@@ -1,0 +1,37 @@
+
+<% @statuses.each do |weibo| %>
+<div class="row">
+  <div class="span1">
+    <img src="<%=h weibo.user.profile_image_url %>" alt="<%=h weibo.user.profile_image_url %>">
+  </div>
+  <div class="span5">
+    <span><%= weibo.user.name %>:</span>
+    <span><%= weibo.text %></span><br>
+    <% suffix_url = weibo.text.match(/(http.*)/).nil? ? "" : weibo.text.match(/(http.*)/)[0] %>
+    <% if suffix_url.present? %>
+				  <% suffix_url = suffix_url.gsub(":","%3A") %>
+				  <% suffix_url = suffix_url.gsub("/","%2F") %>
+				  <% img_url = "http://oimagea8.ydstatic.com/image?w=100&h=100&url=#{suffix_url}" %>
+				  <img src="<%=h img_url %>">
+    <% end %>
+    <!--转发微博-->
+    <% if weibo.root_in_reply_to_user_name? %>
+    <div class="row" style="background:lightgray;">
+      <div class="span5">
+        <a><%= weibo.root_in_reply_to_user_name %></a>
+        <%= weibo.root_in_reply_to_status_text %><br>
+        <div style="float:right;">
+        <a>原文转发(<%= weibo.root_retweet_count %>)</a>|
+        <a> 原文评论(<%= weibo.root_commentsh_count %>)</a>
+        </div>
+      </div>
+    </div>
+    <% end %>
+   来自<%= weibo.source %>
+   <div style="float:right;">
+   <a>原文转发(<%= weibo.retweet_count %>)</a>|
+   <a> 原文评论(<%= weibo.commentsh_count %>)</a>
+   </div>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,82 @@
+<div class="modal hide" id="log_checker_pane" style="width:820px;height:520px;">
+  <div class="modal-header">
+     <a class="close" onclick="$('#log_checker_pane').addClass('hide');$('#loading_pane').addClass('hide');">×</a>
+  </div>
+  
+  <div class="modal-body">
+					<%= text_area_tag("log_holder", nil, rows:20, class:'text_area span8') %>
+			</div>
+			
+			<div class="modal-footer">
+			<div class="control-group" style="float:left;">
+     <div class="controls">
+       <div class="input-append">
+							 <a id="log_reflash" id="reflash" class="btn btn-primary" onclick="fun_select()">reflash</a><span id="loading_lable"></span>
+       </div>
+     </div>
+   </div>
+		</div>
+		
+</div>
+
+
+
+<script type="text/javascript">
+ $("#log_holder").val('');
+  function fun_select(){
+    var file_root = $("#file_root").val();
+    var select = $("#file_select").val();
+    log_loader(select);
+  }
+  function log_pane_init(){
+		  var strhost = window.location.host;
+				var strprotocol = window.location.protocol;
+				var strurl = strprotocol + "//" + strhost + "/log_checker/index";
+    $("#loading_lable").html("init...");
+				$.ajax({
+					type: 'POST',
+					url: strurl,
+					contentType: 'multipart/form-data',
+					datatype: 'json',
+					success:function(data)
+					{
+					 if(document.getElementById("file_root")){
+					   $("#file_root").detach();
+					   $("#file_select").detach();
+					 }
+					 $("#log_checker_pane").removeClass("hide")
+					 $("#log_reflash").before(data);
+      $("#loading_lable").html("init over!");
+					},
+					error:function(xhr,r,e)
+					{
+						alert(e);
+      $("#loading_lable").html("init fail!");
+					}
+				});
+		}
+  function log_loader(file_path){
+		  var strhost = window.location.host;
+				var strprotocol = window.location.protocol;
+				var strurl = strprotocol + "//" + strhost + "/log_checker/log_loader";
+    $("#loading_lable").html("loading...");
+				$.ajax({
+					type: 'POST',
+					url: strurl,
+					contentType: 'multipart/form-data',
+					data:{"file_path":file_path},
+					datatype: 'json',
+					success:function(data)
+					{
+					 $("#log_holder").val('');
+						$("#log_holder").val(data);
+      $("#loading_lable").html("loading over!");
+					},
+					error:function(xhr,r,e)
+					{
+						alert(e);
+      $("#loading_lable").html("loading fail!");
+					}
+				});
+		}
+</script>

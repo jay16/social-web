@@ -1,0 +1,52 @@
+		    	<div class="row">
+		    	<div style="border-color: transparent transparent lightgray transparent;border-style: solid;border-width: 10px 10px 10px 10px;width: 0;height: 0;margin-left:20px;">
+		    	</div>
+		    	<div class="row" style="margin-left:10px;padding:2px;background-color:lightgray;">
+		     <div class="span1" style="margin-left:0;">
+		        <a data-toggle="modal" href="#<%= weibo.retweeted_status.user.id %>_user_info_modal">
+				    			<img src="<%=h weibo.retweeted_status.user.profile_image_url %>" alt="<%=h weibo.retweeted_status.user.screen_name %>" title="<%=h weibo.retweeted_status.user.screen_name %>"></a>
+				    	<!-- 是否关注 -->
+	       	<%= render :partial => "sina_partial/friendship_or_not", :locals => { :weibo => weibo.retweeted_status.user } %>
+				   		<!-- 是否在线-->
+				   		<%= render :partial => "sina_partial/online_status", :locals => { :weibo => weibo.retweeted_status.user } %>
+				   			 <!--用户详情 触发点是头像与妮称-->
+				   			 <%= render :partial => "sina_partial/statuses_userinfo", :locals => {:weibo => weibo.retweeted_status.user} %>
+				    <!--用户详情end-->
+				    </div> 
+				 			<div class="span4" style="margin:0px;">
+								   <div>
+								    <a data-toggle="modal" href="#<%= weibo.retweeted_status.user.id %>_user_info_modal">
+								     	<%=h weibo.retweeted_status.user.screen_name %></a>
+								      <%=h weibo.retweeted_status.text %><br>
+								      <img id="<%=h weibo.retweeted_status.id %>_thumbnail_pic" src="<%=h weibo.retweeted_status.thumbnail_pic %>">
+								   </div>
+
+					   						<span style="color:gray;">
+					   						<% day = Time.now.strftime("%m月%d日") == DateTime.parse(weibo.retweeted_status.created_at).strftime("%m月%d日") ? "今天 " : "%m月%d日 " %>
+					   						(<%=h DateTime.parse(weibo.retweeted_status.created_at).strftime("#{day}%H:%M") %>)
+					   						</span> 	
+														<% source = weibo.retweeted_status.source.match(/"(.*?)"/mi)[0] %>
+														<% source_name = weibo.retweeted_status.source.gsub(/<a(.*?)>|<\/a>/mi,"") %>
+														<span style="color:gray;">来自<a src="<%=h source %>"><%= source_name %></a></span>
+										
+										    <span style="float:right;">
+					   						<a data-toggle="modal" href="#<%=h weibo.retweeted_status.id %>_repost_modal" >转发(<%= weibo.retweeted_status.reposts_count? ? weibo.retweeted_status.reposts_count : 0%>)</a> | <a id="<%=h weibo.retweeted_status.id %>_repost_list" href="javascript:void(0)" onclick="comments_list(<%=h weibo.retweeted_status.id %>,'true');$('#<%=h weibo.retweeted_status.id %>_comment_pane').css('display','block');$('#<%=h weibo.retweeted_status.id %>_comment').val('想说点什么....');" >评论(<%= weibo.retweeted_status.comments_count? ? weibo.retweeted_status.comments_count : 0%>)</a>
+					   						</span>
+					   					<!--转发、评论后提示-->
+													<div class="alert" id="<%=h weibo.retweeted_status.id %>_after_pane" style="display:none;">
+														 <button type="button" class="close" data-dismiss="alert">&times;</button>
+														 <strong>Well done!</strong><span> You successfully comment!.</span>
+													</div>
+													<!--转发、评论后提示-->
+					   					
+					        <!--转发-->
+					        <%= render :partial => "sina_partial/statuses_repost", :locals => { :weibo => weibo.retweeted_status} %>
+             <!--转发end-->
+					   					<!--评论-->
+					   				 <%= render :partial => "sina_partial/statuses_comment", :locals => { :weibo => weibo.retweeted_status, :is_reweeted => "true" } %>
+             <!--评论end-->
+					    
+					  </div>
+					    <!--span5 end -->
+						</div>
+					</div>

@@ -1,0 +1,8 @@
+<div id="<%=h weibo.id %>_friendship_pane">
+		<% if weibo.following %>
+			<div><a href="javascript:void(0)" onclick="friendship_destroy(<%=h weibo.id %>);" class="friendship_destroy">取消关注</a></div>
+		<% else %>
+	  <div><a href="javascript:void(0)"  onclick="friendship_create(<%=h weibo.id %>);" 
+class="friendship_create">添加关注</a></div>
+	 <% end %>
+</div>

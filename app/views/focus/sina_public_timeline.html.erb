@@ -1,0 +1,25 @@
+<% @statuses_timeline.statuses.each do |weibo| %>
+	<div class="row" style="">
+			<div class="span1" style="padding:15px 0 15px 5px;width:45px;">
+				 <a data-toggle="modal" href="#<%= weibo.user.id %>_user_info_modal">
+					<img width="40" src="<%=h weibo.user.profile_image_url %>" alt="<%=h weibo.user.screen_name %>"></a>
+			</div> 
+			<!--span1 end -->
+		
+			<div class="span4" style="margin:0;padding:15px 0px;border-top-style:dotted;border-top-width:1px;">
+					<div>
+							<a><%=h weibo.user.screen_name if weibo.user? %>:</a>
+							<%=h weibo.text if weibo.text? %>
+					</div>
+				
+					<div style="color:gray;">
+							<% c_min = DateTime.parse(weibo.created_at).strftime("%M").to_i %>
+							<% m_d = (Time.now).min - c_min %>
+							<% min = m_d == 0 ? "刚刚" : "#{m_d}分钟前" %>
+					<%=h DateTime.parse(weibo.created_at).strftime("#{min}") %>
+					</div>
+								
+				</div>
+				<!--span5 end -->
+		</div>
+<% end %>

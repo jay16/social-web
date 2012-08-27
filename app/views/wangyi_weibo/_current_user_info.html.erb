@@ -1,0 +1,40 @@
+<div style="height:45em;ovarflow:auto;margin:0px;">
+  <div id="wangyi_statuse_release_pane" style="margin-left:20px;">
+   <a class="close" onclick="$('#wangyi_statuse_release_pane').css('display','none');$('#wangyi_curret_info_pane').css('height','43em');">x</a>
+					<div class="row">
+						 <div class="span6">
+						 <span>有什么新鲜事想告诉大家？</span>
+				   <span style="float:right;">还可以输入<span id="wangyi_word_limit">140</span>字</span>
+						 </div>
+					</div>
+				<%= form_tag("/sina_weibo/statuses_update", :multipart=>true, :remote => true) do %>
+						<div class="row">
+								<div class="span6">
+								<%= text_area_tag("wangyi_statuses_text", nil, rows:3, class:'text_area span6') %>
+								</div>
+						</div>
+						<div class="row">
+								<div class="span6">
+								<span id="wangyi_face"><img src="/images/F_1.gif"><a onclick="sina_emotions()">表情</a></span>
+								<span id="wangyi_check_img"><a onclick="wangyi_load_image()">图片</a></span>
+								<span><a onclick="$('#wangyi_statuses_image').toggleClass('hide');">视频</a></span>
+								<span><a onclick="$('#wangyi_statuses_image').toggleClass('hide');">音乐</a></span>
+								<span><a>话题</a></span>
+								<span><a>投票</a></span>
+								<span style="float:right;">
+								<%= submit_tag "发布", id:"wangyi_statuse_release", class:"btn",remote:true %>
+								</span>
+				  </div>
+				</div>
+				<% end %>
+		</div>
+	   <%= render "current_user_brand" %>
+		  <div id="wangyi_curret_info_pane" style="height:44em;overflow:auto;">  
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#wangyi_statuse_release_pane').css('display','none');
+  wangyi_statuses_by_name("home_timeline");
+});
+</script>

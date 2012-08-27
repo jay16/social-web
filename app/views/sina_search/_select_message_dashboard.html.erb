@@ -1,0 +1,96 @@
+
+		<ul class="nav nav-tabs">
+				<li class="active">
+				　　<a href="#show_weibo" data-toggle="tab" rel="tooltip" title="搜索微博" onclick="$('#weibo_search_brand').html('微博搜索');return false;">微博</a></li>
+				<li>
+				　　<a href="#show_people" data-toggle="tab" rel="tooltip" title="搜索人物" onclick="$('#weibo_search_brand').html('人物搜索');return false;">人物</a></li>
+		</ul>
+  <form>
+  <fieldset>
+ 		 <div id="my-tab-content" class="tab-content">
+      <div class="tab-pane active" id="show_weibo">
+				    <div class="control-group">
+				      <label class="control-label" for="str_sel_mes" style="text-align: left;">关键词：</label>
+		        <input type="text" class="input-large" placeholder="关键词" id="str_sel_mes" name="str_sel_mes">
+		      </div>
+		      <div class="control-group">
+		        <label class="control-label" for="str_filter_ori">是否为原创：</label>
+		        <div class="controls">
+		          <select class="medium" name="str_filter_ori" id="str_filter_ori">
+														<option value="0" selected="true">全部</option>
+														<option value="5">原创</option>
+														<option value="4">转发</option>
+		          </select>
+		         </div>
+		       </div>
+		       <div class="control-group">
+				     		<label class="control-label" for="str_filter_pic">是否包含图片：</label>
+				     		<div class="controls">
+				        	<select name="str_filter_pic" id="str_filter_pic">
+															<option value="0" selected="true">全部</option>
+															<option value="1">包含</option>
+															<option value="2">不包含</option>
+		           </select>
+		         </div>
+		       </div>
+		       <div class="control-group">
+				     		<label class="control-label" for="str_filter_time">时间范围：</label>
+				     		<div class="controls">
+		           <select class="medium" name="str_filter_time" id="str_filter_time">
+															<option value="0" selected="true">不限</option>
+															<option value="1">今天</option>
+															<option value="2">昨天</option>
+															<option value="3">前天之前</option>
+		           </select>
+		         </div>
+		       </div>
+					    <a href="#" class="btn primary" onclick="weibo_search();$('#loading_pane').removeClass('hide');" rel="tooltip" title="输入关键词时，可直接回车搜索">搜索</a>
+       </div>
+       
+       <div class="tab-pane" id="show_people">
+				     <div class="control-group">
+				    	  <label class="control-label" for="txtselect" style="text-align: left;">关键词：</label>
+		         <div>
+		           <input class="input-large" type="text" id="txtselect" placeholder="关键词" />
+		         </div>
+		       </div>
+		       <h4 class="user-rec-component">
+				    		<span class="dashboard-component-title">范围：</span>
+				    	</h4>
+				    	<div class="control-group">
+		         <label class="control-label" style="padding-left: 10px;">
+		           <input type="checkbox" id="txtmes" checked="true" />简介
+		         </label>
+		       </div>
+		       <div class="control-group">
+		         <label class="control-label" style="padding-left: 10px;">
+		          <input type="checkbox" id="txtsdomain" checked="true" />个性域名
+		         </label>
+		       </div>
+		       <div class="control-group">
+		         <label class="control-label" style="width: 70px;">&nbsp;&nbsp;*性&nbsp;&nbsp;别：</label>
+           <label class="control-label" style="width: 50px">
+          	 <input id="man" name="gender" type="radio" value="1" class="" />男&nbsp;
+          	</label>
+		         <label class="control-label" style="width: 50px">
+		          <input id="woman" name="gender" type="radio" value="2" class="" />女&nbsp;
+		         </label>
+		         <label class="control-label" style="width: 50px">
+		          <input id="wm" name="gender" type="radio" value="0" checked="" checked="true" />不限
+		         </label>
+		       </div>
+		       <div class="control-group">
+		          <label class="control-label" for="str_filter_ori" style="width: 75px;">&nbsp;&nbsp;&nbsp;&nbsp;地&nbsp;&nbsp;域：</label>
+		          <div class="input">
+		          <select class="medium" name="province" id="province"  style="width: 90px;" preval="" ></select>
+					       <select class="medium" name="city" id="city" style="width: 80px;" ></select>
+		          </div>
+		       </div>
+						   <a href="#" class="btn primary" onclick="user_search();$('#loading_pane').removeClass('hide');" rel="tooltip" title="输入关键词时，可直接回车搜索">搜索</a>
+				 		</div>
+					</div>
+		</fieldset>
+		</form>
+ <hr class="component-spacer">
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>social-web</name>
+	<comment></comment>
+	<projects>
+		<project>abc</project>
+		<project>blog</project>
+		<project>blog1</project>
+		<project>blog2</project>
+		<project>blog3</project>
+		<project>sina_api_test</project>
+		<project>unit10(01)</project>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>com.aptana.projects.webnature</nature>
+		<nature>org.radrails.rails.core.railsnature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,14 @@
+<% if user_signed_in? %>
+		<% @is_exists = Userkey.find_by_user_id(current_user.id).present? %>
+		<% @expired_at = @is_exists ? Time.at(Userkey.find_by_user_id(current_user.id).key2.to_i) : nil %>
+		
+		<% if @is_exists %>
+				<% if @expired_at < Time.now %>
+				  <%= render :partial => "home/firm_weibo", :locals => { :warn => "新浪access_token过期！"} %>
+				<% else %>
+				  <%= javascript_tag "window.location.assign('/home/about')" %>
+				<% end %>
+		<% else %>
+      <%= render :partial => "home/firm_weibo", :locals => { :warn => "还未绑定，"} %>
+		<% end %>
+<% end %>

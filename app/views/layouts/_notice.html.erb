@@ -1,0 +1,11 @@
+  	<p class="notice"></p>
+  	<div id="notice" class="alert-message warning fade in" data-alert="alert" style="display:<% if notice != nil or alert != nil %>
+  	  				block
+  	  				<% else %>
+  	  				none"
+  	  				<% end %>
+  	  			>
+        <a class="close" href="#">x</a>
+        <p class="notice" id="a-notice"><%= notice %></p>
+    	<p class="alert"><%= alert %></p>
+   </div>

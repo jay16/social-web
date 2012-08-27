@@ -1,0 +1,40 @@
+<% if @favorites.present? %>
+  <% if @favorites.total_number ==0 %>
+    <p style="color:gray;text-align:center;">还没有评论</p>
+  <% else %>
+    <span style="font-weight:bold;font-size:20px;margin:0px 15px;">我的评论</span>
+    <span style="font-size:14px;">共<%= @favorites.total_number %>条</span>
+    <div id="favorites" style="height:43em;overflow:auto;">
+    <% id_index = 1 %>
+    <% @favorites.favorites.each do |weibo| %>
+    <div class="row" id="statuses_<%= id_index %>"><% id_index += 1 %>
+      <div class="span1" style="padding-left:20px;width:65px;">
+       <img src="<%=h weibo.status.user.profile_image_url %>">
+			    <!-- 是否关注 -->
+			    <%= render :partial => "sina_partial/friendship_or_not", :locals => { :weibo => weibo.status } %>
+	   			<!-- 是否关注end -->
+	   			<%= render :partial => "sina_partial/online_status", :locals => { :weibo => weibo.status } %>
+				  </div>
+				  
+      <div class="span5" style="padding:5px;margin:0;">
+        <div class="row">
+        <div class="span5">
+										<span><%= weibo.status.text if weibo.status.text? %></span>
+										<span style="color:gray;">(<%=h DateTime.parse(weibo.status.created_at).strftime("%m月%d日  %H:%M:%S") %>)<br>
+										 评论<a href="<%=h weibo.status.user.url %>"><%= weibo.status.user.screen_name %></a>的微博</span>
+										<a href="<%=h weibo.status.user.url %>"><%= weibo.status.text.to_s[0,20] %>......</a><br>
+										<% source = weibo.status.source.match(/"(.*?)"/mi)[0] %>
+										<% source_name = weibo.status.source.gsub(/<a(.*?)>|<\/a>/mi,"") %>
+										<span style="color:gray;">来自<a src="<%=h source %>"><%= source_name %></a></span>
+								</div>
+								</div>
+								<!--是否有转发微博-->
+								<% if weibo.status.retweeted_status? %>
+								  <%= render :partial => "sina_partial/retweeted_status", :locals => { :weibo => weibo.status } %>
+								<% end %>
+      </div>
+    </div>
+    <% end %>
+    </div>
+  <% end %>
+<% end %>

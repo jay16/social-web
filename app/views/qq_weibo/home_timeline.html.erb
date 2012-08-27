@@ -1,0 +1,58 @@
+<% unless @statuses.data? %>
+  <span style="text-align:center;">
+    Sorry!没有相关微博.
+  </span>
+<% else %>
+
+<% @user = Hash.new %>
+<% @statuses.data.user.each do |weibo| %>
+<% @user[weibo[0].to_s] = weibo[1] %>
+<% end %>
+
+<% @statuses.data.info.each do |weibo| %>
+<div class="row">
+  <div class="span1" style="margin-left:30px;">
+    <img  src="<%=h weibo.head << '/100' if weibo.head? %>"><br>
+  </div>
+  
+  <div class="span5">
+    <div class="row">
+    <div class="span5">
+    <span><a><%= @user[weibo.name] %></a></span>:
+    <span><%= weibo.text %></span><br>
+    <div><img src="<%=h weibo.image[0] << '/160' if weibo.image? %>"></div>
+    </div>
+    </div>
+    
+    <% if weibo.source? %>
+      <%= render :partial => "reweeted_source", :locals => {:weibo => weibo} %>
+    <% end %>
+    
+    <span style="color:gray;">
+     <% timestamp = Time.at(weibo.timestamp).to_s %>
+		   <% day = Time.now.strftime("%m月%d日") == DateTime.parse(timestamp).strftime("%m月%d日") ? "今天 " : "%m月%d日 " %>
+						<% if day == "今天 " %>
+							 <% c_min = DateTime.parse(timestamp).strftime("%M").to_i %>
+							 <% if (Time.now).hour == DateTime.parse(timestamp).strftime("%H").to_i %>
+							 <% m_d = (Time.now).min - c_min %>
+							 <% min = m_d == 0 ? "刚刚" : "#{m_d}分钟前" %>
+							 <% else %>
+							    <% min = "%H:%M" %>
+							 <% end %>
+						<% else %>
+							 <% min = "%H:%M" %>
+						<% end %> 
+						(<%=h DateTime.parse(timestamp).strftime("#{day}#{min}") %>)
+    </span>
+    <span style="color:gray;"><a>from<%= weibo.from %></a></span>
+    <span style="float:right;">
+      <span><a>转发(<%= weibo.count %>)</a><a>评论(<%= weibo.mcount %>)</a></span>
+    </span>
+    
+  </div>
+</div>
+<p style="line-height:200%;">
+<hr style="border:1 dashed #987cb9;margin:0 auto;" width="80%" color=#987cb9 size=1>
+</p>
+<% end %>
+<% end %>

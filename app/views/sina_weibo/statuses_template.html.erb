@@ -1,0 +1,52 @@
+ <% hot_statuses ||= [@hot_comments_daily,@hot_comments_weekly,@hot_repost_daily,@hot_repost_weekly] %>
+	<% hot_statuses.reject! { |s| s.blank? } %>
+	<% statuses ||= [@statuses_timeline,@statuses_mentions] %>
+	<% statuses.reject! { |s| s.blank? } %>
+	<% @statuses = statuses.empty? ? hot_statuses[0] : statuses[0].statuses %>
+	<% @statuses = @repost_by_me.reposts if @statuses.nil? %>
+	
+	<!--公共微博返回条数为0时-->
+ <% unless statuses.empty? %>
+  <% if statuses[0].total_number ==0 %>
+   <p style="color:gray;text-align:center;">返回0条结果</p>
+  <% end %>
+ <% end %>
+ 	<!--近期没有转发微博-->
+ <% unless @repost_by_me.nil? %>
+   <% if @repost_by_me.reposts.length == 0 %>
+   <p style="color:gray;text-align:center;">您近期没有转发微博</p>
+   <% end %>
+ <% end %>
+ 
+ <!--遍历微博-->
+ <% id_index = 1 %>
+ <% @statuses.each do |weibo| %>
+	<!--单条微博 --> 
+	<%= render :partial => "sina_partial/statuse_template", :locals => {:weibo => weibo, :id => id_index} %>
+	<% id_index += 1 %>
+	<!--单条微博 结束-->   
+	<!--分隔线-->
+	<p style="line-height:200%;">
+	  <hr style="border:1 dashed #987cb9;margin:0 auto;" width="80%" color=#987cb9 size=1>
+	</p>    
+	<% end %>
+<script type="text/javascript">
+	//点击缩略图查看原图
+	<% if @statuses.present? %>
+	  <% @statuses.each do |weibo| %>
+				 $("#<%=h weibo.id %>_thumbnail_pic").hover(function(){
+									$(this).css("cursor","crosshair");
+					});
+					$("#<%=h weibo.id %>_thumbnail_pic").click(function(){
+							if($(this).attr("src")== "<%=h weibo.thumbnail_pic %>"){
+									$(this).css("cursor","wait");
+									$(this).attr("src","<%=h weibo.original_pic %>");
+									$(this).css("cursor","crosshair");}
+							else{
+									$(this).css("cursor","wait");
+									$(this).attr("src","<%=h weibo.thumbnail_pic %>");
+									$(this).css("cursor","crosshair");}
+					});
+  <% end %>
+<% end %>
+	</script>

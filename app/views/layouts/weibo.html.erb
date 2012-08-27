@@ -1,0 +1,68 @@
+<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+		  <div class="item active">
+		    <div id="sina_weibo_pane"></div>
+		  </div>
+		  
+		  <div class="item">
+						<div id="qq_weibo_pane"></div>
+		  </div>
+		  
+		</div>
+		
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  $('.carousel').carousel('pause');
+  sina_weibo_init();
+  qq_weibo_init()'
+});
+
+function sina_weibo_init(){
+  var strhost = window.location.host;
+		var strprotocol = window.location.protocol;
+		var strurl = strprotocol + "//" + strhost + "/sina_weibo/index";
+  $("#loading_pane").removeClass("hide");
+		$.ajax({
+			type: 'POST',
+			url: strurl,
+			contentType: 'multipart/form-data',
+			datatype: 'json',
+			success:function(data)
+			{
+				$("#sina_weibo_pane").html(data);
+    $("#loading_pane").addClass("hide");
+			},
+			error:function(xhr,r,e)
+			{
+				alert(e);
+    $("#loading_pane").addClass("hide");
+			}
+		});
+}
+function qq_weibo_init(){
+  var strhost = window.location.host;
+		var strprotocol = window.location.protocol;
+		var strurl = strprotocol + "//" + strhost + "/qq_weibo/index";
+  $("#loading_pane").removeClass("hide");
+		$.ajax({
+			type: 'POST',
+			url: strurl,
+			contentType: 'multipart/form-data',
+			datatype: 'json',
+			success:function(data)
+			{
+				$("#qq_weibo_pane").html(data);
+    $("#loading_pane").addClass("hide");
+			},
+			error:function(xhr,r,e)
+			{
+				alert(e);
+    $("#loading_pane").addClass("hide");
+			}
+		});
+}
+</script>

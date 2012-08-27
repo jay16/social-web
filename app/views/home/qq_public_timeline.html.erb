@@ -1,0 +1,27 @@
+
+<% @user = Hash.new %>
+<% @statuses.data.user.each do |weibo| %>
+<% @user[weibo[0].to_s] = weibo[1] %>
+<% end %>
+
+<% @statuses.data.info.each do |weibo| %>
+<div class="row">
+  <div class="span1" style="padding:15px 0 15px 5px;width:45px;">
+    <img width="40" src="<%=h weibo.head << '/100' if weibo.head? %>"><br>
+  </div>
+  
+  <div class="span4" style="margin:0;padding:15px 0px;border-top-style:dotted;border-top-width:1px;">
+    <span><a><%= @user[weibo.name] %></a></span>:
+    <span><%= weibo.text %></span><br>
+    
+    <div style="color:gray;">
+     <% timestamp = Time.at(weibo.timestamp).to_s %>
+					<% c_min = DateTime.parse(timestamp).strftime("%M").to_i %>
+					<% m_d = (Time.now).min - c_min %>
+					<% min = m_d == 0 ? "刚刚" : "#{m_d}分钟前" %>
+					<%=h DateTime.parse(timestamp).strftime("#{min}") %>
+    </div>
+    
+  </div>
+</div>
+<% end %>

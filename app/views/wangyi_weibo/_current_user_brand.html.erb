@@ -1,0 +1,41 @@
+<div id="wangyi_hover" style="height:0;width:500px;margin:0 auto;border-width:10px 10px 10px 10px;border-style:solid solid solid solid;border-color:lightgray transparent transparent transparent">
+</div>
+<div class="row" id="wangyi_current_user_brand" style="margin-bottom:10px;">
+ <a class="close" onclick="$('#current_user_brand').css('display','none');">x</a>
+<div class="span6">
+<div class="tabbable" style="padding-left:20px;overflow:hidden;">
+  <ul class="nav nav-tabs" style="margin:0px;">
+    <li class="active">
+      <a href="#total_weibo" data-toggle="tab">全部微博</a></li>
+    <li>
+      <a href="#hot_weibo" data-toggle="tab">热门微博</a></li>
+  </ul>
+  <div class="tab-content"  style="overflow:hidden;height:25px;background:lightgray;">
+    <div class="tab-pane active" id="wangyi_total_weibo" style="margin:3px auto;">
+						<span id="wangyi_public_timeline_tab"><a onclick="wangyi_statuses_by_name('public_timeline')" data-toggle="tab">
+						公共微博</a></span>|
+						<span id="wangyi_user_timeline_tab"><a onclick="wangyi_statuses_by_name('user_timeline')" data-toggle="tab">
+						我的微博</a></span>|
+						<span id="wangyi_friends_timeline_tab"><a onclick="wangyi_statuses_by_name('friends_timeline')" data-toggle="tab">
+						朋友微博</a></span>|
+						<span id="wangyi_bilateral_timeline_tab"><a onclick="wangyi_statuses_by_name('bilateral_timeline')" data-toggle="tab">
+						相互关注</a></span>|
+						<span id="wangyi_home_timeline_tab"><a onclick="wangyi_statuses_by_name('home_timeline')" data-toggle="tab">
+						最新微博</a></span>|
+						<span id="wangyi_repost_by_me_tab"><a onclick="wangyi_statuses_by_name('repost_by_me')" data-toggle="tab">
+						最新转发</a></span>
+    </div>
+    <div class="tab-pane" id="hot_weibo">
+						<span id="hot_repost_daily_tab"><a onclick="statuses_by_name('hot_repost_daily')">
+						热门转发榜(天)</a></span>|
+						<span id="hot_repost_weekly_tab"><a onclick="statuses_by_name('hot_repost_weekly')">
+						热门转发榜(周) </a></span>|
+						<span id="hot_comments_daily_tab"><a onclick="statuses_by_name('hot_comments_daily')">
+						热门评论榜(天)</a></span>|
+						<span id="hot_comments_weekly_tab"><a onclick="statuses_by_name('hot_comments_weekly')">
+						热门评论榜(周)</a></span>
+    </div>
+  </div>
+</div>
+</div>
+</div>

@@ -1,0 +1,20 @@
+<% @span = is_reweeted == "true" ? "span4" : "span5" %>
+<div id="<%= weibo.id %>_comment_pane" style="display:none;width:200px;margin-left:0px;">
+  <div class="row <%= @span %>" style="margin-left:0px;">
+    <% @content = "想说点什么....." %>
+    <%= text_area_tag("#{weibo.id}_comment", "#{@content}", rows:3, class:"text_area #{@span}") %>
+  </div>
+		<div id="<%= weibo.id %>_ctl_pane" class="row <%= @span %>">		 					
+   <label style="float:right;margin-right:25px;">
+     <input type="checkbox" id="<%=h weibo.id %>_repost_at_time" checked="true" />
+     同时评论原微博
+		  <a class="btn btn-mini" href="javascript:void(0)" onclick="weibo_comment_ajax(<%=h weibo.id %>,$('#<%=h weibo.id %>_comment').val(),$('#<%=h weibo.id %>_repost_at_time').attr('checked'));;return false;">评论</a>
+		  <a class="btn btn-mini" href="javascript:void(0)" onclick="$('#<%=h weibo.id %>_comment_pane').css('display','none');">取消</a>
+		  </label>
+  </div>
+  <!--评论列表-->
+  <div id="<%= weibo.id %>_comments_list" class="row <%= @span %>" style="margin:0px;">
+   <img src="/images/loading-bar.gif" style="margin:0 auto;">
+  </div>
+  <!--评论列表end-->
+</div>

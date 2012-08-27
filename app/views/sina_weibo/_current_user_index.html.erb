@@ -1,0 +1,222 @@
+<div class="row"><br>
+		<div class="row" style="margin-left:30px;width:300px;" >
+		  <div class="span1">
+				<img src="<%=h @user_info.avatar_large %>" title="<%=h @user_info.screen_name %>" >
+				</div>
+				<div class="span2">
+				<span style="font-size:18;color:blue;"><%=h @user_info.screen_name %></span><br>
+				<span><%=h @user_info.location %></span>
+				</div>
+		</div>
+		<div class="row" style="margin-left:60px;width:200px;">
+		<br>
+		<span style="font-size:18;font-weight:bold;color:blue;"><%= @user_info.friends_count %> | <%= @user_info.followers_count %> | <%= @user_info.statuses_count %></span><br>
+		关注|粉丝|微博<br><br>
+		</div>
+		<div style="margin-left:50px;">
+				<a onclick="$('#sina_statuse_release_pane').css('display','block');$('#sina_curret_info_pane').css('height','33em');">
+				<img src="/images/sina_emotions/statuses.png"></a>
+		</div><br>
+		
+		<div class="row" style="font-size:16px;margin-left:50px;width:170px;"> 
+				<ul class="nav nav-list" id="sina_user_info_siderbar" style="width:80%;">
+						<li id="sina_weibo_index" class="active"><a>
+								微博首页</a></li>
+								
+						<li id="sina_at_me"><a onclick="if($('#sina_at_around_me').css('display')=='none'){$('#sina_at_around_me').css('display','block');}else{$('#sina_at_around_me').css('display','none');}">
+								@提到我的</a>
+								<div class="row" id="sina_at_around_me" style="display:none;font-size:14px;padding-left:25px;">
+								<ul class="nav nav-list">
+								<li id="sina_statuses_mentions"><a onclick="sina_statuses_by_name('statuses_mentions')">
+										@到我的微博</a></li>
+								<li id="sina_comments_mentions"><a onclick="sina_comments_mentions()">
+										@到我的评论</a></li>
+								</ul>
+								</div>
+						</li>
+								
+						<li><a onclick="if($('#sina_comment_around_me').css('display')=='none'){$('#sina_comment_around_me').css('display','block');}else{$('#sina_comment_around_me').css('display','none');}">
+						我的评论</a>
+								<div class="row" id="sina_comment_around_me" style="display:none;font-size:14px;padding-left:25px;">
+								<ul class="nav nav-list">
+								<li id="sina_comment_by_me"><a onclick="sina_comments_by_me()">
+										发出的评论</a></li>
+								<li id="sina_comment_to_me"><a onclick="sina_comments_to_me()">
+										收到的评论</a></li>
+								</ul>
+								</div>
+						</li>
+				
+						<li id="sina_my_fans"><a onclick="sina_my_followers()">
+								我的粉丝</a></li>
+						<li id="sina_my_follow"><a onclick="sina_my_friends()">
+								我的关注</a></li>
+						<li id="sina_my_favourity"><a onclick="sina_my_favorites()">
+								我的收藏</a></li>
+					</ul>
+		</div>
+		<br>
+		<div class="row" style="margin-left:10px;">
+    <div class="span3">
+      <div class="row">
+       <div class="span3">
+				    <label>新浪搜索<br>
+								<input class="span2" id="sina_search" type="text" placeholder="...">
+								<select class="span1" id="sina_select_class">
+										<option>微博</option>
+										<option>用户</option>
+										<option>学校</option>
+										<option>公司</option>
+										<option>应用</option>
+										<option>@联想</option>
+								</select>
+								</label>
+							</div>
+						</div>
+						<div class="row">
+						 <div class="span3">
+								<a class="btn" onclick="sina_weibo_search($('#sina_select_class').val(),$('#sina_search').val());">
+								搜索</a>
+							</div>
+						</div>
+			</div>
+		</div><br>
+		<div class="row">
+		  <ul class="pager">
+    <li id="sina_pager_older">
+    <a href="#" onclick="sina_older()">&larr; Older</a>
+    </li>
+    <li id="sina_pager_newer">
+    <a href="#" onclick="sina_newer()">Newer &rarr;</a>
+    </li>
+    </ul>
+		</div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    //网页加载完需要自动设置的样式
+				$("#loading_pane").addClass("hide");
+				$("#sina_current_user_brand").css("display","none");
+				$("#sina_public_timeline_tab a").css("background","white");
+				//进入顶部div后显示功能模板
+				$("#sina_hover").hover(
+						function(){$("#sina_current_user_brand").css("display","block");$(this).css("display","none");});
+				$("#sina_current_user_brand").hover(
+						function(){$("#sina_current_user_brand").css("display","block");},
+						function(){$("#sina_current_user_brand").css("display","none");$("#sina_hover").css("display","block");});
+				//顶部功能模板中各功能超链接点击后样式设置
+				$("a").hover(function(){$(this).css({"cursor":"pointer","text-decoration":"none"});});
+				$("#sina_tab_content a").click(function(){
+						$(".tab-pane span").children("a").css("background","lightgray");
+						$(this).css("background","white");
+				});
+				//侧边栏功能列表悬浮、点击功能
+				$("#sina_user_info_siderbar li").hover(function(){
+				  $(this).css("cursor","pointer");
+				});
+				$("#sina_user_info_siderbar li").click(function(){
+						if($(this).is("li")&&($(this).has("ul").size()==0)){
+								$("#sina_user_info_siderbar li").removeClass("active")
+								$(this).addClass("active");
+				    $("#loading_pane").removeClass("hide");
+								}
+				  });
+				//点击写微博面板调出输入框
+				$("#sina_weibo_index").click(function(){
+				  $("#sina_statuses_main_pane").html("<%= j render "current_user_info" %>");
+				});
+		});
+		<!--   weibo search --> 
+	function sina_weibo_search(style,keyworld){
+		var strhost = window.location.host;
+		var strprotocol = window.location.protocol;
+		var strurl = strprotocol + "//" + strhost + "/sina_weibo/statuses_search"
+		
+		$("#loading_pane").removeClass("hide");
+		$.ajax({
+			type: 'POST',
+		    url: strurl,
+		    data: {"style":style,"keyworld":keyworld},
+		    contentType: 'multipart/form-data',
+		    datatype: 'json',
+		    success:function(data)
+		    {
+								$("#sina_curret_info_pane").html(data);
+								$("#loading_pane").addClass("hide");
+		    },
+		    error:function(xhr,r,e)
+		    {
+		    	$("#sina_curret_info_pane").html("远方服务器没有响应，请稍候再试！<br/>" + e);
+								$("#loading_pane").addClass("hide");
+		    }
+		  });
+	};
+   //向后翻看微博
+		function sina_older(){
+			var index = 0;
+			var tmp = 150;
+			var top = 0;
+			for(var i=1; i<50; i++){
+			  judge = document.getElementById("sina_statuses_"+i);
+			  if(judge){
+			    var tmp_top = Math.abs($("#sina_statuses_"+i).offset().top)
+					  if(tmp_top<tmp){
+					    tmp = tmp_top;
+					    index = i;
+					  }
+			  }else{
+			    break;
+			  }
+			}
+			
+			if(index==0||index<=3){
+			  top = 0;
+			  $("#pager_older").addClass("disabled");
+			  $("#pager_newer").removeClass("disabled");
+			}
+			else{
+			  index = index-3
+			  top = $("#sina_curret_info_pane").scrollTop()+$("#sina_statuses_"+index).offset().top-80;
+			  $("#sina_pager_older").removeClass("disabled");
+			}
+			
+			$("#sina_curret_info_pane").scrollTop(top);
+		}
+		//向前翻看微博
+		function sina_newer(){
+			var index = 0;
+			var tmp = 150;
+			var top = 0;
+			for(var i=1; i<50; i++){
+			  judge = document.getElementById("sina_statuses_"+i);
+			  if(judge){
+			    var tmp_top = Math.abs($("#sina_statuses_"+i).offset().top)
+					  if(tmp_top<tmp){
+					    tmp = tmp_top;
+					    index = i;
+					  }
+			  }else{
+			    break;
+			  }
+			}
+			if(index==0){
+			  index = 1;
+			    $("#sina_pager_older").addClass("disabled");
+			  top = $("#sina_curret_info_pane").scrollTop()+$("#sina_statuses_"+index).offset().top-80;
+			}
+			else{
+			  var not_last = document.getElementById("sina_statuses_"+String(index+3));
+			  if(not_last){
+			    index = index+3
+			    $("#sina_pager_older").removeClass("disabled");
+			    top = $("#sina_curret_info_pane").scrollTop()+$("#sina_statuses_"+index).offset().top-80;
+			  }
+			  else{
+			    $("#sina_pager_newer").addClass("disabled");
+			    top = $("#sina_current_user_info").attr("height");
+			  }
+			}
+			$("#sina_curret_info_pane").scrollTop(top);
+		}
+</script>
+

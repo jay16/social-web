@@ -1,0 +1,24 @@
+ <div class="modal hide fade" id="<%=h weibo.id %>_repost_modal">
+   <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3>转发微博</h3>
+	 	</div>
+		 <div class="modal-body">
+		   <div class="row">
+		     <div class="span1">
+		     <img src="<%=h weibo.profile_image_url %>">
+		     </div>
+		     <div class="span4">
+				    <%= text_area_tag("#{weibo.id}_repost", "想说点什么......", rows:5, class:'text_area span4') %>
+				   </div>
+				 </div>
+		 </div>
+		 <div class="modal-footer">
+		   <lable><input type="checkbox" id="<%= weibo.id %>_comment_at_time" checked="true" />
+				    同时评论给<%= weibo.screen_name %>
+				<a class="btn btn-primary" href="javascript:void(0)" onclick="alert('start');weibo_repost_ajax(<%=h weibo.id %>,$('#<%=h weibo.id %>_repost').val(),$('#<%= weibo.id %>_comment_at_time').attr('checked'));alert('mid');$('#<%=h weibo.id %>_repost_modal').modal('toggle');alert('end');return false;">
+				  转发</a>
+			  <a class="btn" href="javascript:void(0)" onclick="$('#<%=h weibo.id %>_repost_modal').modal('toggle');">取消</a>
+				  </label>
+		 </div>
+ </div>

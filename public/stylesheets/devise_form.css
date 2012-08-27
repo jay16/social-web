@@ -1,0 +1,91 @@
+#myModal{width: 30em; 
+       }
+a{color:#4183c4;
+ text-decoration:none;
+ font-size:11px;
+ }
+a:hover{text-decoration:underline;}
+a.action{color:#d00;text-decoration:underline;}
+a.danger{color:#c00;}
+a.mute{color:#000;}
+a:active{outline:none;}
+
+
+#myModal .modal-body{padding:3em 6em;
+       background-color:#e9f1f4;
+       overflow:hidden;
+       border-style:solid;
+       border-width:1px 1px 2px;
+       border-color:#e9f1f4 #d8dee2 #d8dee2;
+       border-radius:0 0 3px 3px;
+       height:70%;
+       margin-bottom:-17px;
+       }
+#myModal .modal-header{
+       background:#829aa8;
+       background:-moz-linear-gradient(#829aa8,#405a6a);
+       background:-webkit-linear-gradient(#829aa8,#405a6a);
+       -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#829aa8',endColorstr='#405a6a')";
+       border:1px solid #677c89;
+       border-bottom-color:#6b808d;
+       border-radius:3px 3px 0 0;
+       text-shadow:0 -1px 0 rgba(0,0,0,0.7);
+       margin:0;
+       padding-top:20px;
+       height:30px;
+}
+#myModal .modal-header .welcome{color:#fff;
+       font-weight:bold;
+       font-size:18px;
+       margin-left:10px;
+}
+#myModal .modal-header .small{color:#ddd;
+       font-size:14px;
+       margin-left:5px;
+}
+#myModal form label,#myModal form .label{font-size:110%;
+       color:#2f424e;
+       text-shadow:0 -1px 0 rgba(100,100,100,0.1);
+       display:inline-block;
+       cursor:text;
+       }
+#myModal form input.text,.login_form form textarea{padding:5px;
+       border:1px solid #d8dee2;
+       margin:.2em 0 1em 0;
+       }
+#myModal form input.text{font-size:110%;}
+#myModal form input[type=submit]{display:inline-block;
+       height:34px; 
+       padding:0;
+       position:relative;
+       top:1px;
+       margin-left:10px;
+       font-family:helvetica,arial,freesans,clean,sans-serif;
+       font-weight:bold;
+       font-size:12px;
+       color:#333;
+       text-shadow:1px 1px 0 #fff;
+       white-space:nowrap;
+       border:none;
+       overflow:visible;
+       background:white;
+       background:-moz-linear-gradient(white,#e1e1e1);
+       background:-webkit-linear-gradient(white,#e1e1e1);
+       -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='white',endColorstr='#e1e1e1')";
+       border-bottom:1px solid #ebebeb;
+       border-radius:4px;
+       box-shadow:0 1px 4px rgba(0,0,0,0.3);
+       cursor:pointer;
+       margin-left:1px;
+       padding:0 13px;
+       -webkit-font-smoothing:subpixel-antialiased!important;}
+#myModal .modal-body .btn_submit:hover{color:#fff;
+       text-shadow:-1px -1px 0 rgba(0,0,0,0.3);
+       border-bottom-color:#0770a0;
+       background:#0ca6dd;
+       background:-moz-linear-gradient(#0ca6dd,#0770a0);
+       background:-webkit-linear-gradient(#0ca6dd,#0770a0);
+       -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr='#0ca6dd',endColorstr='#0770a0')";
+       }
+#myModal form .error_box,#myModal form .notification{margin-bottom:1em;}
+

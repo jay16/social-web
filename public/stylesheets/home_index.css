@@ -1,0 +1,45 @@
+#index-body ul{padding-top:10px; padding-left:15%; list-style:none; list-style-type:none;}
+#nav-shadow li a,
+#nav-shadow li a:visited,
+#nav-shadow li a:hover{ display:block;
+					text-decoration:none;
+					color:#000;
+					text-indent:-9999px;
+					outline: 0 none;
+					width:61px;
+					height:60px;
+					z-index:2;
+					overflow:hidden;
+					position:relative;}
+#nav-shadow li{float:left; width:61px; height:92px; margin-left:10px; position:relative;}
+#nav-shadow li.chang-one a{ background:url(images/img-animate/button_pic.png) no-repeat left top;}
+#nav-shadow li.chang-two a{background:url(images/img-animate/button_pic.png) no-repeat -60px top;}
+#nav-shadow li.chang-three a{background:url(images/img-animate/button_pic.png) no-repeat -120px top;}
+#nav-shadow li.chang-four a{background:url(images/img-animate/button_pic.png) no-repeat -180px top;}
+#nav-shadow li.chang-five a{background:url(images/img-animate/button_pic.png) no-repeat -240px top;}
+#nav-shadow li img.shadow{margin:0 auto; position:absolute; bottom:0px; left:0px; z-index:1;}
+#iphone{width:750px;
+								height:400px;
+								background:url('images/img-magnifier/iphone_4G.png') no-repeat center center;
+								position:relative;
+								left:10px;
+								bottom:-80px;}
+#webpage{width:499px;
+									height:283px;
+									position:absolute;
+									top:50%;
+									left:50%;
+									margin:-141px 0 0 -249px;}
+#retina{background:url('images/img-magnifier/webpage.png') no-repeat center center white;
+								border:2px solid white;
+								position:absolute;
+								height:180px;
+								width:180px;
+								display:none;
+								cursor:url('images/img-magnifier/blank.cur'),default;
+								-moz-box-shadow:0 0 5px #777, 0 0 10px #aaa inset;
+								-webkit-box-shadow:0 0 5px #777;
+								box-shadow:0 0 5px #777, 0 0 10px #aaa inset;
+								-moz-border-radius:90px;
+								-webkit-border-radius:90px;
+								border-radius:90px;}

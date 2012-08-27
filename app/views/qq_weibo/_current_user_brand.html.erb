@@ -1,0 +1,39 @@
+<div id="qq_hover" style="height:0;width:500px;margin:0 auto;border-width:10px 10px 10px 10px;border-style:solid solid solid solid;border-color:lightgray transparent transparent transparent"></div>
+<div class="row">
+<div class="span6">
+<div class="tabbable" id="qq_current_user_brand" style="margin:0px auto 10px 10px;">
+  <ul class="nav nav-tabs" style="margin:0px;">
+    <li class="active">
+      <a href="#qq_total_weibo">全部微博</a></li>
+    <li>
+      <a href="#qq_hot_weibo">热门微博</a></li>
+  </ul>
+  <div class="tab-content" id="qq_tab_content" style="overflow:hidden;height:25px;background:lightgray;">
+    <div class="tab-pane active" id="qq_total_weibo" style="margin:3px auto;">
+						<span id="qq_public_timeline_tab"><a onclick="qq_statuses_by_name('public_timeline')">
+						微博首页</a></span>|
+						<span id="qq_home_timeline_tab"><a onclick="qq_statuses_by_name('home_timeline')">
+						微博主页</a></span>|
+						<span id="qq_broadcast_timeline_tab"><a onclick="qq_statuses_by_name('broadcast_timeline')">
+						广播大厅</a></span>|
+						<span id="qq_user_timeline_tab"><a onclick="qq_statuses_by_name('user_timeline')">
+						用户发表</a></span>|
+						<span id="qq_mentions_timeline_tab"><a onclick="qq_statuses_by_name('mentions_timeline')">
+						用户提及</a></span>|
+						<span id="qq_special_timeline_tab"><a onclick="qq_statuses_by_name('special_timeline')">
+						特别收听</a></span>
+    </div>
+    <div class="tab-pane" id="qq_hot_weibo">
+						<span id="hot_repost_daily_tab"><a onclick="qq_statuses_by_name('hot_repost_daily')">
+						热门转发榜(天)</a></span>|
+						<span id="hot_repost_weekly_tab"><a onclick="qq_statuses_by_name('hot_repost_weekly')">
+						热门转发榜(周) </a></span>|
+						<span id="hot_comments_daily_tab"><a onclick="qq_statuses_by_name('hot_comments_daily')">
+						热门评论榜(天)</a></span>|
+						<span id="hot_comments_weekly_tab"><a onclick="qq_statuses_by_name('hot_comments_weekly')">
+						热门评论榜(周)</a></span>
+    </div>
+  </div>
+</div>
+</div>
+</div>

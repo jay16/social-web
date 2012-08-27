@@ -1,0 +1,3438 @@
+---
+1883881851: !ruby/hash:Hashie::Mash
+  id: 1883881851
+  idstr: '1883881851'
+  screen_name: NBA
+  name: NBA
+  province: '11'
+  city: '1000'
+  location: 北京
+  description: Big Things Are Coming ! 意见反馈或投稿：NBAChinaInfo@nba.com
+  url: http://china.nba.com/
+  profile_image_url: http://tp4.sinaimg.cn/1883881851/50/5626743962/1
+  profile_url: nba
+  domain: nba
+  weihao: ''
+  gender: m
+  followers_count: 18079851
+  friends_count: 65
+  statuses_count: 19594
+  favourites_count: 0
+  created_at: Mon Dec 06 11:44:29 +0800 2010
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: true
+  verified_type: 7
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:51:51 +0800 2012
+    id: 3477141972568025
+    mid: '3477141972568025'
+    idstr: '3477141972568025'
+    text: 来欣赏下俄罗斯对阵立陶宛的精彩瞬间
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Thu Aug 09 02:48:41 +0800 2012
+      id: 3476944882417558
+      mid: '3476944882417558'
+      idstr: '3476944882417558'
+      text: 俄罗斯83-74立陶宛全场高清图集：http://t.cn/zWWMFop
+      source: <a href="http://weibo.com" rel="nofollow">新浪微博</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/7049c17bjw1dvpuf4dwc1j.jpg
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/7049c17bjw1dvpuf4dwc1j.jpg
+      original_pic: http://ww1.sinaimg.cn/large/7049c17bjw1dvpuf4dwc1j.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 1883881851
+        idstr: '1883881851'
+        screen_name: NBA
+        name: NBA
+        province: '11'
+        city: '1000'
+        location: 北京
+        description: Big Things Are Coming ! 意见反馈或投稿：NBAChinaInfo@nba.com
+        url: http://china.nba.com/
+        profile_image_url: http://tp4.sinaimg.cn/1883881851/50/5626743962/1
+        profile_url: nba
+        domain: nba
+        weihao: ''
+        gender: m
+        followers_count: 17585263
+        friends_count: 46
+        statuses_count: 17484
+        favourites_count: 4
+        created_at: Mon Dec 06 11:44:29 +0800 2010
+        following: false
+        allow_all_act_msg: true
+        geo_enabled: true
+        verified: true
+        verified_type: 7
+        allow_all_comment: false
+        avatar_large: http://tp4.sinaimg.cn/1883881851/180/5626743962/1
+        verified_reason: NBA官方微博
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 21
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: false
+  avatar_large: http://tp4.sinaimg.cn/1883881851/180/5626743962/1
+  verified_reason: NBA官方微博
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 22
+  lang: zh-cn
+  comments_count: 0
+1985698157: !ruby/hash:Hashie::Mash
+  id: 1985698157
+  idstr: '1985698157'
+  screen_name: Love_NBA小秘书
+  name: Love_NBA小秘书
+  province: '11'
+  city: '8'
+  location: 北京 海淀区
+  description: ! "nba.weibo.com  \r\n新浪LOVE NBA，最权威、最好玩、最有爱的NBA球迷聚合地！览NBA资讯，看每日比赛直播，侃球竞猜..."
+  url: http://nba.weibo.com/
+  profile_image_url: http://tp2.sinaimg.cn/1985698157/50/5635563657/1
+  profile_url: lovenba2011
+  domain: lovenba2011
+  weihao: ''
+  gender: m
+  followers_count: 3347773
+  friends_count: 322
+  statuses_count: 5691
+  favourites_count: 0
+  created_at: Wed Feb 23 10:55:58 +0800 2011
+  following: true
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: true
+  verified_type: 2
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:10:01 +0800 2012
+    id: 3477131444621540
+    mid: '3477131444621540'
+    idstr: '3477131444621540'
+    text: ! '8月9日，伦敦奥运展开了男子篮球淘汰赛的争夺，对阵双方是美国和澳大利亚。但是解说员几次将球迷们熟悉的梦十球星名字念倒，这也成为了转播中的一个花絮。
+      梦十比赛解说雷人语录，点击视频http://t.cn/zWWof71  '
+    source: <a href="http://nba.weibo.com" rel="nofollow">新浪LoveNBA</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww3.sinaimg.cn/thumbnail/765b596djw1dvqg53rm5aj.jpg
+    bmiddle_pic: http://ww3.sinaimg.cn/bmiddle/765b596djw1dvqg53rm5aj.jpg
+    original_pic: http://ww3.sinaimg.cn/large/765b596djw1dvqg53rm5aj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/1985698157/180/5635563657/1
+  verified_reason: 新浪Love_NBA小秘书微博
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 152
+  lang: zh-cn
+  comments_count: 0
+2375866212: !ruby/hash:Hashie::Mash
+  id: 2375866212
+  idstr: '2375866212'
+  screen_name: NBA篮球实用技巧
+  name: NBA篮球实用技巧
+  province: '400'
+  city: '5'
+  location: 海外 加拿大
+  description: 想学篮球技术吗，想技术有效的提高吗?那就关注我吧!在这里才可以完成你的篮球梦。（想合作的、需要商务合作的，请私信）
+  url: http://t.qq.com/NBASKETBALL
+  profile_image_url: http://tp1.sinaimg.cn/2375866212/50/5614781285/1
+  profile_url: u/2375866212
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 993460
+  friends_count: 23
+  statuses_count: 8420
+  favourites_count: 0
+  created_at: Tue Sep 06 20:20:56 +0800 2011
+  following: true
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:03:54 +0800 2012
+    id: 3477145001256020
+    mid: '3477145001256020'
+    idstr: '3477145001256020'
+    text: “离比赛结束还有8分钟，费城第一联合中心体育馆内的球迷再也坐不住了，体育馆内有节奏地响起了“我们要看迈克”的喊声，所有的球迷都盯着奇才的替补席，他们的球星迈克尔·乔丹坐在那里。”再见，篮球之神。飞人乔丹告别演出回顾http://t.cn/zW7zs4K（乔丹15分vs艾弗森35分）
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww3.sinaimg.cn/thumbnail/8d9cd764gw1dvqh7ls4tlj.jpg
+    bmiddle_pic: http://ww3.sinaimg.cn/bmiddle/8d9cd764gw1dvqh7ls4tlj.jpg
+    original_pic: http://ww3.sinaimg.cn/large/8d9cd764gw1dvqh7ls4tlj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2375866212/180/5614781285/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 7
+  lang: zh-cn
+  comments_count: 0
+1736329970: !ruby/hash:Hashie::Mash
+  id: 1736329970
+  idstr: '1736329970'
+  screen_name: 新浪NBA
+  name: 新浪NBA
+  province: '11'
+  city: '8'
+  location: 北京 海淀区
+  description: 新浪NBA-NBA官方中文互联网合作伙伴、NBA官方授权视频直播网站、努力做最好的NBA资讯、最有趣的互动社区
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/1736329970/50/1291783177/1
+  profile_url: nbachannel
+  domain: nbachannel
+  weihao: ''
+  gender: m
+  followers_count: 1080683
+  friends_count: 372
+  statuses_count: 31171
+  favourites_count: 0
+  created_at: Fri Apr 30 17:46:37 +0800 2010
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: true
+  verified_type: 2
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:29:03 +0800 2012
+    id: 3477151334170975
+    mid: '3477151334170975'
+    idstr: '3477151334170975'
+    text: 【科比回应LBJ三双吐酸话】http://t.cn/zWWWLDe 詹姆斯今天成为了奥运会篮球正赛历史上首位单场夺取三双的球员，不过科比对此的反应颇有些醋意。据报道，飞侠在赛后对詹姆斯的表现大加赞赏，但他也提到皮蓬在为梦一效力时几乎每场比赛都有接近三双的表现，这是为了进一步激励詹姆斯，还是贬低他？
+    source: <a href="http://a.weibo.com/proc/productintro.php" rel="nofollow">企业微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww4.sinaimg.cn/thumbnail/677e4af2jw1dvqhypto7tj.jpg
+    bmiddle_pic: http://ww4.sinaimg.cn/bmiddle/677e4af2jw1dvqhypto7tj.jpg
+    original_pic: http://ww4.sinaimg.cn/large/677e4af2jw1dvqhypto7tj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/1736329970/180/1291783177/1
+  verified_reason: 新浪NBA官方微博
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 237
+  lang: zh-cn
+  comments_count: 0
+2682296870: !ruby/hash:Hashie::Mash
+  id: 2682296870
+  idstr: '2682296870'
+  screen_name: NBA抒情篮球文字
+  name: NBA抒情篮球文字
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: ! "三生有幸，能够把篮球的歌唱给你们的耳朵。 \n@MD麦迪無寂寞先森  @向益YikHeung"
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/2682296870/50/5634222281/1
+  profile_url: u/2682296870
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 615062
+  friends_count: 423
+  statuses_count: 709
+  favourites_count: 0
+  created_at: Tue Jan 24 08:28:41 +0800 2012
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 10:14:03 +0800 2012
+    id: 3477056966905663
+    mid: '3477056966905663'
+    idstr: '3477056966905663'
+    text: 王者执印拜我，我岂能挂印封金？ 再脆弱的男人，在年轻时也有登高一呼，要山鸣谷应的理想，再腼腆的生命，也有英气勃发的瞬间。 他一剑铿然，举手若电，只身杀进杀出，单骑救主；他深践戎马之地，足历王庭，横挑强敌。
+      一号，一号的身影在奥兰多蓝色水屋升华。
+    source: <a href="http://power.motorola.com.cn/index.aspx" rel="nofollow">MOTO锋丽智能手机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/9fe09a26jw1dvq7l5ubr7j.jpg
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/9fe09a26jw1dvq7l5ubr7j.jpg
+    original_pic: http://ww1.sinaimg.cn/large/9fe09a26jw1dvq7l5ubr7j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2682296870/180/5634222281/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 369
+  lang: zh-cn
+  comments_count: 0
+2193262463: !ruby/hash:Hashie::Mash
+  id: 2193262463
+  idstr: '2193262463'
+  screen_name: NBA篮球训练基地
+  name: NBA篮球训练基地
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: NBA内部最专业、最实用、最有效的篮球训练方法！NBA会教我们如何牛O！
+  url: http://weibo.com/okfs
+  profile_image_url: http://tp4.sinaimg.cn/2193262463/50/5629428731/1
+  profile_url: okfs
+  domain: okfs
+  weihao: ''
+  gender: m
+  followers_count: 595573
+  friends_count: 339
+  statuses_count: 637
+  favourites_count: 0
+  created_at: Wed Jun 22 22:42:10 +0800 2011
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Mon Jul 16 22:37:56 +0800 2012
+    id: 3468546858768282
+    mid: '3468546858768282'
+    idstr: '3468546858768282'
+    text: 科比经典中文视频 http://t.cn/zWx33Mx
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2193262463/180/5629428731/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 62
+  lang: zh-cn
+  comments_count: 0
+2403616264: !ruby/hash:Hashie::Mash
+  id: 2403616264
+  idstr: '2403616264'
+  screen_name: NBA篮球第一线
+  name: NBA篮球第一线
+  province: '36'
+  city: '4'
+  location: 江西 九江
+  description: 实时更新播报2012欧洲杯战况、快讯、趣闻和视频。全天24小时关注国内外各大足球体育赛事！
+  url: http://weibo.com/shuipingok
+  profile_image_url: http://tp1.sinaimg.cn/2403616264/50/5629703576/1
+  profile_url: shuipingok
+  domain: shuipingok
+  weihao: ''
+  gender: m
+  followers_count: 543297
+  friends_count: 544
+  statuses_count: 1803
+  favourites_count: 0
+  created_at: Sat Sep 17 12:03:19 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Wed Aug 01 14:32:44 +0800 2012
+    id: 3474222963889337
+    mid: '3474222963889337'
+    idstr: '3474222963889337'
+    text: 一直以来，我们只相信伟大是属于少数人的，只属于那些巨星，但其实，我们都可以伟大。伟大，不限地点；不限身份；属于每一个正在追寻它的人。从今天起，#活出伟大#！http://t.cn/zWCYkpH
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/8f444608gw1dvh63tudavj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/8f444608gw1dvh63tudavj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/8f444608gw1dvh63tudavj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2403616264/180/5629703576/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 12
+  lang: zh-cn
+  comments_count: 0
+1734293051: !ruby/hash:Hashie::Mash
+  id: 1734293051
+  idstr: '1734293051'
+  screen_name: NBA直播
+  name: NBA直播
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: NBA精彩赛事直播！~敬请关注！~
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/1734293051/50/5633066996/1
+  profile_url: yidongjiaoyou
+  domain: yidongjiaoyou
+  weihao: ''
+  gender: m
+  followers_count: 516468
+  friends_count: 1057
+  statuses_count: 5553
+  favourites_count: 0
+  created_at: Sun Apr 25 14:55:43 +0800 2010
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:30:17 +0800 2012
+    id: 3477151641204916
+    mid: '3477151641204916'
+    idstr: '3477151641204916'
+    text: ! '科比最最最最最最霸气gif图，霸气外露有木有？？？科密们转起来！[威武] '
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/675f363bjw1dvqiglktg4g.gif
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/675f363bjw1dvqiglktg4g.gif
+    original_pic: http://ww1.sinaimg.cn/large/675f363bjw1dvqiglktg4g.gif
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/1734293051/180/5633066996/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 925
+  lang: zh-cn
+  comments_count: 0
+2493953247: !ruby/hash:Hashie::Mash
+  id: 2493953247
+  idstr: '2493953247'
+  screen_name: NBA篮球训练
+  name: NBA篮球训练
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: 告诉你专业实用的篮球训练方法！官方旗舰店http://shop34127022.taobao.com/ 支持对公帐单，承接学校订单。广告推广、商业合作请私信或加QQ2428596463
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2493953247/50/5631457826/1
+  profile_url: u/2493953247
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 491098
+  friends_count: 41
+  statuses_count: 1789
+  favourites_count: 0
+  created_at: Sat Nov 26 22:18:54 +0800 2011
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: false
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:32:06 +0800 2012
+    id: 3477152102426330
+    mid: '3477152102426330'
+    idstr: '3477152102426330'
+    text: ! '30秒连进三记三分！科比依旧王者气质~霸气外露啊[给力] '
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/94a6b4dfjw1dvqiihtbh0j.jpg
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/94a6b4dfjw1dvqiihtbh0j.jpg
+    original_pic: http://ww1.sinaimg.cn/large/94a6b4dfjw1dvqiihtbh0j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2493953247/180/5631457826/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2188181514: !ruby/hash:Hashie::Mash
+  id: 2188181514
+  idstr: '2188181514'
+  screen_name: NBA保罗詹姆斯
+  name: NBA保罗詹姆斯
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: 24小时滚动播报NBA热火队保罗和 “小皇帝”詹姆斯新闻
+  url: http://weibo.com/daochamena
+  profile_image_url: http://tp3.sinaimg.cn/2188181514/50/5634532104/1
+  profile_url: daochamena
+  domain: daochamena
+  weihao: ''
+  gender: m
+  followers_count: 422880
+  friends_count: 1617
+  statuses_count: 503
+  favourites_count: 0
+  created_at: Wed Jun 22 21:06:34 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sun Jul 15 17:07:21 +0800 2012
+    id: 3468101276403197
+    mid: '3468101276403197'
+    idstr: '3468101276403197'
+    text: ! '宁可胖得精致，也不要瘦得雷同！ '
+    source: <a href="http://data.tech.sina.com.cn/3gsoft/soft.php?id=1290" rel="nofollow">Arming微博客户端</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww3.sinaimg.cn/thumbnail/826d000ajw1duxn1hf74pj.jpg
+    bmiddle_pic: http://ww3.sinaimg.cn/bmiddle/826d000ajw1duxn1hf74pj.jpg
+    original_pic: http://ww3.sinaimg.cn/large/826d000ajw1duxn1hf74pj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2188181514/180/5634532104/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 72
+  lang: zh-cn
+  comments_count: 0
+1783672693: !ruby/hash:Hashie::Mash
+  id: 1783672693
+  idstr: '1783672693'
+  screen_name: NBA录像
+  name: NBA录像
+  province: '44'
+  city: '3'
+  location: 广东 深圳
+  description: 每天更新精彩NBA视频录像..喜欢NBA就关注@NBA录像
+  url: ''
+  profile_image_url: http://tp2.sinaimg.cn/1783672693/50/5631362340/1
+  profile_url: u/1783672693
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 417779
+  friends_count: 1990
+  statuses_count: 421
+  favourites_count: 0
+  created_at: Sun Jul 25 08:06:46 +0800 2010
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Wed Aug 08 22:08:50 +0800 2012
+    id: 3476874455742701
+    mid: '3476874455742701'
+    idstr: '3476874455742701'
+    text: 断皇帝球？追帽扇晕你
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Wed Aug 08 19:19:30 +0800 2012
+      id: 3476831845730155
+      mid: '3476831845730155'
+      idstr: '3476831845730155'
+      text: 断皇帝球？追帽扇晕你[威武] 关注@篮球公社
+      source: <a href="http://weibo.com" rel="nofollow">新浪微博</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/8f763c7ctw1dvphnj9mvtg.gif
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/8f763c7ctw1dvphnj9mvtg.gif
+      original_pic: http://ww1.sinaimg.cn/large/8f763c7ctw1dvphnj9mvtg.gif
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2406890620
+        idstr: '2406890620'
+        screen_name: 篮球公社
+        name: 篮球公社
+        province: '34'
+        city: '1'
+        location: 安徽 合肥
+        description: 专业的篮球微博，分享精彩篮球！
+        url: http://q.weibo.com/775483
+        profile_image_url: http://tp1.sinaimg.cn/2406890620/50/5616135874/1
+        profile_url: hotbasketball
+        domain: hotbasketball
+        weihao: ''
+        gender: m
+        followers_count: 377853
+        friends_count: 734
+        statuses_count: 1194
+        favourites_count: 0
+        created_at: Sun Sep 18 17:06:20 +0800 2011
+        following: false
+        allow_all_act_msg: true
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp1.sinaimg.cn/2406890620/180/5616135874/1
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 690
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/1783672693/180/5631362340/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 1390
+  lang: zh-cn
+  comments_count: 0
+2553231943: !ruby/hash:Hashie::Mash
+  id: 2553231943
+  idstr: '2553231943'
+  screen_name: NBA篮球经典实况
+  name: NBA篮球经典实况
+  province: '44'
+  city: '1'
+  location: 广东 广州
+  description: 篮球场上，让我们忘记生活的悲伤，让我们找到拼搏的充实感。
+  url: http://blog.sina.com.cn/u/2553231943
+  profile_image_url: http://tp4.sinaimg.cn/2553231943/50/5627351315/0
+  profile_url: u/2553231943
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 356740
+  friends_count: 91
+  statuses_count: 1071
+  favourites_count: 0
+  created_at: Sun Dec 25 15:59:42 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Wed Aug 08 14:26:58 +0800 2012
+    id: 3476758231951624
+    mid: '3476758231951624'
+    idstr: '3476758231951624'
+    text: ! '//@搞笑NBA篮球俱乐部: 经典的访问[哈哈]'
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Tue Aug 07 16:10:34 +0800 2012
+      id: 3476421907625244
+      mid: '3476421907625244'
+      idstr: '3476421907625244'
+      text: 【请花几分钟看完真值得】 选手回答太经典了，评委都无语，当场吐血身亡！ ，笑死人了 看完请记得把快乐分享给大家！！！ http://t.cn/zWOSIFX
+        @揭露人性事情 陪大家快乐过好每一天~_~
+      source: <a href="http://www.pomoho.com" rel="nofollow">爆米花分享</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/9bdc719djw1dvo6nhjdgkj.jpg
+      bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/9bdc719djw1dvo6nhjdgkj.jpg
+      original_pic: http://ww2.sinaimg.cn/large/9bdc719djw1dvo6nhjdgkj.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2614915485
+        idstr: '2614915485'
+        screen_name: 揭露人性事情
+        name: 揭露人性事情
+        province: '35'
+        city: '6'
+        location: 福建 漳州
+        description: 寂寞的时候谁陪我切西瓜
+        url: ''
+        profile_image_url: http://tp2.sinaimg.cn/2614915485/50/5624103734/0
+        profile_url: u/2614915485
+        domain: ''
+        weihao: ''
+        gender: f
+        followers_count: 237264
+        friends_count: 15
+        statuses_count: 1123
+        favourites_count: 0
+        created_at: Mon Feb 13 16:03:11 +0800 2012
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp2.sinaimg.cn/2614915485/180/5624103734/0
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 8
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2553231943/180/5627351315/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 6
+  lang: zh-cn
+  comments_count: 0
+1821955212: !ruby/hash:Hashie::Mash
+  id: 1821955212
+  idstr: '1821955212'
+  screen_name: 篮球NBA新闻
+  name: 篮球NBA新闻
+  province: '31'
+  city: '1000'
+  location: 上海
+  description: 爱篮球，爱NBA！【关注伦敦奥运会！！】欢迎投稿：37112631
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/1821955212/50/5634347990/1
+  profile_url: nba520nba
+  domain: nba520nba
+  weihao: ''
+  gender: m
+  followers_count: 752222
+  friends_count: 414
+  statuses_count: 1840
+  favourites_count: 0
+  created_at: Mon Oct 18 10:54:33 +0800 2010
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 09:35:59 +0800 2012
+    id: 3477047382935404
+    mid: '3477047382935404'
+    idstr: '3477047382935404'
+    text: 【孙杨、叶诗文结伴归乡！】北京时间2012年8月5日，中国游泳队启程回国。走下大巴后，看到叶诗文和孙杨在一起，有位电视台的记者说，“孙杨、叶诗文，走近一点，让我拍一个你俩的画面。”听完这话，孙杨和叶诗文一个向左走一个向右走，瞬间分开了。
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww4.sinaimg.cn/thumbnail/6c98d48cgw1dvq6hil2soj.jpg
+    bmiddle_pic: http://ww4.sinaimg.cn/bmiddle/6c98d48cgw1dvq6hil2soj.jpg
+    original_pic: http://ww4.sinaimg.cn/large/6c98d48cgw1dvq6hil2soj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/1821955212/180/5634347990/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 254
+  lang: zh-cn
+  comments_count: 0
+2152988585: !ruby/hash:Hashie::Mash
+  id: 2152988585
+  idstr: '2152988585'
+  screen_name: NBA篮球教学
+  name: NBA篮球教学
+  province: '11'
+  city: '3'
+  location: 北京 崇文区
+  description: 不是谁的蜜也不是谁的黑 只是和大家分享篮球而已
+  url: ''
+  profile_image_url: http://tp2.sinaimg.cn/2152988585/50/5626841165/0
+  profile_url: nbalqjx
+  domain: nbalqjx
+  weihao: ''
+  gender: f
+  followers_count: 323871
+  friends_count: 1522
+  statuses_count: 1721
+  favourites_count: 0
+  created_at: Sun May 29 19:29:54 +0800 2011
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 13:30:10 +0800 2012
+    id: 3477106317558973
+    mid: '3477106317558973'
+    idstr: '3477106317558973'
+    text: 这一切就像是昨天还在发生的！姚明9载火箭生涯震撼表现集锦！怀念的转！ http://t.cn/a0A9yb
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/2152988585/180/5626841165/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 592
+  lang: zh-cn
+  comments_count: 0
+2074561935: !ruby/hash:Hashie::Mash
+  id: 2074561935
+  idstr: '2074561935'
+  screen_name: 酷炫NBA
+  name: 酷炫NBA
+  province: '11'
+  city: '1000'
+  location: 北京
+  description: 收录篮球精彩，展现NBA经典，这里有很酷很炫的视频及教程，也有很帅很屌的图片，喜欢篮球的你一定要关注我，精彩不容错过
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2074561935/50/5630759617/1
+  profile_url: liluoke1990
+  domain: liluoke1990
+  weihao: ''
+  gender: m
+  followers_count: 710085
+  friends_count: 174
+  statuses_count: 2247
+  favourites_count: 0
+  created_at: Thu Apr 07 11:17:05 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:40:07 +0800 2012
+    id: 3477139020420499
+    mid: '3477139020420499'
+    idstr: '3477139020420499'
+    text: ! '给力了，一切防守都是浮云！艾弗森终结脚踝突破集锦来了！就算是乔丹大神，也难逃此劫！http://t.cn/S4EZmt   '
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/7ba74d8fjw1dvqh0fadjdj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/7ba74d8fjw1dvqh0fadjdj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/7ba74d8fjw1dvqh0fadjdj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2074561935/180/5630759617/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 128
+  lang: zh-cn
+  comments_count: 0
+2418631902: !ruby/hash:Hashie::Mash
+  id: 2418631902
+  idstr: '2418631902'
+  screen_name: NBA篮球微博汇
+  name: NBA篮球微博汇
+  province: '44'
+  city: '3'
+  location: 广东 深圳
+  description: 无篮球，不兄弟~~~ 喜欢NBA、喜欢篮球的关注我，精彩不容错过……
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/2418631902/50/5628229433/1
+  profile_url: wsphoto
+  domain: wsphoto
+  weihao: ''
+  gender: m
+  followers_count: 287982
+  friends_count: 1909
+  statuses_count: 3716
+  favourites_count: 0
+  created_at: Fri Sep 23 13:05:17 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:22:04 +0800 2012
+    id: 3477149577210051
+    mid: '3477149577210051'
+    idstr: '3477149577210051'
+    text: ! '给力了，一切防守都是浮云！艾弗森终结脚踝突破集锦来了！就算是乔丹大神，也难逃此劫！http://t.cn/S4EZmt   '
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww4.sinaimg.cn/thumbnail/902964dejw1dvqi82ceawj.jpg
+    bmiddle_pic: http://ww4.sinaimg.cn/bmiddle/902964dejw1dvqi82ceawj.jpg
+    original_pic: http://ww4.sinaimg.cn/large/902964dejw1dvqi82ceawj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2418631902/180/5628229433/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 17
+  lang: zh-cn
+  comments_count: 0
+2424491022: !ruby/hash:Hashie::Mash
+  id: 2424491022
+  idstr: '2424491022'
+  screen_name: NBA科比世界
+  name: NBA科比世界
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: 有一种信仰，叫做科比布莱恩特；有一种膜拜，叫科比布莱恩特！
+  url: http://weibo.com/kobeok
+  profile_image_url: http://tp3.sinaimg.cn/2424491022/50/5628777681/1
+  profile_url: kobeok
+  domain: kobeok
+  weihao: ''
+  gender: m
+  followers_count: 227879
+  friends_count: 478
+  statuses_count: 1566
+  favourites_count: 0
+  created_at: Mon Sep 26 07:16:50 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Tue Jul 17 07:00:07 +0800 2012
+    id: 3468673236869026
+    mid: '3468673236869026'
+    idstr: '3468673236869026'
+    text: 再一次膜拜篮球帝!
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Mon Jul 16 22:37:56 +0800 2012
+      id: 3468546858768282
+      mid: '3468546858768282'
+      idstr: '3468546858768282'
+      text: 科比经典中文视频 http://t.cn/zWx33Mx
+      source: <a href="http://weibo.com" rel="nofollow">新浪微博</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2193262463
+        idstr: '2193262463'
+        screen_name: NBA篮球训练基地
+        name: NBA篮球训练基地
+        province: '400'
+        city: '1'
+        location: 海外 美国
+        description: NBA内部最专业、最实用、最有效的篮球训练方法！NBA会教我们如何牛O！
+        url: http://weibo.com/okfs
+        profile_image_url: http://tp4.sinaimg.cn/2193262463/50/5629428731/1
+        profile_url: okfs
+        domain: okfs
+        weihao: ''
+        gender: m
+        followers_count: 372243
+        friends_count: 339
+        statuses_count: 667
+        favourites_count: 0
+        created_at: Wed Jun 22 22:42:10 +0800 2011
+        following: false
+        allow_all_act_msg: true
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp4.sinaimg.cn/2193262463/180/5629428731/1
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 62
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2424491022/180/5628777681/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 131
+  lang: zh-cn
+  comments_count: 0
+2357832895: !ruby/hash:Hashie::Mash
+  id: 2357832895
+  idstr: '2357832895'
+  screen_name: NBA篮球实用教学
+  name: NBA篮球实用教学
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: 新浪最好的篮球教学微博，合作QQ2321073882
+  url: http://weibo.com/hupunba
+  profile_image_url: http://tp4.sinaimg.cn/2357832895/50/5630933499/0
+  profile_url: hupunba
+  domain: hupunba
+  weihao: ''
+  gender: f
+  followers_count: 218195
+  friends_count: 1904
+  statuses_count: 2300
+  favourites_count: 0
+  created_at: Wed Sep 14 20:22:22 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: false
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 14:52:13 +0800 2012
+    id: 3477126966141259
+    mid: '3477126966141259'
+    idstr: '3477126966141259'
+    text: 无论有多少伤痛，只要梦想在，动力就在，希望就在。[心]
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/8c89acbfgw1dvqfmj3abvj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/8c89acbfgw1dvqfmj3abvj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/8c89acbfgw1dvqfmj3abvj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2357832895/180/5630933499/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 1648
+  lang: zh-cn
+  comments_count: 0
+2573091473: !ruby/hash:Hashie::Mash
+  id: 2573091473
+  idstr: '2573091473'
+  screen_name: NBA篮球集锦
+  name: NBA篮球集锦
+  province: '400'
+  city: '1000'
+  location: 海外
+  description: 无篮球，不兄弟~~~ 喜欢NBA、喜欢篮球的关注我，精彩不容错过……
+  url: ''
+  profile_image_url: http://tp2.sinaimg.cn/2573091473/50/5633179714/1
+  profile_url: u/2573091473
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 209295
+  friends_count: 4
+  statuses_count: 1487
+  favourites_count: 0
+  created_at: Thu Jan 12 14:43:46 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:32:12 +0800 2012
+    id: 3477137032093834
+    mid: '3477137032093834'
+    idstr: '3477137032093834'
+    text: 也许，我们正在见证一个巨星的诞生！越来越强大！NBA2012朗多过人集锦http://t.cn/zWhSvpL
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/2573091473/180/5633179714/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 2
+  lang: zh-cn
+  comments_count: 0
+2525647671: !ruby/hash:Hashie::Mash
+  id: 2525647671
+  idstr: '2525647671'
+  screen_name: NBA篮球图片
+  name: NBA篮球图片
+  province: '44'
+  city: '5'
+  location: 广东 汕头
+  description: 回忆NBA那些经典瞬间（乔丹，科比，艾佛森，麦蒂，韦德，奥拉朱旺安东尼，詹姆斯～～～～～）
+  url: http://blog.sina.com.cn/u/2525647671
+  profile_image_url: http://tp4.sinaimg.cn/2525647671/50/39998970450/1
+  profile_url: xinyun5188
+  domain: xinyun5188
+  weihao: ''
+  gender: m
+  followers_count: 207151
+  friends_count: 837
+  statuses_count: 834
+  favourites_count: 0
+  created_at: Mon Dec 12 10:11:45 +0800 2011
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 13:21:11 +0800 2012
+    id: 3477104056420762
+    mid: '3477104056420762'
+    idstr: '3477104056420762'
+    text: 粉，丝，一天增加4万以上，看图片，各位懂的！！可以加QQ
+    source: <a href="http://desktop.weibo.com/?source=app" rel="nofollow">微博桌面</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/968a5337jw1dvqczunyefj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/968a5337jw1dvqczunyefj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/968a5337jw1dvqczunyefj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2525647671/180/39998970450/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 818
+  lang: zh-cn
+  comments_count: 0
+2691534591: !ruby/hash:Hashie::Mash
+  id: 2691534591
+  idstr: '2691534591'
+  screen_name: NBA篮球风云
+  name: NBA篮球风云
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: NBA篮球风云有你喜欢的篮球
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2691534591/50/39997312222/1
+  profile_url: u/2691534591
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 181129
+  friends_count: 14
+  statuses_count: 585
+  favourites_count: 0
+  created_at: Mon Apr 02 13:20:30 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Tue Aug 07 09:44:54 +0800 2012
+    id: 3476324851435680
+    mid: '3476324851435680'
+    idstr: '3476324851435680'
+    text: ! '@大明星爱上小搭配'
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Tue Aug 07 09:41:52 +0800 2012
+      id: 3476324092381441
+      mid: '3476324092381441'
+      idstr: '3476324092381441'
+      text: 如果刘翔得了伦敦奥运会金牌，凡关注我并@3位好友的网友，所有人送一台最新版的iPhone。记住，不是一个人，而是所有人。为了刘翔得冠军我豁出去了
+        ！信誉保证，到期兑现！
+      source: <a href="http://weibo.com" rel="nofollow">新浪微博</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/968a0bc8gw1dvnve4cdsxj.jpg
+      bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/968a0bc8gw1dvnve4cdsxj.jpg
+      original_pic: http://ww2.sinaimg.cn/large/968a0bc8gw1dvnve4cdsxj.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2525629384
+        idstr: '2525629384'
+        screen_name: 全球潮流时尚帮
+        name: 全球潮流时尚帮
+        province: '11'
+        city: '5'
+        location: 北京 朝阳区
+        description: 360导航收录，每日分享幽默、搞笑、趣图、创意、乐事、玩儿、笑话， 绝对值得你关注。投稿私信QQ535156942
+        url: ''
+        profile_image_url: http://tp1.sinaimg.cn/2525629384/50/5635499167/0
+        profile_url: '537859123'
+        domain: hnchn
+        weihao: '537859123'
+        gender: f
+        followers_count: 575945
+        friends_count: 1430
+        statuses_count: 2540
+        favourites_count: 2
+        created_at: Thu Nov 10 12:54:25 +0800 2011
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp1.sinaimg.cn/2525629384/180/5635499167/0
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 345
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2691534591/180/39997312222/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2453950587: !ruby/hash:Hashie::Mash
+  id: 2453950587
+  idstr: '2453950587'
+  screen_name: NBA篮球之家
+  name: NBA篮球之家
+  province: '11'
+  city: '14'
+  location: 北京 昌平区
+  description: 喜欢篮球吗？喜欢NBA吗？你是NBA球迷吗？请关注我吧！！这里有你不知道的NBA。因为它是最给力的！！！喜欢就关注我吧。
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2453950587/50/5620038263/1
+  profile_url: u/2453950587
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 163401
+  friends_count: 53
+  statuses_count: 1827
+  favourites_count: 0
+  created_at: Tue Nov 08 17:23:46 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Mon Aug 06 20:49:00 +0800 2012
+    id: 3476129598406592
+    mid: '3476129598406592'
+    idstr: '3476129598406592'
+    text: 多少人因为这九个人爱上篮球，关注NBA的
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/9244507bgw1dvn92vte73j.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/9244507bgw1dvn92vte73j.jpg
+    original_pic: http://ww2.sinaimg.cn/large/9244507bgw1dvn92vte73j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2453950587/180/5620038263/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2616613295: !ruby/hash:Hashie::Mash
+  id: 2616613295
+  idstr: '2616613295'
+  screen_name: NBA漫画
+  name: NBA漫画
+  province: '35'
+  city: '1'
+  location: 福建 福州
+  description: 不仅仅是精彩的NBA漫画，还有更多爆笑劲爆的NBA瞬间~~
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2616613295/50/5629004055/1
+  profile_url: '526678688'
+  domain: ''
+  weihao: '526678688'
+  gender: m
+  followers_count: 137735
+  friends_count: 1845
+  statuses_count: 582
+  favourites_count: 0
+  created_at: Tue Feb 14 14:36:15 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:03:48 +0800 2012
+    id: 3477129885238270
+    mid: '3477129885238270'
+    idstr: '3477129885238270'
+    text: 韦德推荐生涯集锦，11分半带来激情闪电侠 http://t.cn/z0k1YJP
+    source: <a href="http://t.xuanker.com" rel="nofollow">喧客</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2616613295/180/5629004055/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 760
+  lang: zh-cn
+  comments_count: 0
+2530978864: !ruby/hash:Hashie::Mash
+  id: 2530978864
+  idstr: '2530978864'
+  screen_name: 科比NBA球迷汇
+  name: 科比NBA球迷汇
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: 科比-布莱恩特，NBA著名球星，现效力于NBA洛杉矶湖人队，司职得分后卫。
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/2530978864/50/5636099051/1
+  profile_url: u/2530978864
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 511861
+  friends_count: 459
+  statuses_count: 89
+  favourites_count: 0
+  created_at: Sun Nov 13 00:40:11 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Mon Aug 06 21:22:04 +0800 2012
+    id: 3476137911023223
+    mid: '3476137911023223'
+    idstr: '3476137911023223'
+    text: 神啊，救救我吧！我到底要去哪里呢？
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/96dbac30jw1dvna1b2x0cj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/96dbac30jw1dvna1b2x0cj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/96dbac30jw1dvna1b2x0cj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2530978864/180/5636099051/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 239
+  lang: zh-cn
+  comments_count: 0
+2612047957: !ruby/hash:Hashie::Mash
+  id: 2612047957
+  idstr: '2612047957'
+  screen_name: NBA林書豪兩岸後援會
+  name: NBA林書豪兩岸後援會
+  province: '71'
+  city: '1'
+  location: 台湾 台北市
+  description: 兩岸同胞一起來挺！NBA紐約新星－林書豪。 每日发布林书豪新闻动态！
+  url: http://www.ettoday.net/
+  profile_image_url: http://tp2.sinaimg.cn/2612047957/50/5623838476/1
+  profile_url: linstorm
+  domain: linstorm
+  weihao: ''
+  gender: m
+  followers_count: 108793
+  friends_count: 35
+  statuses_count: 550
+  favourites_count: 0
+  created_at: Fri Feb 10 18:49:57 +0800 2012
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sat Jul 21 09:31:40 +0800 2012
+    id: 3470160931622099
+    mid: '3470160931622099'
+    idstr: '3470160931622099'
+    text: ! '20日聯盟的董事會議後，NBA主席史騰(David Stern)宣布了一項新政策，那就是將開放球隊的球衣廣告補丁贊助，此方案如果最終通過決議，將讓NBA每年多賺進近1億美元(約30億台幣)的廣告收入。
+      原文網址: http://t.cn/zW6C9VX'
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/9bb0b055gw1dv47l5ottcj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/9bb0b055gw1dv47l5ottcj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/9bb0b055gw1dv47l5ottcj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/2612047957/180/5623838476/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 5
+  lang: zh-cn
+  comments_count: 0
+2485157491: !ruby/hash:Hashie::Mash
+  id: 2485157491
+  idstr: '2485157491'
+  screen_name: NBA週刊
+  name: NBA週刊
+  province: '81'
+  city: '1000'
+  location: 香港
+  description: 中國最專業的NBA週刊 如果你也超喜愛NBA 請猛击+加关注（不要猶豫啦~）
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2485157491/50/5629788880/0
+  profile_url: u/2485157491
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 107996
+  friends_count: 1989
+  statuses_count: 690
+  favourites_count: 0
+  created_at: Tue Nov 22 19:26:43 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Fri Jun 22 09:29:58 +0800 2012
+    id: 3459651255436336
+    mid: '3459651255436336'
+    idstr: '3459651255436336'
+    text: 大家在看总决赛吗？今天的节奏太快了！
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2485157491/180/5629788880/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 1696
+  lang: zh-cn
+  comments_count: 0
+2364250067: !ruby/hash:Hashie::Mash
+  id: 2364250067
+  idstr: '2364250067'
+  screen_name: NBA-经典-视频-GIF
+  name: NBA-经典-视频-GIF
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: 主页的目标是专注篮球经典，分享篮球快乐~~~有事请私信或@NBA-经典-视频-GIF（PS欢迎网友踊跃投稿，批评，必回复）
+  url: http://weibo.com/17nba
+  profile_image_url: http://tp4.sinaimg.cn/2364250067/50/5631619165/1
+  profile_url: 17nba
+  domain: 17nba
+  weihao: ''
+  gender: m
+  followers_count: 107656
+  friends_count: 900
+  statuses_count: 1052
+  favourites_count: 0
+  created_at: Sat Sep 17 08:54:30 +0800 2011
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sun Aug 05 15:07:59 +0800 2012
+    id: 3475681377739303
+    mid: '3475681377739303'
+    idstr: '3475681377739303'
+    text: 科比和詹姆斯在比赛中“得瑟”….. 旁边的维斯布鲁克那是啥表情？
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww4.sinaimg.cn/thumbnail/8ceb97d3tw1dvltljauh9g.gif
+    bmiddle_pic: http://ww4.sinaimg.cn/bmiddle/8ceb97d3tw1dvltljauh9g.gif
+    original_pic: http://ww4.sinaimg.cn/large/8ceb97d3tw1dvltljauh9g.gif
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2364250067/180/5631619165/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1863047912: !ruby/hash:Hashie::Mash
+  id: 1863047912
+  idstr: '1863047912'
+  screen_name: NBAJohnWall
+  name: NBAJohnWall
+  province: '400'
+  city: '1000'
+  location: 海外
+  description: ''
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/1863047912/50/1289529023/1
+  profile_url: johnwall1
+  domain: johnwall1
+  weihao: ''
+  gender: m
+  followers_count: 98132
+  friends_count: 0
+  statuses_count: 832
+  favourites_count: 0
+  created_at: Wed Oct 27 19:27:31 +0800 2010
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: true
+  verified_type: 0
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Tue Sep 20 07:52:00 +0800 2011
+    id: 3359607544175984
+    mid: '3359607544175984'
+    idstr: '3359607544175984'
+    text: The pic lockerz.com/s/140242082
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    annotations:
+    - !ruby/hash:Hashie::Mash
+      server_ip: 10.73.19.178
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/1863047912/180/1289529023/1
+  verified_reason: NBA2010届状元，华盛顿奇才队后卫约翰-沃尔
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1782650130: !ruby/hash:Hashie::Mash
+  id: 1782650130
+  idstr: '1782650130'
+  screen_name: NBA-那些事儿
+  name: NBA-那些事儿
+  province: '33'
+  city: '2'
+  location: 浙江 宁波
+  description: 我皇于2012年6月22日登基，记住这天QQ:872256753
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/1782650130/50/5633925426/1
+  profile_url: heaping
+  domain: heaping
+  weihao: ''
+  gender: m
+  followers_count: 96640
+  friends_count: 117
+  statuses_count: 310
+  favourites_count: 0
+  created_at: Fri Feb 18 10:48:19 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Fri Jul 27 10:41:36 +0800 2012
+    id: 3472352870702544
+    mid: '3472352870702544'
+    idstr: '3472352870702544'
+    text: 期待[奥特曼]
+    source: <a href="http://sinatair.sinaapp.com/" rel="nofollow">微博AIR</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Fri Jul 27 09:01:00 +0800 2012
+      id: 3472327536685479
+      mid: '3472327536685479'
+      idstr: '3472327536685479'
+      text: 热火新赛季赛程：总决赛圣诞重演面对三少！NBA公布12-13赛季的赛程，作为卫冕冠军，热火首战将面对凯尔特人。这不仅是东部决赛的重演，也是雷-阿伦第一次面对老东家。热火还将在这天接过总冠军戒指。圣诞大战同样也少不了卫冕冠军，热火届时将主场大战雷霆。
+      source: <a href="http://weibo.com" rel="nofollow">新浪微博</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww3.sinaimg.cn/thumbnail/74323cf4jw1dvb4f3sa0lj.jpg
+      bmiddle_pic: http://ww3.sinaimg.cn/bmiddle/74323cf4jw1dvb4f3sa0lj.jpg
+      original_pic: http://ww3.sinaimg.cn/large/74323cf4jw1dvb4f3sa0lj.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 1949449460
+        idstr: '1949449460'
+        screen_name: LOVE_热火
+        name: LOVE_热火
+        province: '400'
+        city: '1'
+        location: 海外 美国
+        description: http://nba.weibo.com/team/heat
+        url: http://nba.weibo.com/team/heat
+        profile_image_url: http://tp1.sinaimg.cn/1949449460/50/5636111467/1
+        profile_url: loveheat
+        domain: loveheat
+        weihao: ''
+        gender: m
+        followers_count: 424565
+        friends_count: 84
+        statuses_count: 11592
+        favourites_count: 2
+        created_at: Mon Feb 21 21:14:05 +0800 2011
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: true
+        verified_type: 3
+        allow_all_comment: false
+        avatar_large: http://tp1.sinaimg.cn/1949449460/180/5636111467/1
+        verified_reason: 迈阿密热火队新浪球迷集中营
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 75
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/1782650130/180/5633925426/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2635020410: !ruby/hash:Hashie::Mash
+  id: 2635020410
+  idstr: '2635020410'
+  screen_name: NBA运动手表
+  name: NBA运动手表
+  province: '71'
+  city: '1000'
+  location: 台湾
+  description: 喜欢蝴蝶姐姐代言的NBA手表吗？支持蝴蝶姐姐那就关注我哦..
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/2635020410/50/5624839858/0
+  profile_url: u/2635020410
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 93328
+  friends_count: 1861
+  statuses_count: 448
+  favourites_count: 0
+  created_at: Wed Feb 08 10:14:55 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sat May 05 10:26:43 +0800 2012
+    id: 3442270919942789
+    mid: '3442270919942789'
+    idstr: '3442270919942789'
+    text: ! '@蝴蝶姐姐 你好单纯，很好骗內！可是我好喜欢你哦 http://t.cn/Sa9b2E （分享自 @优酷网）'
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2635020410/180/5624839858/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2048578777: !ruby/hash:Hashie::Mash
+  id: 2048578777
+  idstr: '2048578777'
+  screen_name: NBA记录
+  name: NBA记录
+  province: '35'
+  city: '2'
+  location: 福建 厦门
+  description: NBA记录，NBA趣味数据。喜欢NBA请赶紧关注@NBA记录 该微博内容一定不会让大家失望！
+  url: http://weibo.com/nbadata
+  profile_image_url: http://tp2.sinaimg.cn/2048578777/50/5597300293/1
+  profile_url: nbadata
+  domain: nbadata
+  weihao: ''
+  gender: m
+  followers_count: 90802
+  friends_count: 1926
+  statuses_count: 880
+  favourites_count: 0
+  created_at: Sun Mar 27 16:31:00 +0800 2011
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Wed Aug 08 22:01:40 +0800 2012
+    id: 3476872652687727
+    mid: '3476872652687727'
+    idstr: '3476872652687727'
+    text: 【孙杨被困镇江】孙杨发帖称自己在高铁上，因受到台风“海葵”的影响，被困镇江已3个小时；网友神回复：你再等等，等水够深了你就能游回去了...
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/2048578777/180/5597300293/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2466516432: !ruby/hash:Hashie::Mash
+  id: 2466516432
+  idstr: '2466516432'
+  screen_name: NBA科比迷
+  name: NBA科比迷
+  province: '36'
+  city: '4'
+  location: 江西 九江
+  description: ''
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/2466516432/50/5613537977/1
+  profile_url: u/2466516432
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 88697
+  friends_count: 1
+  statuses_count: 1212
+  favourites_count: 0
+  created_at: Fri Oct 14 13:37:59 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Wed Aug 08 11:33:02 +0800 2012
+    id: 3476714452101363
+    mid: '3476714452101363'
+    idstr: '3476714452101363'
+    text: 每次坐板凳的时候，会一不小心摩擦出有点像屁声但又不是屁声的摩擦声。随后都要重新摩擦几下，以此证明自己不是放的屁，而是板凳的声音！
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/93040dd0jw1dvp490yo1mj.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/93040dd0jw1dvp490yo1mj.jpg
+    original_pic: http://ww2.sinaimg.cn/large/93040dd0jw1dvp490yo1mj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2466516432/180/5613537977/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1986641824: !ruby/hash:Hashie::Mash
+  id: 1986641824
+  idstr: '1986641824'
+  screen_name: NBA篮球有约
+  name: NBA篮球有约
+  province: '33'
+  city: '2'
+  location: 浙江 宁波
+  description: 爱NBA，爱篮球
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/1986641824/50/5609037016/1
+  profile_url: nbalq
+  domain: nbalq
+  weihao: ''
+  gender: m
+  followers_count: 88593
+  friends_count: 1334
+  statuses_count: 313
+  favourites_count: 0
+  created_at: Mon May 16 08:11:33 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sat Apr 28 09:15:51 +0800 2012
+    id: 3439716366277536
+    mid: '3439716366277536'
+    idstr: '3439716366277536'
+    text: 4分钟赏尽赛季精彩瞬间 .生命不息，篮球不止，I love this game。http://t.cn/zOj90U5
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/1986641824/180/5609037016/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2479604542: !ruby/hash:Hashie::Mash
+  id: 2479604542
+  idstr: '2479604542'
+  screen_name: NBA最体育
+  name: NBA最体育
+  province: '61'
+  city: '8'
+  location: 陕西 榆林
+  description: ''
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/2479604542/50/5614032840/0
+  profile_url: u/2479604542
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 88102
+  friends_count: 58
+  statuses_count: 1027
+  favourites_count: 0
+  created_at: Thu Oct 20 07:05:43 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Wed Aug 08 13:46:02 +0800 2012
+    id: 3476747922583272
+    mid: '3476747922583272'
+    idstr: '3476747922583272'
+    text: 一女对出轨的老公说：你如果敢离婚娶那个年轻的妖精，我就嫁给妖精她爹，从此以后，儿子管你叫姐夫，你得喊我妈！老公当场晕倒！
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/93cbc33ejw1dvp83ewt70j.jpg
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/93cbc33ejw1dvp83ewt70j.jpg
+    original_pic: http://ww1.sinaimg.cn/large/93cbc33ejw1dvp83ewt70j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2479604542/180/5614032840/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1831170590: !ruby/hash:Hashie::Mash
+  id: 1831170590
+  idstr: '1831170590'
+  screen_name: NBA赛讯
+  name: NBA赛讯
+  province: '11'
+  city: '1'
+  location: 北京 东城区
+  description: 热爱篮球，热爱NBA！【关注NBA，上手机新浪网NBA频道】
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/1831170590/50/1294127879/1
+  profile_url: u/1831170590
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 73569
+  friends_count: 930
+  statuses_count: 4813
+  favourites_count: 0
+  created_at: Mon Nov 01 15:14:44 +0800 2010
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:38:39 +0800 2012
+    id: 3477138650524574
+    mid: '3477138650524574'
+    idstr: '3477138650524574'
+    text: 【科比杜兰特詹姆斯完美融合 阿杜成熟詹皇统治球场】八场战斗过后，科比和詹姆斯、老K教练、美国篮球，如愿以偿。北京之后，又是四年。科比变老了，杜兰特长大了，詹姆斯如日中天。三代巨星，第一次携手征战奥运，他们此番依然承担着一个酝酿了四年之久的使命———金牌http://t.cn/zWWlT1B
+    source: <a href="http://daren.btui.it/app" rel="nofollow">定时8</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/1831170590/180/1294127879/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1930269880: !ruby/hash:Hashie::Mash
+  id: 1930269880
+  idstr: '1930269880'
+  screen_name: NBA精选
+  name: NBA精选
+  province: '51'
+  city: '1'
+  location: 四川 成都
+  description: 最拉风的NBA流言板：NBA中国球迷交流互动平台，第一时间与球迷共享NBA之精彩。大家一起织围脖【约稿请联系：QQ:32541179】
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/1930269880/50/1297618672/0
+  profile_url: u/1930269880
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 68261
+  friends_count: 369
+  statuses_count: 14233
+  favourites_count: 0
+  created_at: Mon Feb 14 01:37:27 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Tue Jul 31 23:14:11 +0800 2012
+    id: 3473991799282590
+    mid: '3473991799282590'
+    idstr: '3473991799282590'
+    text: 佩蒂特带领老鹰击败宿敌凯尔特人取得了总冠军。在双方系列赛的第六战，佩蒂特砍下了50分。“鲍勃是二次进攻的鼻祖，他从来不忌惮和你争抢位置，他习惯在拼抢前场篮板的战斗中击败你，然后得分。”“指环王”拉塞尔如此评价佩蒂特。
+    source: <a href="http://www.weizhushou.com" rel="nofollow">助手</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/730d94b8jw1dvgfk3mr3hj.jpg
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/730d94b8jw1dvgfk3mr3hj.jpg
+    original_pic: http://ww1.sinaimg.cn/large/730d94b8jw1dvgfk3mr3hj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/1930269880/180/1297618672/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2720114044: !ruby/hash:Hashie::Mash
+  id: 2720114044
+  idstr: '2720114044'
+  screen_name: NBA专题
+  name: NBA专题
+  province: '31'
+  city: '12'
+  location: 上海 闵行区
+  description: NBA季后赛,NBA常规赛,NBA数据,NBA资料,NBA周边,NBA总决赛
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/2720114044/50/5625322864/1
+  profile_url: '208094888'
+  domain: ''
+  weihao: '208094888'
+  gender: m
+  followers_count: 51475
+  friends_count: 1976
+  statuses_count: 2484
+  favourites_count: 0
+  created_at: Fri Feb 17 16:32:29 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: false
+  verified: false
+  verified_type: 220
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Mon Jul 09 10:02:25 +0800 2012
+    id: 3465820011267625
+    mid: '3465820011267625'
+    idstr: '3465820011267625'
+    text: 球迷们！关注顶级球星战靴吧！保证正品，货到付款~支持验货~全球抢购网址点击链接；http://t.cn/zWq98ne 或http://t.cn/zWvnbGH
+      公益活动~每个人出份力量，一起转发给朋友，支持科比，力挺詹姆斯夺冠！
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Thu Jul 05 10:18:49 +0800 2012
+      id: 3464374587266169
+      mid: '3464374587266169'
+      idstr: '3464374587266169'
+      text: ! '[神马]我是科比球迷~喜欢科比战靴！前天女朋友送了我一个礼物[礼物]，http://t.cn/zOR1fRw打开一看竟然是【科比战靴】！
+        问她说要一千七百多， 她奶奶的，这么浪费钱，跟我在这家买的233元对比一样！而且这家店是首次与新浪做活动2.5折[给力]!推荐给大家 http://t.cn/zWq98ne
+        好活动一定要支持[耶]！'
+      source: <a href="" rel="nofollow"></a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/86e984a1gw1dulr18193qj.jpg
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/86e984a1gw1dulr18193qj.jpg
+      original_pic: http://ww1.sinaimg.cn/large/86e984a1gw1dulr18193qj.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2263450785
+        idstr: '2263450785'
+        screen_name: 联盟秒杀
+        name: 联盟秒杀
+        province: '11'
+        city: '5'
+        location: 北京 朝阳区
+        description: ''
+        url: ''
+        profile_image_url: http://tp2.sinaimg.cn/2263450785/50/5628211528/0
+        profile_url: u/2263450785
+        domain: ''
+        weihao: ''
+        gender: f
+        followers_count: 156
+        friends_count: 7
+        statuses_count: 158
+        favourites_count: 1
+        created_at: Fri Jul 22 19:18:30 +0800 2011
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp2.sinaimg.cn/2263450785/180/5628211528/0
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 2
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2720114044/180/5625322864/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2438850134: !ruby/hash:Hashie::Mash
+  id: 2438850134
+  idstr: '2438850134'
+  screen_name: NBA经典赛
+  name: NBA经典赛
+  province: '42'
+  city: '5'
+  location: 湖北 宜昌
+  description: ''
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/2438850134/50/5612530518/0
+  profile_url: u/2438850134
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 51260
+  friends_count: 519
+  statuses_count: 1189
+  favourites_count: 0
+  created_at: Sun Oct 02 21:47:00 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:59:03 +0800 2012
+    id: 3477143784884484
+    mid: '3477143784884484'
+    idstr: '3477143784884484'
+    text: 鹅、鹅、鹅。这灰机挺可爱的。。。
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww3.sinaimg.cn/thumbnail/915de656jw1dvqhk4bgijj.jpg
+    bmiddle_pic: http://ww3.sinaimg.cn/bmiddle/915de656jw1dvqhk4bgijj.jpg
+    original_pic: http://ww3.sinaimg.cn/large/915de656jw1dvqhk4bgijj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2438850134/180/5612530518/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1559355382: !ruby/hash:Hashie::Mash
+  id: 1559355382
+  idstr: '1559355382'
+  screen_name: NBA精华
+  name: NBA精华
+  province: '14'
+  city: '1'
+  location: 山西 太原
+  description: ''
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/1559355382/50/5631075800/0
+  profile_url: u/1559355382
+  domain: ''
+  weihao: ''
+  gender: f
+  followers_count: 50426
+  friends_count: 398
+  statuses_count: 1460
+  favourites_count: 0
+  created_at: Thu Jan 13 01:07:48 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:19:03 +0800 2012
+    id: 3477148818146463
+    mid: '3477148818146463'
+    idstr: '3477148818146463'
+    text: DELL牌的黑板，你用过吗？？？
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/5cf1dff6jw1dvqi4xbw22j.jpg
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/5cf1dff6jw1dvqi4xbw22j.jpg
+    original_pic: http://ww1.sinaimg.cn/large/5cf1dff6jw1dvqi4xbw22j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/1559355382/180/5631075800/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2454853680: !ruby/hash:Hashie::Mash
+  id: 2454853680
+  idstr: '2454853680'
+  screen_name: NBA巨星与实用技巧
+  name: NBA巨星与实用技巧
+  province: '81'
+  city: '4'
+  location: 香港 九龙城区
+  description: 这里汇集一切NBA巨星精彩瞬间，优秀篮球教程。想学篮球技术吗，想看篮球的一切吗?那就关注我吧!在这里才可以完成你的篮球梦
+  url: http://weibo.com/2454853680
+  profile_image_url: http://tp1.sinaimg.cn/2454853680/50/5619087558/0
+  profile_url: nbajuxing
+  domain: nbajuxing
+  weihao: ''
+  gender: f
+  followers_count: 47422
+  friends_count: 1685
+  statuses_count: 54
+  favourites_count: 0
+  created_at: Sat Oct 08 23:37:57 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sun Jan 08 20:50:03 +0800 2012
+    id: 3399666014277529
+    mid: '3399666014277529'
+    idstr: '3399666014277529'
+    text: ! ' 一部好的篮球电影，带给我们的震撼和感动不仅局限于篮球，而是贯穿整个人生。《卡特教练》就是这样一部电影。和我们之前带来的那部《光荣之路》相比，《卡特教练》在篮球场外的立意更加深刻。人生不只有篮球，也许你不能成为球星，但要做好一个人。
+      【http://t.cn/S6ShuS 】 '
+    source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2454853680/180/5619087558/0
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1831400112: !ruby/hash:Hashie::Mash
+  id: 1831400112
+  idstr: '1831400112'
+  screen_name: NBA小皇帝詹姆斯
+  name: NBA小皇帝詹姆斯
+  province: '11'
+  city: '1000'
+  location: 北京
+  description: 我是LJ！我是小皇帝！我是NBA唯一的特权【关注NBA，上手机新浪网NBA频道】
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/1831400112/50/1293774758/1
+  profile_url: u/1831400112
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 42707
+  friends_count: 223
+  statuses_count: 2444
+  favourites_count: 0
+  created_at: Mon Sep 27 18:22:43 +0800 2010
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:38:38 +0800 2012
+    id: 3477138646700495
+    mid: '3477138646700495'
+    idstr: '3477138646700495'
+    text: 吃西瓜也能吃出NBA奖杯来。。。。。。
+    source: <a href="http://daren.btui.it/app" rel="nofollow">定时8</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww2.sinaimg.cn/thumbnail/6d28f2b0jw1dvqgyvguk7j.jpg
+    bmiddle_pic: http://ww2.sinaimg.cn/bmiddle/6d28f2b0jw1dvqgyvguk7j.jpg
+    original_pic: http://ww2.sinaimg.cn/large/6d28f2b0jw1dvqgyvguk7j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/1831400112/180/1293774758/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 18
+  lang: zh-cn
+  comments_count: 0
+2174534013: !ruby/hash:Hashie::Mash
+  id: 2174534013
+  idstr: '2174534013'
+  screen_name: NBA麦迪世界
+  name: NBA麦迪世界
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: NBA超级巨星麦迪粉丝集中营
+  url: http://www.t-mac.cn
+  profile_image_url: http://tp2.sinaimg.cn/2174534013/50/22816332146/1
+  profile_url: '209096781'
+  domain: ''
+  weihao: '209096781'
+  gender: m
+  followers_count: 24446
+  friends_count: 105
+  statuses_count: 2089
+  favourites_count: 0
+  created_at: Sun Jun 12 08:17:56 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 11:57:09 +0800 2012
+    id: 3477082908799093
+    mid: '3477082908799093'
+    idstr: '3477082908799093'
+    text: 大家希望麦迪加盟那支球队那
+    source: <a href="http://m.weibo.com/web/cellphone.php#mobile" rel="nofollow">新浪微博手机版</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Thu Aug 09 09:14:17 +0800 2012
+      id: 3477041922229930
+      mid: '3477041922229930'
+      idstr: '3477041922229930'
+      text: 【HoopsWorld】麦迪在这个休赛季吸引了不少球队的注意，不过据麦迪自己表示，他希望加盟一支总冠军争夺队伍。据悉，麦迪将在接下来几周内权衡自己的决定。早些时候，芝加哥公牛队曾接触过麦迪，不过随着公牛队签下新秀马奎斯-蒂格，双方的谈判也就此终结。公牛就剩下473604美元的新秀底薪。
+      source: <a href="http://weibo.com" rel="nofollow">新浪微博</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/6ed78746gw1dvq5owu68sj.jpg
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/6ed78746gw1dvq5owu68sj.jpg
+      original_pic: http://ww1.sinaimg.cn/large/6ed78746gw1dvq5owu68sj.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 1859618630
+        idstr: '1859618630'
+        screen_name: 麦迪中文网
+        name: 麦迪中文网
+        province: '44'
+        city: '6'
+        location: 广东 佛山
+        description: 麦迪(麦蒂)中文网 http://www.t-mac.cn/ 三位管理员:@JasonONic、@该昵称涉黄未予显示 (视频)、@张洪嘉1tmac
+          (图片)
+        url: http://www.t-mac.cn
+        profile_image_url: http://tp3.sinaimg.cn/1859618630/50/5631714098/1
+        profile_url: '119790524'
+        domain: tmaccn
+        weihao: '119790524'
+        gender: m
+        followers_count: 40356
+        friends_count: 186
+        statuses_count: 6865
+        favourites_count: 0
+        created_at: Thu Nov 18 20:53:36 +0800 2010
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: true
+        verified_type: 5
+        allow_all_comment: false
+        avatar_large: http://tp3.sinaimg.cn/1859618630/180/5631714098/1
+        verified_reason: 社区网站麦迪中文网www.t-mac.cn官方微博
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 177
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/2174534013/180/22816332146/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2157053452: !ruby/hash:Hashie::Mash
+  id: 2157053452
+  idstr: '2157053452'
+  screen_name: nba动态速递
+  name: nba动态速递
+  province: '31'
+  city: '1000'
+  location: 上海
+  description: NBA中国球迷交流互动平台，第一时间与球迷共享NBA之精彩。大家一起织围脖。We love this game! We love NBA!
+  url: ''
+  profile_image_url: http://tp1.sinaimg.cn/2157053452/50/5603389505/1
+  profile_url: u/2157053452
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 23746
+  friends_count: 50
+  statuses_count: 334
+  favourites_count: 0
+  created_at: Fri Jun 03 18:08:30 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 09:19:24 +0800 2012
+    id: 3477043209664230
+    mid: '3477043209664230'
+    idstr: '3477043209664230'
+    text: 时尚浪漫幻彩多色甜筒冰激凌！让这个夏天不会寂寞！爱冰激凌的有木有？
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww4.sinaimg.cn/thumbnail/8092060cgw1dvq60abiw0j.jpg
+    bmiddle_pic: http://ww4.sinaimg.cn/bmiddle/8092060cgw1dvq60abiw0j.jpg
+    original_pic: http://ww4.sinaimg.cn/large/8092060cgw1dvq60abiw0j.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp1.sinaimg.cn/2157053452/180/5603389505/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2687724334: !ruby/hash:Hashie::Mash
+  id: 2687724334
+  idstr: '2687724334'
+  screen_name: NBA小故事
+  name: NBA小故事
+  province: '11'
+  city: '1'
+  location: 北京 东城区
+  description: ''
+  url: http://q.weibo.com/231657
+  profile_image_url: http://tp3.sinaimg.cn/2687724334/50/5628844822/1
+  profile_url: nbalogo
+  domain: nbalogo
+  weihao: ''
+  gender: m
+  followers_count: 23001
+  friends_count: 25
+  statuses_count: 45
+  favourites_count: 0
+  created_at: Thu Jan 26 23:26:33 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Mon Jul 23 16:44:15 +0800 2012
+    id: 3470994566108777
+    mid: '3470994566108777'
+    idstr: '3470994566108777'
+    text: 喜欢短发的请关注@短发V
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Mon Jul 23 13:45:42 +0800 2012
+      id: 3470949636791904
+      mid: '3470949636791904'
+      idstr: '3470949636791904'
+      text: ! '#短发明星#@范冰冰 范爷这张短发照片仿佛是十八岁的大姑娘。'
+      source: <a href="" rel="nofollow"></a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/a6421d1agw1dv6q4wswg4j.jpg
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/a6421d1agw1dv6q4wswg4j.jpg
+      original_pic: http://ww1.sinaimg.cn/large/a6421d1agw1dv6q4wswg4j.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2789350682
+        idstr: '2789350682'
+        screen_name: 短发V
+        name: 短发V
+        province: '11'
+        city: '1000'
+        location: 北京
+        description: 短发是一种个性！（私信投稿，图片不要加水印。喜欢就关注@短发V　谢谢。）
+        url: ''
+        profile_image_url: http://tp3.sinaimg.cn/2789350682/50/39997889247/0
+        profile_url: u/2789350682
+        domain: ''
+        weihao: ''
+        gender: f
+        followers_count: 144857
+        friends_count: 0
+        statuses_count: 218
+        favourites_count: 0
+        created_at: Tue Jun 12 17:18:04 +0800 2012
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp3.sinaimg.cn/2789350682/180/39997889247/0
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 0
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2687724334/180/5628844822/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 16
+  lang: zh-cn
+  comments_count: 0
+2152079274: !ruby/hash:Hashie::Mash
+  id: 2152079274
+  idstr: '2152079274'
+  screen_name: NBA篮球游戏
+  name: NBA篮球游戏
+  province: '11'
+  city: '1000'
+  location: 北京
+  description: ''
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/2152079274/50/5601788151/1
+  profile_url: u/2152079274
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 21843
+  friends_count: 112
+  statuses_count: 608
+  favourites_count: 0
+  created_at: Tue May 31 13:45:09 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Sun Aug 05 19:37:30 +0800 2012
+    id: 3475749208303408
+    mid: '3475749208303408'
+    idstr: '3475749208303408'
+    text: ! '[嘻嘻]'
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Sun Aug 05 19:15:42 +0800 2012
+      id: 3475743721917570
+      mid: '3475743721917570'
+      idstr: '3475743721917570'
+      text: ! '最近看CCAV是否经常听到这样一句话————跨越2P玩3P，送你进入基时代~~~屌丝们颤抖吧[转发] '
+      source: <a href="http://weibo.pp.cc/time/" rel="nofollow">皮皮时光机</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww3.sinaimg.cn/thumbnail/7805a4c8jw1dvm0ri5u74j.jpg
+      bmiddle_pic: http://ww3.sinaimg.cn/bmiddle/7805a4c8jw1dvm0ri5u74j.jpg
+      original_pic: http://ww3.sinaimg.cn/large/7805a4c8jw1dvm0ri5u74j.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2013635784
+        idstr: '2013635784'
+        screen_name: 屌丝逆袭路
+        name: 屌丝逆袭路
+        province: '11'
+        city: '1000'
+        location: 北京
+        description: ☑85后 ☑喜欢自由 ☑无拘无束 ☑网购控 ☑喜欢篮球 ☑爱K歌 ☑微博控 ☑分享各类经典段子
+        url: ''
+        profile_image_url: http://tp1.sinaimg.cn/2013635784/50/5603350731/1
+        profile_url: u/2013635784
+        domain: ''
+        weihao: ''
+        gender: m
+        followers_count: 320334
+        friends_count: 489
+        statuses_count: 8449
+        favourites_count: 0
+        created_at: Thu May 19 13:08:01 +0800 2011
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp1.sinaimg.cn/2013635784/180/5603350731/1
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 224
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/2152079274/180/5601788151/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2025221163: !ruby/hash:Hashie::Mash
+  id: 2025221163
+  idstr: '2025221163'
+  screen_name: NBA篮球经理
+  name: NBA篮球经理
+  province: '11'
+  city: '8'
+  location: 北京 海淀区
+  description: 游戏官方网站：http://wanwan.sina.com.cn/nb/
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2025221163/50/1300318041/1
+  profile_url: nbacoach
+  domain: nbacoach
+  weihao: ''
+  gender: m
+  followers_count: 19987
+  friends_count: 51
+  statuses_count: 119
+  favourites_count: 0
+  created_at: Mon Mar 14 17:28:12 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: true
+  verified_type: 3
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Jul 26 14:04:44 +0800 2012
+    id: 3472041585609126
+    mid: '3472041585609126'
+    idstr: '3472041585609126'
+    text: 转发微博
+    source: <a href="http://a.weibo.com/proc/productintro.php" rel="nofollow">企业微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Mon Jul 23 16:53:30 +0800 2012
+      id: 3470996893746318
+      mid: '3470996893746318'
+      idstr: '3470996893746318'
+      text: 新浪#超级体育平台#在#chinajoy#期间关注我们并转发此条微博送大奖！活动时间：7月26日~7月29日，活动规则很简单即关注+转发+AT3个好友，在chinajoy结束后抽取10名玩家获得纪念版球衣。chinajoy现场拍摄我们的广告AT给我们，在chinajoy结束后邮寄精美水袋一个！
+        超级体育平台：http://t.cn/zWwMwkh
+      source: <a href="http://a.weibo.com/proc/productintro.php" rel="nofollow">新浪微博企业版</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/a6dbf989jw1dv6vl1rconj.jpg
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/a6dbf989jw1dv6vl1rconj.jpg
+      original_pic: http://ww1.sinaimg.cn/large/a6dbf989jw1dv6vl1rconj.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 2799434121
+        idstr: '2799434121'
+        screen_name: 超级体育
+        name: 超级体育
+        province: '11'
+        city: '8'
+        location: 北京 海淀区
+        description: 新浪旗下体育类游戏综合平台——新浪超级体育平台6月21日正式上线，这里是体育迷的大本营，这里是属于球迷的私有空间。为全国玩家提供最好的一...
+        url: ''
+        profile_image_url: http://tp2.sinaimg.cn/2799434121/50/5635154285/1
+        profile_url: supersports2012
+        domain: supersports2012
+        weihao: ''
+        gender: m
+        followers_count: 1585
+        friends_count: 73
+        statuses_count: 144
+        favourites_count: 0
+        created_at: Thu Jun 07 09:29:23 +0800 2012
+        following: false
+        allow_all_act_msg: false
+        geo_enabled: true
+        verified: true
+        verified_type: 2
+        allow_all_comment: true
+        avatar_large: http://tp2.sinaimg.cn/2799434121/180/5635154285/1
+        verified_reason: 新浪超级体育平台官方微博
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 1
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2025221163/180/1300318041/1
+  verified_reason: 《NBA篮球经理》官方微博
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1643063885: !ruby/hash:Hashie::Mash
+  id: 1643063885
+  idstr: '1643063885'
+  screen_name: NBA2K资讯
+  name: NBA2K资讯
+  province: '400'
+  city: '1'
+  location: 海外 美国
+  description: NBA2K消息最权威发布平台，给你更快更便捷的NBA 2K资讯。点击关注@NBA2K资讯
+  url: http://nba2k.cn/
+  profile_image_url: http://tp2.sinaimg.cn/1643063885/50/5626688189/1
+  profile_url: nba2k
+  domain: nba2k
+  weihao: ''
+  gender: m
+  followers_count: 17522
+  friends_count: 1369
+  statuses_count: 7117
+  favourites_count: 0
+  created_at: Wed Sep 30 16:34:23 +0800 2009
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: false
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:42:18 +0800 2012
+    id: 3477139569691465
+    mid: '3477139569691465'
+    idstr: '3477139569691465'
+    text: http://t.cn/zWWNDbP 看了NBA2K13 - 杜兰特访谈视频是不是一点也听不懂呢？没关系，NBA 2K中文网成员@RK_广阝亻士礻其_the_Stan
+      给你这样的听译稿，让你知道他们在讲什么。来这里看吧：http://t.cn/zWWl3yX
+    source: <a href="http://weibo.com/" rel="nofollow">新浪微博</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp2.sinaimg.cn/1643063885/180/5626688189/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 1
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+1831176670: !ruby/hash:Hashie::Mash
+  id: 1831176670
+  idstr: '1831176670'
+  screen_name: NBA明星会
+  name: NBA明星会
+  province: '11'
+  city: '5'
+  location: 北京 朝阳区
+  description: NBA【关注NBA，上手机新浪网NBA频道】
+  url: ''
+  profile_image_url: http://tp3.sinaimg.cn/1831176670/50/1288843012/1
+  profile_url: u/1831176670
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 17312
+  friends_count: 983
+  statuses_count: 4485
+  favourites_count: 0
+  created_at: Mon Sep 27 16:44:21 +0800 2010
+  following: false
+  allow_all_act_msg: true
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 16:19:02 +0800 2012
+    id: 3477148817821442
+    mid: '3477148817821442'
+    idstr: '3477148817821442'
+    text: 麦蒂与公牛已经终止谈判 艾弗森至今无人问津
+    source: <a href="http://daren.btui.it/app" rel="nofollow">定时8</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Thu Aug 09 14:35:13 +0800 2012
+      id: 3477122687020610
+      mid: '3477122687020610'
+      idstr: '3477122687020610'
+      text: 【麦蒂与公牛已经终止谈判 艾弗森至今无人问津】 艾弗森重回联盟困难重重 腾讯体育讯  北京时间8月9日，据《篮筐世界》报道，阔别NBA已经两年之久的阿伦-艾弗森想重新回到NBA联盟，但是悲催的是，目前联盟中还没有哪...http://t.cn/zWWONl4
+      source: <a href="http://www.cutt.com" rel="nofollow">简网</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/6d3546fajw1dvqf4vp4r8j.jpg
+      bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/6d3546fajw1dvqf4vp4r8j.jpg
+      original_pic: http://ww1.sinaimg.cn/large/6d3546fajw1dvqf4vp4r8j.jpg
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 1832208122
+        idstr: '1832208122'
+        screen_name: 芝加哥公牛队
+        name: 芝加哥公牛队
+        province: '11'
+        city: '5'
+        location: 北京 朝阳区
+        description: 公牛队【关注NBA，上手机新浪网NBA频道】
+        url: ''
+        profile_image_url: http://tp3.sinaimg.cn/1832208122/50/1291601764/1
+        profile_url: u/1832208122
+        domain: ''
+        weihao: ''
+        gender: m
+        followers_count: 1739
+        friends_count: 1826
+        statuses_count: 1446
+        favourites_count: 0
+        created_at: Mon Sep 27 23:19:01 +0800 2010
+        following: false
+        allow_all_act_msg: true
+        geo_enabled: true
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp3.sinaimg.cn/1832208122/180/1291601764/1
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 320
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp3.sinaimg.cn/1831176670/180/1288843012/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2655358467: !ruby/hash:Hashie::Mash
+  id: 2655358467
+  idstr: '2655358467'
+  screen_name: NBA篮球专栏
+  name: NBA篮球专栏
+  province: '35'
+  city: '1'
+  location: 福建 福州
+  description: 男人就应该像科比一样去战斗 去拼抢 ，我们最喜欢科比，我们支持湖人！
+  url: ''
+  profile_image_url: http://tp4.sinaimg.cn/2655358467/50/5635649395/1
+  profile_url: u/2655358467
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 14812
+  friends_count: 473
+  statuses_count: 155
+  favourites_count: 0
+  created_at: Wed Mar 07 21:28:21 +0800 2012
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 10:30:29 +0800 2012
+    id: 3477061098336992
+    mid: '3477061098336992'
+    idstr: '3477061098336992'
+    text: 夏天打球需要注意事项：1、有条件最好选择室内，或下午及晚上凉爽时，以免中暑；2、运动前后要合理补充水分，特别是含钾、镁、钙盐的防暑饮料，不要等口渴了才喝水，水温不宜太低；
+      3、运动后不要马上洗冷水澡或进空调房，等身上的汗蒸发掉再去洗热水澡； 4、打球时间不宜超过3小时。转给你的朋友吧！
+    source: <a href="http://t.xuanker.com" rel="nofollow">喧客</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    thumbnail_pic: http://ww1.sinaimg.cn/thumbnail/9e458e03jw1dvq828x3rzj.jpg
+    bmiddle_pic: http://ww1.sinaimg.cn/bmiddle/9e458e03jw1dvq828x3rzj.jpg
+    original_pic: http://ww1.sinaimg.cn/large/9e458e03jw1dvq828x3rzj.jpg
+    geo: 
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: true
+  avatar_large: http://tp4.sinaimg.cn/2655358467/180/5635649395/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0
+2086564993: !ruby/hash:Hashie::Mash
+  id: 2086564993
+  idstr: '2086564993'
+  screen_name: nba944
+  name: nba944
+  province: '11'
+  city: '2'
+  location: 北京 西城区
+  description: ''
+  url: ''
+  profile_image_url: http://tp2.sinaimg.cn/2086564993/50/5623461466/1
+  profile_url: u/2086564993
+  domain: ''
+  weihao: ''
+  gender: m
+  followers_count: 13365
+  friends_count: 69
+  statuses_count: 247
+  favourites_count: 0
+  created_at: Thu Apr 14 16:01:03 +0800 2011
+  following: false
+  allow_all_act_msg: false
+  geo_enabled: true
+  verified: false
+  verified_type: -1
+  remark: ''
+  status: !ruby/hash:Hashie::Mash
+    created_at: Thu Aug 09 15:22:00 +0800 2012
+    id: 3477134461203694
+    mid: '3477134461203694'
+    idstr: '3477134461203694'
+    text: 哈哈！
+    source: <a href="http://m.weibo.com/web/cellphone.php#iphone" rel="nofollow">iPhone客户端</a>
+    favorited: false
+    truncated: false
+    in_reply_to_status_id: ''
+    in_reply_to_user_id: ''
+    in_reply_to_screen_name: ''
+    geo: 
+    retweeted_status: !ruby/hash:Hashie::Mash
+      created_at: Thu Aug 02 14:43:38 +0800 2012
+      id: 3474588090504497
+      mid: '3474588090504497'
+      idstr: '3474588090504497'
+      text: 多年以后，邂逅街头，交谈过后，她说：“我想问你最后一个问题？”他脱口而出：“学过！”然后腼腆的望向她：“鸭！鸡！不！鸭！留！不！留！”
+      source: <a href="http://itunes.apple.com/cn/app/id448844548" rel="nofollow">WeicoPro</a>
+      favorited: false
+      truncated: false
+      in_reply_to_status_id: ''
+      in_reply_to_user_id: ''
+      in_reply_to_screen_name: ''
+      geo: 
+      user: !ruby/hash:Hashie::Mash
+        id: 1900973725
+        idstr: '1900973725'
+        screen_name: 潮流俄语
+        name: 潮流俄语
+        province: '100'
+        city: '1000'
+        location: 其他
+        description: 让我们为了俄语而俄语吧！
+        url: ''
+        profile_image_url: http://tp2.sinaimg.cn/1900973725/50/1294277409/1
+        profile_url: chaoliueyu
+        domain: chaoliueyu
+        weihao: ''
+        gender: m
+        followers_count: 19148
+        friends_count: 14
+        statuses_count: 2462
+        favourites_count: 1
+        created_at: Thu Dec 23 21:48:39 +0800 2010
+        following: false
+        allow_all_act_msg: true
+        geo_enabled: false
+        verified: false
+        verified_type: -1
+        allow_all_comment: true
+        avatar_large: http://tp2.sinaimg.cn/1900973725/180/1294277409/1
+        verified_reason: ''
+        follow_me: false
+        online_status: 0
+        bi_followers_count: 12
+        lang: zh-cn
+      reposts_count: 0
+      comments_count: 0
+      mlevel: 0
+      visible: !ruby/hash:Hashie::Mash
+        type: 0
+        list_id: 0
+    reposts_count: 0
+    comments_count: 0
+    mlevel: 0
+    visible: !ruby/hash:Hashie::Mash
+      type: 0
+      list_id: 0
+  allow_all_comment: false
+  avatar_large: http://tp2.sinaimg.cn/2086564993/180/5623461466/1
+  verified_reason: ''
+  follow_me: false
+  online_status: 0
+  bi_followers_count: 0
+  lang: zh-cn
+  comments_count: 0

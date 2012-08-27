@@ -1,0 +1,40 @@
+<% weibo = @user %>
+<div>
+  <div class="row">
+				<div class="span1">
+				  <img src="<%=h weibo.profile_image_url if weibo.profile_image_url? %>"><br>
+				</div>
+				<div class="span1" style="margin=0;">	
+				  <%= weibo.name if weibo.name? %><br>
+				  <%= weibo.email if weibo.email? %><br>
+				  <%= weibo.location if weibo.location? %><br>
+    性别:<%= weibo.gender == 0 ? "男" : "女" %>
+				</div>
+		</div>
+		<div class="row">
+		  <div class="span3">
+    <a onclick="wangyi_statuses_by_name('fanslist')">听众:<%= weibo.followers_count %></a>|
+    <a onclick="wangyi_statuses_by_name('idollist')">收听:<%= weibo.friends_count %></a>|
+    收藏:<%= weibo.favourites_count %>|
+    我的广播:<%= weibo.statuses_count %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+    注册时间:<%= weibo.created_at %><br>
+	   </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+    <%= text_field_tag 'wangyi_search', nil, :placeholder => 'Enter search term...' %>
+    <div class="controls">
+      <select id="wangyi_select_class">
+        <option>人物</option>
+        <option>微博</option>
+        <option>话题</option>
+      </select>
+    </div>
+    <a class="btn" onclick="wangyi_statuses_search($('#wangyi_select_class').val(),$('#wangyi_search').val());">搜索</a>
+    </div>
+  </div>
+</div>

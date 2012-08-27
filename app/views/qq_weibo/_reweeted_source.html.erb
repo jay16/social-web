@@ -1,0 +1,35 @@
+      <div style="border-color: transparent transparent lightgray transparent;border-style: solid;border-width: 10px 10px 10px 10px;width: 0;height: 0;margin-left:30px;">
+	    	</div>
+	    	
+		    <div class="row" style="background-color:lightgray;margin-left:25px;">
+      <div class="span1">
+        <% source_name = weibo.source.head.split("/")[-1] + "_180.jpeg" %>
+        <img src="<%=h weibo.source.head << '/100' if weibo.source.head? %>">
+      </div>
+      
+      <div class="span4">
+        <span><%= weibo.source.nick %>:</span>
+        <span><%= weibo.source.text %></span>
+        <div><img src="<%=h weibo.source.image[0] << '/160' if weibo.source.image? %>"></div>
+        <span style="color:gray;">
+						  <% timestamp = Time.at(weibo.source.timestamp).to_s %>
+								<% day = Time.now.strftime("%m月%d日") == DateTime.parse(timestamp).strftime("%m月%d日") ? "今天 " : "%m月%d日 " %>
+									<% if day == "今天 " %>
+											<% c_min = DateTime.parse(timestamp).strftime("%M").to_i %>
+											<% if (Time.now).hour == DateTime.parse(timestamp).strftime("%H").to_i %>
+											<% m_d = (Time.now).min - c_min %>
+											<% min = m_d == 0 ? "刚刚" : "#{m_d}分钟前" %>
+											<% else %>
+													 <% min = "%H:%M" %>
+											<% end %>
+									<% else %>
+											<% min = "%H:%M" %>
+									<% end %> 
+									(<%=h DateTime.parse(timestamp).strftime("#{day}#{min}") %>)
+						  </span>
+						  <span style="color:gray;"><a>from<%= weibo.source.from %></a></span>
+						  <span style="float:right;">
+				    <span><a>转发(<%= weibo.source.count %>)</a><a>评论(<%= weibo.source.mcount %>)</a></span>
+				    </span>
+      </div>
+    </div>

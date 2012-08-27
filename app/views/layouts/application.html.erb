@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IntFocus / <%= request.url %></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= stylesheet_link_tag    "/stylesheets/dtree.css" %>
+    <%= javascript_include_tag "/javascripts/dtree.js" %>
+    <%= javascript_include_tag "/javascripts/qq_weibo.js" %>
+    <%= javascript_include_tag "/javascripts/sina_weibo.js" %>
+    <%= javascript_include_tag "application" %>
+    
+    <%= csrf_meta_tags %>
+    <%= render "layouts/override_css" %>
+    <%= render "layouts/link" %> 
+  </head>
+  <body> 
+  <%= render "layouts/topbar" %>
+  <%= render "layouts/notice" %>
+    
+		<div class="container">
+				<div class="row">
+				<div class="span12">
+				  <div class="row">
+								<div class="span10 offset1 content">
+										<div id="modal_form"></div>
+										<%= yield %>
+								</div> 
+
+								<a onclick="carousel_left()" class="left carousel-control" data-slide="prev" style="margin-left:130px;">&lsaquo;</a>
+								<a onclick="carousel_right()" class="right carousel-control"  data-slide="next" style="margin-right:130px;">&rsaquo;</a>
+
+								<div class="span1">
+								<div style="margin:10px 0;width:150px;">
+							
+								<% if user_signed_in? %>	
+								<a class="btn btn-primary" id="focus_access_btn" style="width:55px;" onclick="carousel_focus('focus');">首页</a>
+								 <% @firm_weibos = Array.new %>
+									<% unless Userkey.find_by_user_id(current_user.id).nil? %>
+									<% @firms = Userkey.find_by_sql("select * from userkeys where user_id ='#{current_user.id}'") %>
+									<% if @firms.length >= 1 %>
+											<% @firms.each do |weibo| %>
+												<% firm = case weibo.weibo_firm %>
+												<% when "sinaweibo" then "新浪微博" %>
+												<% when "qqweibo" then "腾讯微博" %>
+												<% when "wangyiweibo" then "网易微博" %>
+												<% when "renrenweibo" then "人人网" %>
+												<% when "kaixinweibo" then "开心网" %>
+												<% else "focus" %>
+												<% end %>
+												<% @weibo_name = weibo.weibo_firm.gsub('weibo','') %>
+												<% @firm_weibos.push(@weibo_name) %>
+												<a class="btn" id="<%=h weibo.weibo_firm.gsub('weibo','') %>_access_btn" style="width:55px;" onclick="carousel_focus('<%=h @weibo_name %>');">
+												<%= firm %></a>
+											<% end %>
+										<% end %>
+										<p>  </p>
+										<% @un_reg = %w[sina qq wangyi renren kaixin] - @firm_weibos %>
+										<% @un_reg.each do |un| %>
+												<% unreg = case un %>
+												<% when "sina" then "新浪微博" %>
+												<% when "qq" then "腾讯微博" %>
+												<% when "wangyi" then "网易微博" %>
+												<% when "renren" then "人人网" %>
+												<% when "kaixin" then "开心网" %>
+												<% else "focus" %>
+												<% end %>
+										 <div class="btn-group" style="margin-left:0px;">
+										   <a class="btn" style="width:55px;"><%= unreg %></a>
+										   <a class="btn btn-warning">注册</a>
+										 </div>
+										<% end %>
+									<% end %>
+								<% end %>
+		      </div>
+								</div>
+							</div>
+							
+						<div class="row">
+								<div class="span12">
+										<%= render "layouts/footer" %>
+						    <%= render "layouts/loading" %>
+						    <%= render "log_checker/log_partial" %>
+								</div>
+						</div>
+						
+				</div>
+				</div>
+		</div>
+
+  </body>
+</html>
+<script type="text/javascript"> 
+ //光标变化
+  $("a").hover(function(){
+    $(this).css("cursor","pointer");
+  });
+  //微博切换
+  $("a").hover(function(){$(this).css("cursor","pointer")});
+		function carousel_right(){
+				var carousel=["focus","sina","qq"]
+				for(var i=0;i<carousel.length;i++){
+						if($("#"+carousel[i]+"_carousel_item").hasClass("active")){
+						  if(i<carousel.length-1){
+						    $("#"+carousel[i+1]+"_carousel_item").addClass("active");
+						    $("#"+carousel[i+1]+"_access_btn").addClass("btn-primary");
+						  }
+						  else{
+						    $("#"+carousel[0]+"_carousel_item").addClass("active");
+						    $("#"+carousel[0]+"_access_btn").addClass("btn-primary");
+						  }
+						  $("#"+carousel[i]+"_carousel_item").removeClass("active");
+						  $("#"+carousel[i]+"_access_btn").removeClass("btn-primary");
+						  break;
+						}
+				}
+		}
+		function carousel_left(){
+				var carousel=["focus","sina","qq"]
+				for(var i=0;i<carousel.length;i++){
+						if($("#"+carousel[i]+"_carousel_item").hasClass("active")){
+						  if(i>0){
+						    $("#"+carousel[i-1]+"_carousel_item").addClass("active");
+						    $("#"+carousel[i-1]+"_access_btn").addClass("btn-primary");
+						  }
+						  else{
+						    $("#"+carousel[carousel.length-1]+"_carousel_item").addClass("active");
+						    $("#"+carousel[carousel.length-1]+"_access_btn").addClass("btn-primary");
+						  }
+						  $("#"+carousel[i]+"_carousel_item").removeClass("active");
+						  $("#"+carousel[i]+"_access_btn").removeClass("btn-primary");
+						  break;
+						}
+				}
+		}
+		function carousel_focus(name){
+				var carousel=["focus","sina","qq"]
+				for(var i=0;i<carousel.length;i++){
+						if($("#"+carousel[i]+"_carousel_item").hasClass("active")){
+						  $("#"+carousel[i]+"_carousel_item").removeClass("active");
+						  $("#"+carousel[i]+"_access_btn").removeClass("btn-primary");
+						  break;
+						}
+				}
+		  $("#"+name+"_carousel_item").addClass("active");
+		  $("#"+name+"_access_btn").addClass("btn-primary");
+		}
+		//其他微博同步发布
+		function other_weibos_add(other_weibos,content){
+		  for(var index=0;index<other_weibos.length;index++){
+		    switch(other_weibos[index]){
+		      case "sinaweibo":
+		        sina_statuses_update(content);
+		      case "qqweibo":
+		        qq_t_add(content);
+		      case "wangyiweibo":
+		      default:
+		        return
+		    }
+		  }
+		}
+		//其他微博同步转发
+		function other_weibos_repost(other_weibos,content){
+		  for(var index=0;index<other_weibos.length;index++){
+		    switch(other_weibos[index]){
+		      case "sinaweibo":
+		        sina_statuses_update(content);
+		      case "qqweibo":
+		        qq_t_add(content);
+		      case "wangyiweibo":
+		      default:
+		        return
+		    }
+		  }
+		}
+		
+</script>

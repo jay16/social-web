@@ -1,0 +1,38 @@
+
+<div class="row">
+	 <div class="span7">
+	  <div id="qq_statuses_main_pane">
+	   <%= render "current_user_info" %>
+	   </div>
+		</div>
+		<div class="span3"><br>
+		  <%= render "current_user_index" %>
+		</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+  //加载首页时自动读取广播大厅微博信息
+  qq_statuses_by_name("public_timeline");
+  
+  //网页加载完需要自动设置的样式
+		$("#qq_current_user_brand").css("display","none");
+		$("#qq_public_timeline_tab a").css("background","white");
+		//进入顶部div后显示功能模板
+		$("#qq_hover").hover(
+		  function(){$("#qq_current_user_brand").css("display","block");$(this).css("display","none");});
+		$("#qq_current_user_brand").hover(
+				function(){$("#qq_current_user_brand").css("display","block");},
+				function(){$("#qq_current_user_brand").css("display","none");$("#qq_hover").css("display","block");});
+		//顶部功能模板中各功能超链接点击后样式设置
+		$("a").hover(function(){$(this).css({"cursor":"pointer","text-decoration":"none"});});
+		$("qq_tab_content .tab-pane a").click(function(){
+				$(".tab-pane span").children("a").css("background","lightgray");
+				$(this).css("background","white");
+		});
+			//点击写微博面板调出输入框
+			$("#qq_statuses_create_pane").click(function(){
+			  $("#qq_statuse_release_pane").css("display","block");
+			});
+});
+</script>

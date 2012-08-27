@@ -1,0 +1,94 @@
+<style type="css/text">
+.focus{font-size:150%;
+       background:purple;
+}
+</style>
+<div class="row"><br>
+	 <div class="span7">
+	  <div id="wangyi_statuses_main_pane">
+	   <%= render "current_user_info" %>
+	   </div>
+		</div>
+		<div class="span3">
+		  <%= render "current_user_index" %>
+		</div>
+</div>
+<script type="text/javascript">
+  $(function(){
+    //网页加载完需要自动设置的样式
+				$("#loading_pane").addClass("hide");
+				$("#wangyi_current_user_brand").css("display","none");
+				$("#wangyi_public_timeline_tab a").css("background","white");
+				//进入顶部div后显示功能模板
+				$("#wangyi_hover").hover(
+						function(){$("#wangyi_current_user_brand").css("display","block");$(this).css("display","none");});
+				$("#current_user_brand").hover(
+						function(){$("#wangyi_current_user_brand").css("display","block");},
+						function(){$("#wangyi_current_user_brand").css("display","none");
+						           $("#wangyi_hover").css("display","block");});
+				//顶部功能模板中各功能超链接点击后样式设置
+				$("a").hover(function(){$(this).css({"cursor":"pointer","text-decoration":"none"});});
+				$(".tab-pane a").click(function(){
+						$(".tab-pane span").children("a").css("background","lightgray");
+						$(this).css("background","white");
+				});
+		  });
+
+//批量获取用户相关信息
+function wangyi_statuses_by_name(name){
+  var strhost = window.location.host;
+		var strprotocol = window.location.protocol;
+		var strurl = strprotocol + "//" + strhost + "/wangyi_weibo/" + name;
+  $("#loading_pane").removeClass("hide");
+		$.ajax({
+			type: 'POST',
+			url: strurl,
+			contentType: 'multipart/form-data',
+			datatype: 'json',
+			success:function(data)
+			{
+				$("#wangyi_curret_info_pane").html(data);
+				$("#wangyi_"+name+"_tab").addClass("active");
+    $("#loading_pane").addClass("hide");
+			},
+			error:function(xhr,r,e)
+			{
+				alert(e);
+    $("#loading_pane").addClass("hide");
+			}
+		});
+}
+//搜索
+function wangyi_statuses_search(s_class,value){
+  var strhost = window.location.host;
+		var strprotocol = window.location.protocol;
+		var method_name = "search_user";
+		if(s_class=="人物")
+		  method_name = "search_user";
+		else if(s_class=="微博")
+		  method_name = "search_t";
+		else if(s_class=="话题")
+		  method_name = "search_ht";
+		  
+		var strurl = strprotocol + "//" + strhost + "/qq_weibo/" + method_name;
+  $("#loading_pane").removeClass("hide");
+		$.ajax({
+			type: 'POST',
+			url: strurl,
+			data:{"value":value},
+			contentType: 'multipart/form-data',
+			datatype: 'json',
+			success:function(data)
+			{
+				$("#wangyi_curret_info_pane").html(data);
+				$("#wangyi_"+name+"_tab").addClass("active");
+    $("#loading_pane").addClass("hide");
+			},
+			error:function(xhr,r,e)
+			{
+				alert(e);
+    $("#loading_pane").addClass("hide");
+			}
+		});
+}
+</script>

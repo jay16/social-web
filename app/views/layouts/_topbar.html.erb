@@ -1,0 +1,141 @@
+<style type="text/css">
+.nav-collapse ul li:hover ul {display:block;}
+.nav-collapse ul li:hover ul li ul {display: none;}
+.nav-collapse ul li:hover ul li a {display:block; background:white; color:#000;}
+.nav-collapse ul li:hover ul li a:hover {background:purple; color:white;}
+.nav-collapse ul li:hover ul li:hover ul {list-style:none;display:block; position:absolute; 
+  left:-150px; top:0;width:125px;}
+</style>
+  <div class="navbar navbar-fixed-top">
+     <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/reports/dashboard">胜因营销</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><a id="topbar_index" href="/home">首页</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="topbar_weibo">
+              我的微博</a>
+              <ul class="dropdown-menu">
+           <% if user_signed_in? %>
+													<% unless Userkey.find_by_user_id(current_user.id).nil? %>
+													<% @firms = Userkey.find_by_sql("select * from userkeys where user_id ='#{current_user.id}'") %>
+															<% @firms.each do |weibo| %>
+																<li><a href="/<%=h weibo.weibo_firm.gsub('weibo','_weibo') %>/index">
+																<% firm = case weibo.weibo_firm %>
+																<% when "sinaweibo" then "新浪微博" %>
+																<% when "qqweibo" then "腾讯微博" %>
+																<% when "wangyiweibo" then "网易微博" %>
+																<% else "focus" %>
+																<% end %>
+																<%= firm %>
+																</a></li>
+															<% end %>
+													<% end %>
+											<% else %>
+											  <li>请登陆微博</li>
+											<% end %>
+																			     
+								        	</ul>
+								       </li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="topbar_search">
+              搜&nbsp;&nbsp;&nbsp;&nbsp;索</b></a>
+              <ul class="dropdown-menu">
+				          		<li><a href="/sina_search/weibo_search_index">微博搜索</a></li>
+				          		<li><a href="/searching/rule_list">规则搜索</a></li>
+             	</ul>
+            </li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              客户管理</b></a>
+              <ul class="dropdown-menu">
+					           <li><a href="/messages/answer">回复评论</a></li>
+					           <li><a href="/accounts/following">关系管理</a></li>
+					           <li class="divider"></li>
+					           <li><a href="/accounts/recommend">推荐客户</a></li>
+					           <li><a href="/accounts/recommend_setting">潜客规则设置</a></li>
+               </ul>
+             </li>
+		           <li class="dropdown">
+		           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		             微博监听</b></a>
+			            <ul class="dropdown-menu">
+							          <li><a href="/messages/output">数据导出</a></li>
+							          <li><a href="/settings/keyword_rule_list">监听规则设置</a></li>
+							          <li><a href="/category/">规则分类</a></li>
+			             </ul>
+		             </li>
+						         <li class="dropdown">
+						         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						           数据分析</b></a>
+							          <ul class="dropdown-menu">
+						             <li><a href="/reports/keywords">关键词分析</a></li>
+						             <li><a href="/reports/customer">客户分析</a></li>
+						             <li><a href="/reports/message_track">微博传播轨迹</a></li>
+						             <li><a href="/reports/event_track">事件串分析</a></li>
+						             <li class="divider"></li>
+						             <li><a href="/reports/my_message">我的微博统计</a></li>
+                  </ul>
+               </li>
+             <li><a id="topbar_about" href="/home/about">关于</a></li>
+             <li><a onclick="log_pane_init();">
+               log_checker</a></li>
+          </ul>
+          <ul class="nav pull-right">
+				        <li class="dropdown">
+									     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									       设置</b></a>
+						         <ul class="dropdown-menu">
+								         <li><a href="/messages/output">数据导出</a></li>
+								         <li><a href="/settings/keyword_rule_list">监听规则设置</a></li>
+				           </ul>
+				         </li>
+     <% if user_signed_in? %>  
+        <li class="dropdown">
+				     <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="topbar_account">
+				       <%= current_user.email %></b></a>
+			        <ul class="dropdown-menu">
+											  <li>
+															<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+																 微博切换</b></a>
+								   <ul class="third-menu">
+											<% unless Userkey.find_by_user_id(current_user.id).nil? %>
+										 <% @firms = Userkey.find_by_sql("select * from userkeys where user_id ='#{current_user.id}'") %>
+													<% @firms.each do |weibo| %>
+														<li><a href="/<%=h weibo.weibo_firm.gsub('weibo','_weibo') %>/index">
+														<% firm = case weibo.weibo_firm %>
+														<% when "sinaweibo" then "新浪微博" %>
+														<% when "qqweibo" then "腾讯微博" %>
+														<% when "wangyiweibo" then "网易微博" %>
+														<% else "focus" %>
+														<% end %>
+														<%= firm %>
+														</a></li>
+													<% end %>
+											<% end %>
+										   <li><%=link_to "注册其他微博",{controller:"home",action:"firm_other"},remote:true %></li>
+						     </ul>
+											   </li>								       
+													<li><%=link_to "修改密码", edit_user_registration_path %></li>
+													<li><%= link_to "登出", destroy_user_session_path, :method => :delete %>   </li> 
+										 </ul>
+			      </li>
+      <% else %>    
+         <li><%= link_to "注册", new_user_registration_path, remote:true, id:"topbar_registration",onclick:"$('#loading_pane').removeClass('hide');"%></li>
+         <li><%= link_to "登入", new_user_session_path, remote:true, id:"topbar_session",onclick:"$('#loading_pane').removeClass('hide');" %></li>
+      <% end %>
+			     </ul>
+        </div>
+      </div>
+     </div>
+   </div>
+<%= javascript_include_tag "/javascripts/menu_highlight" %>
+
+<script type="text/javascript">
+		$("li").click(function(){
+		  if($(this).has("ul").size()==0){
+      $("#loading_pane").removeClass("hide");
+     }
+		});
+</script>

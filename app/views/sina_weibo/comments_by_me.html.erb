@@ -1,0 +1,36 @@
+<% if @comments_by_me.present? %>
+  <% if @comments_by_me.total_number ==0 %>
+    <p style="color:gray;text-align:center;">还没有评论</p>
+  <% else %>
+    <% id_index = 1 %>
+    <% @comments_by_me.comments.each do |weibo| %>
+    <div class="row" id="statuses_<%=h id_index %>">
+    <% id_index += 1 %>
+      <div class="span1" style="padding-left:20px;width:65px;">
+        <img src="<%=h weibo.status.user.profile_image_url %>">
+				    	<!-- 是否关注 -->
+				    <div id="<%=h weibo.status.user.id %>_friendship_pane">
+	     		<% if weibo.status.user.following %>
+	    				<div><a href="javascript:void(0)" onclick="friendship_destroy(<%=h weibo.status.user.id %>);" class="friendship_destroy">取消关注</a></div>
+	    			<% else %>
+	   			  <div><a href="javascript:void(0)"  onclick="friendship_create(<%=h weibo.status.user.id %>);" class="friendship_create">添加关注</a></div>
+	   			 <% end %>
+	   			</div>
+	   			<!-- 是否关注end -->
+	   			<% @oniln_state = weibo.status.user.online_status == 0 ? "离线" : "在线" %>
+			     <span style="color:<%=h weibo.status.user.online_status == 0 ? "gray" : "purple" %>;">
+			     <img src="/images/<%=h weibo.status.user.gender == 'm' ? 'man.gif' : 'gile.gif' %>">|<%= @oniln_state %></span>
+				  </div>
+      <div class="span5" style="padding:5px;margin:0;">
+         <span><%= weibo.text if weibo.text? %></span>
+         <span style="color:gray;">(<%=h DateTime.parse(weibo.created_at).strftime("%m月%d日  %H:%M:%S") %>)<br>
+         评论<a href="<%=h weibo.status.user.url %>"><%= weibo.status.user.screen_name %></a>的微博</span>
+        <a href="<%=h weibo.status.user.url %>"><%= weibo.status.text.to_s[0,20] %>......</a><br>
+        <% source = weibo.source.match(/"(.*?)"/mi)[0] %>
+        <% source_name = weibo.source.gsub(/<a(.*?)>|<\/a>/mi,"") %>
+        <span style="color:gray;">来自<a src="<%=h source %>"><%= source_name %></a></span>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+<% end %>

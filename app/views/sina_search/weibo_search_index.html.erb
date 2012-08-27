@@ -1,0 +1,29 @@
+<%= javascript_include_tag "/javascripts/menu_highlight" %>
+<%= javascript_include_tag "/javascripts/sina_search.js" %>
+<%= javascript_include_tag "/javascripts/sina_weibo.js" %>
+
+<div class="row" >
+		<div class="span7">
+				<div class="page-header" style="margin-left:20px;margin-top:5px;margin-bottom:0px;height:20px;">
+				  <h2><span id="weibo_search_brand">微博搜索</span> <small> 来自于新浪微博</small>
+				  </h2>
+				  
+				</div>
+			 <div id="weibo_search" class="stream-content" style="display: block;height:550px;margin:3px;padding:3px;background-color:white;overflow-y:auto;"></div>
+			 <div id="user_search" class="stream-content" style="display: none;height:550px;margin:10px;background-color:white;overflow-y:auto;"></div>
+			 
+			 <div id="comment_repost" class="stream-content" style="display: none;height:550px;margin:10px;background-color:white;overflow-y:auto;">
+			   <div style="float:right;marign-right:20px;">
+			     <a class="btn btn-primary" href="javascript:void(0)" onclick="$('#weibo_search').css('display','block');$('#comment_repost').css('display','none');">返回搜索结果</a>
+			   </div>
+			   <div id="comment_repost_pane">
+			   </div>
+			 </div>
+		</div> 
+		<!--   dashboard end   -->    
+		<div class="span3" style="margin-top:25px;">
+    <%= render "select_message_dashboard" %>
+		</div>
+</div>
+ 
+

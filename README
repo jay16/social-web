@@ -1,0 +1,15 @@
+##注意事项
+  
+    上传文件(:multipart => true)，不允许使用js（:remote => true 无效）
+    gem 'remotipart' 可以解决上述问题
+    
+    setTimeout传递参数（只限字符串），每个参数的格式"+param+"，这时格式化后的参数会去年双引号（或单引号）
+    var hi="hello",wo="world"
+    setTimeout("slideAutoDown("+hi+","+wo+")",4000);
+    => setTimeout("slideAutoDown(hello,world)",4000); 错误
+    setTimeout("slideAutoDown('"+hi+"','"+wo+"')",4000);
+    =>setTimeout("slideAutoDown('hello','world')",4000);正确
+    
+    
+
+

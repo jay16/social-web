@@ -1,0 +1,13 @@
+<% if @comments_mentions.comments? %>
+		<% if @comments_mentions.comments.length ==0 %>
+				<p style="color:gray;text-align:center;">返回0条结果</p>
+		<% else %>
+				<!--单条微博 --> 
+				<% id_index = 1 %>
+				<% @comments_mentions.comments.each do |weibo| %>
+				  <%= render :partial => "sina_partial/statuse_template", :locals => {:weibo => weibo,:id => id_index } %>
+				  <% id_index += 1 %>
+				<% end %>
+		<% end %>
+<% end %>
+

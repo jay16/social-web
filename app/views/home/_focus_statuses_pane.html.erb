@@ -1,0 +1,59 @@
+<div id="focus_statuse_release_pane" style="margin:15px;">
+					<div class="row">
+						 <div class="span4">
+						 <span>有什么新鲜事想告诉大家？</span>
+				   <span style="float:right;">还可以输入<span id="focus_word_limit">140</span>字</span>
+						 </div>
+					</div>
+				<%= form_tag("/focus/statuses_create", :multipart=>true, :remote => true) do %>
+						<div class="row">
+								<div class="span4">
+								<%= text_area_tag("focus_statuses_text", nil, rows:3, class:'text_area span4') %>
+								</div>
+						</div>
+						<div class="row">
+								<div class="span4">
+								<span id="focus_face"><img src="/images/F_1.gif"><a onclick="sina_emotions()">表情</a></span>
+								<span id="focus_check_img"><a onclick="focus_load_image()">图片</a></span>
+								<span><a>视频</a></span>
+								<span><a>音乐</a></span>
+								<span><a>话题</a></span>
+								<span><a>投票</a></span>
+								<span style="float:right;">
+								 <% unless Userkey.find_by_user_id(current_user.id).nil? %>
+									<% @firms = Userkey.find_by_sql("select * from userkeys where user_id ='#{current_user.id}'") %>
+											<% @firms.each do |weibo| %>
+													<% firm = case weibo.weibo_firm %>
+													<% when "sinaweibo" then "新浪微博" %>
+													<% when "qqweibo" then "腾讯微博" %>
+													<% when "wangyiweibo" then "网易微博" %>
+													<% else "focus" %>
+													<% end %>
+													<lable><input type="checkbox" id="<%= weibo.weibo_firm %>_checkbox" checked="true" />
+													<%= firm %>
+													</label>
+											<% end %>
+								 <% end %>
+								<%= submit_tag "发布", id:"focus_statuse_release", class:"btn",remote:true %>
+								</span>
+				  </div>
+				</div>
+				<% end %>
+		</div>
+	<script type="text/javascript">
+	  //光标变化
+  $("a").hover(function(){
+    $(this).css("cursor","pointer");
+  });
+  //监控微博文字数量
+  $("#focus_statuses_text").keyup(function(){
+				if($("#focus_statuses_text").val().length>0){
+				 if(!$("#focus_statuse_release").hasClass("btn-primary"))
+				   $("#focus_statuse_release").addClass("btn-primary");
+				 $("#focus_word_limit").html(140-$("#focus_statuses_text").val().length);
+				}
+				else{
+				  $("#focus_statuse_release").removeClass("btn-primary");
+				}
+  });
+	</script>

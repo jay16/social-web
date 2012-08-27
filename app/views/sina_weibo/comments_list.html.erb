@@ -1,0 +1,30 @@
+<div style="height:150px;overflow:auto;padding-left:30px;">
+  <% @comments_list.comments.each do |comment| %>
+    <div class="row">
+				  <div class="span1"  style="margin:0;">
+				    <a data-toggle="modal" href="#<%= comment.user.id %>_user_info_modal">
+				    <img src="<%= comment.user.profile_image_url %>"></a>
+        	<!-- 是否关注 -->
+	       	<%= render :partial => "sina_partial/friendship_or_not", :locals => { :weibo => comment.user } %>
+				   		<!-- 是否在线-->
+				   		<%= render :partial => "sina_partial/online_status", :locals => { :weibo => comment.user } %>
+				   			 <!--用户详情 触发点是头像与妮称-->
+				   			 <%= render :partial => "sina_partial/statuses_userinfo", :locals => {:weibo => comment.user} %>
+      </div>
+      
+      <div class="span<%= @span %>" style="margin:0px;>
+        <span style="color:blue;">
+        <a data-toggle="modal" href="#<%= comment.user.id %>_user_info_modal">
+        <%= comment.user.screen_name %></a>:</span>
+        <span><%= comment.text %></span>
+        <% day = Time.now.strftime("%m月%d日") == DateTime.parse(comment.created_at).strftime("%m月%d日") ? "今天" : "%m月%d日" %>
+        <span style="color:gray;">
+        (<%=h DateTime.parse(comment.created_at).strftime("#{day}  %H:%M") %>)
+        </span>
+        <span style="color:gray;float:right;margin-right:10px;">
+        <a onclick="sorry!">回复</a>
+        </span>
+      </div>
+    </div>
+  <% end %>
+</div>

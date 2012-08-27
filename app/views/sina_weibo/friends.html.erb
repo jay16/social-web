@@ -1,0 +1,44 @@
+<% id_index = 1 %>
+<% @friends.users.each do |weibo| %>
+ <div class="row" id="statuses_<%= id_index %>"><% id_index += 1 %>
+  <div class="span1">
+		  <a><img src="<%=h weibo.profile_image_url if weibo.profile_image_url? %>"></a>
+		 	<!-- 是否关注 -->
+			 <%= render :partial => "sina_partial/friendship_or_not", :locals => { :weibo => weibo } %>
+		 	<!-- 是否在线、性别 -->
+		 	<%= render :partial => "sina_partial/online_status", :locals => { :weibo => weibo } %>
+  </div>
+  <div class="span5">
+				<!--判断有无用户-->
+				<% if weibo.screen_name? %>
+				<a data-toggle="modal" href="#<%= weibo.id %>_user_info_modal">
+						<%=h weibo.screen_name if weibo.screen_name? %></a>
+				<% else %>
+					 <a><%=h weibo.id if weibo.id? %></a>
+				<% end %>
+				<span style="color:gray;">
+				  [<%= weibo. verified_reason %>](<%= weibo.location %>--<%= DateTime.parse(weibo.created_at).strftime("%m月%d日 %H:%M") %>)
+				</span><br>
+				description:<%= weibo.description %><br>
+				<table><tbody>
+				<tr style="font-size:18;color:blue;">
+					 <td><%= weibo.statuses_count %></td>
+					 <td><%= weibo.friends_count %></td> 
+					 <td><%= weibo.followers_count %></td>
+					 <td><%= weibo.favourites_count %></td>
+				</tr>
+				<tr>
+					 <td>微博</td>
+					 <td>关注</td>
+					 <td>粉丝</td>
+					 <td>收藏</td>
+				</tr>
+				</tbody></table>
+  </div>    
+</div  
+<!--分隔线-->
+<p style="line-height:200%;">
+	 <hr style="border:1 dashed #987cb9;margin:0 auto;" width="80%" color=#987cb9 size=1>
+</p>
+<% end %>
+

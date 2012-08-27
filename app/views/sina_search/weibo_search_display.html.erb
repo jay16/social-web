@@ -1,0 +1,57 @@
+		<% if @select_weibo_info.present? %>
+		   <p style="color:gray;text-align:center;">返回<%= @select_weibo_info.size %>条结果</p>
+   <% @select_weibo_info.each do |weibo| %>
+			<!--单条微博 --> 
+  	<div class="row">
+   <div class="span1" style="padding-left:20px;width:65px;">
+      <a data-toggle="modal" href="#<%= weibo.id %>_user_info_modal">
+   			<img src="<%=h weibo.profile_image_url %>" alt="<%=h weibo.screen_name %>" title="<%=h weibo.screen_name %>"></a>
+			  	<!-- 是否关注 -->
+			  	<%= render :partial => "sina_partial/friendship_or_not", :locals => { :weibo => weibo } %>
+			  	<!-- 是否在线、性别 -->
+			  	<%= render :partial => "sina_partial/online_status", :locals => { :weibo => weibo } %>
+						<!--用户详情 触发点是头像与妮称-->
+	     <%= render :partial => "sina_partial/statuses_userinfo", :locals => { :weibo => weibo } %>
+		  </div> 
+    <!--span1 end -->
+    
+ 			<div class="span5" style="padding:5px;margin:0;">
+						<div class="row">
+						<div class="span5">
+				   <span>
+				    <a data-toggle="modal" href="#<%= weibo.id %>_user_info_modal">
+				     	<%=h weibo.screen_name if weibo.screen_name? %></a>
+				      <%=h weibo.status.text %><br>
+				      <img id="<%=h weibo.status.id %>_thumbnail_pic" src="<%=h weibo.status.thumbnail_pic %>">
+				   </span>
+	   					<p>
+	   						<span style="color:gray;">
+	   						(<%=h DateTime.parse(weibo.status.created_at).strftime("%m月%d日  %H:%M:%S") %>)</span> | 
+	   						<a data-toggle="modal" href="#<%=h weibo.id %>_repost_modal" >
+	   						  转发(<%= weibo.status.reposts_count %>)</a> | 
+	   						<a href="javascript:void(0)" onclick="comments_list(<%=h weibo.id %>);$('#<%=h weibo.id %>_comment_pane').css('display','block');$('#<%=h weibo.id %>_comment').val('想说点什么....');" id="<%=h weibo.id %>_repost_list">
+	   						  评论(<%= weibo.status.comments_count %>)</a>
+	   					</p>
+	   					<p>
+	   					<!--转发、评论后提示-->
+									<div class="alert" id="<%=h weibo.id %>_after_pane" style="display:none;">
+										 <button type="button" class="close" data-dismiss="alert">&times;</button>
+										 <strong>Well done!</strong><span> You successfully comment!.</span>
+									</div>
+	   					</p>
+         <!--转发-->
+         <%= render :partial => "sina_partial/statuses_repost", :locals => { :weibo => weibo } %>
+	   					<!--评论-->
+         <%= render :partial => "sina_partial/statuses_comment", :locals => { :weibo => weibo, :is_reweeted => "false" } } %>
+         </div>
+         </div>
+         <!--有转发微博-->
+         <% if weibo.status.retweeted_status? %>
+         <%= render :partial => "sina_partial/retweeted_status", :locals => { :weibo => weibo.status } %>
+         <% end %>
+	    </div>
+	    <!--span5 end -->
+		</div>
+	<!--单条微博 结束-->       
+	<% end %>
+	<% end %>

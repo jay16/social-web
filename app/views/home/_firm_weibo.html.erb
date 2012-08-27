@@ -1,0 +1,52 @@
+<%= javascript_include_tag "application" %>
+<style type="text/css">
+#firm_weibo{
+  width:400px;
+  height:400px;}
+#firm_weibo .modal_body{width:100%;}
+#firm_weibo ul{
+  list-style:none;
+  width:95%;}
+#firm_weibo ul li{
+  margin-left:15px;
+  margin-top:15px;
+}
+</style>
+<div id="firm_weibo" class="modal hide fade">
+  <div class="modal-header">
+    <a  class="close" onclick="$('#firm_weibo').modal('toggle');$('#modal_form').html('');return false;">×</a>
+    <h3><%= warn %>请选择</h3>
+  </div>
+  <div class="modal-body" >
+				<ul>
+				<% if @weibo_firm.nil? %>
+				  <li><a href="/sina_weibo/connect"><img src="/images/firm_weibo/sina-login.png" /></a></li>
+				  <li><a href="/sina_weibo/connect"><img src="/images/firm_weibo/renren-login.png" /></a></li>
+				  <li><a href="/sina_weibo/connect"><img src="/images/firm_weibo/tencent-login.png" /></a></li>
+				  <li><a href="/sina_weibo/connect"><img src="/images/firm_weibo/kaixin-login.png" /></a></li>
+				<% else %>
+     <% @info =(@sina = @weibo_firm.include?("sinaweibo") ? "_registrated" : "").present? ? "已注册" : "未注册" %>
+					<li><a href="/sina_weibo/connect">
+					      <img src="/images/firm_weibo/sina-login<%= @sina %>.png" />
+					    </a><%= @info %></li>
+
+					<% @info =(@renren = @weibo_firm.include?("renrenweibo") ? "_registrated" : "").present? ? "已注册" : "未注册" %>
+					<li><a href="#">
+					      <img src="/images/firm_weibo/renren-login<%= @renren %>.png" />
+					    </a><%= @info %></li>
+					<% @info =(@tencent = @weibo_firm.include?("qqweibo") ? "_registrated" : "").present? ? "已注册" : "未注册" %>
+					<li><a href="#">
+					      <img src="/images/firm_weibo/tencent-login<%= @tencent %>.png" />
+					    </a><%= @info %></li>
+					<% @info =(@kaixin = @weibo_firm.include?("kaixinweibo") ? "_registrated" : "").present? ? "已注册" : "未注册" %>
+					<li><a href="#">
+					      <img src="/images/firm_weibo/kaixin-login<%= @kaixin %>.png" />
+					    </a><%= @info %></li>
+				<% end %>
+				</ul>
+			</div>
+</div>
+<script type="text/javascript">
+  $("#firm_weibo").modal("toggle");
+</script>
+

@@ -1,0 +1,54 @@
+<%= javascript_include_tag "application" %>
+<%= stylesheet_link_tag "/stylesheets/devise_form" %>
+
+<div id="myModal" class="modal hide fade">
+	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name))  do |f| %>
+	 <%= devise_error_messages! %>
+	 
+			  <div class="modal-header">
+				   <span class="welcome">欢迎登陆</span>
+				   <span class="small">胜因营销管理</span>
+       <button type="button" class="close" data-dismiss="modal">&times;</button>
+		    </div>
+		    
+				<div class="modal-body"> 	   
+					 <div class="row-form">
+								<%= f.label :email, "邮箱：" %>
+		      <%= f.email_field :email %>
+							</div>
+							
+						<div class="row-form">
+							<%= f.label :password, "密码：" %>
+		     <%= f.password_field :password %>
+						</div> 
+						
+       <div class="row-form">
+							 <%= f.submit "登入" ,:class => "btn btn-primary" %>
+							 <%= render :partial => "devise/shared/links" %>
+							 <!--<a  href="/users/password/new">忘记密码?</a>-->
+							<div>
+							
+							<div class="row-form">
+								<% if devise_mapping.rememberable? %>
+									<label for="user_remember_me">
+									<input id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" />
+								下次自动登陆
+								</label>
+					
+							<!--	<%= f.label :remember_me, "下次自动登录" %>
+				    <%= f.check_box :remember_me %>-->
+					  	<% end %>
+					  </div>
+					  
+    </div>
+	<% end %>
+</div>
+
+<script type="text/javascript">
+  $("#myModal").modal("toggle");
+</script>
+
+
+
+
+

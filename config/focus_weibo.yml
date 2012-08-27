@@ -1,0 +1,28 @@
+---
+Sina:
+  development:
+    site: https://api.weibo.com/2/
+    authorize_url: /oauth2/authorize
+    token_url: /oauth2/access_token
+    api_key: 1713173982
+    api_secret: 62170dacd0fa1c70d4eb1263a0855744
+    redirect_uri: http://192.168.184.16:3000/sina_weibo/callback
+
+QQ:
+  development:
+    site: https://open.t.qq.com/api/
+    authorize_url: /cgi-bin/oauth2/authorize
+    token_url: /cgi-bin/oauth2/access_token
+    api_key: 801211262
+    api_secret: 9d737f6ee0db81c754e1ad982d3b9df6
+    redirect_uri: http://192.168.184.16:3000/qq_weibo/callback
+
+Wangyi:
+  development:
+    site: https://api.t.163.com/
+    authorize_url: /oauth2/authorize
+    token_url: /oauth2/access_token
+    api_key: X9wtxSsoopYfCkE8
+    api_secret: W21P8FWeHe3DzRUdsPVNDgKRoVc0RIFB
+    redirect_uri: http://192.168.184.16:3000/wangyi_weibo/callback
+

@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="span1" style="mrgin-right:5px;width:40px;">
+    <img height="30" width="30" src="<%= @comment.user.profile_image_url %>">
+  </div>
+  <div class="span4">
+    <span style="color:blue;"><%= @comment.user.screen_name %>:</span>
+    <span><%= @comment.text %>
+    <% day = Time.now.strftime("%m月%d日") == DateTime.parse(@comment.created_at).strftime("%m月%d日") ? "今天" : "%m月%d日" %>
+    (<%=h DateTime.parse(@comment.created_at).strftime("#{day}  %H:%M") %>)
+    </span>
+    
+    <span style="color:gray;float:right;margin-right:10px;">
+    <a onclick="sorry!">回复</a></span>
+  </div>
+</div>

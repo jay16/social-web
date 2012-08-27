@@ -1,0 +1,139 @@
+
+				<% if @select_users_info.present? %>
+				  <p>返回<%= @select_users_info.size %>条结果</p>
+		  			<% @select_users_info.each do |weibo| %>
+		  			<!--单条微博 --> 
+		    	<div class="row">
+		     <div class="span1" style="padding-left:20px;width:65px;">
+				  			<a  data-toggle="modal" href="#<%= weibo.id %>_user_info_modal">
+				    			<img src="<%=h weibo.profile_image_url %>" alt="<%=h weibo.screen_name %>" title="<%=h weibo.screen_name %>"></a>
+				    			<!-- 是否关注 -->
+				       <div id="<%=h weibo.id %>_friendship_pane">
+								   		<% if weibo.following %>
+								 			  <div><a href="javascript:void(0)" onclick="friendship_destroy(<%=h weibo.id %>);" class="friendship_destroy">取消关注</a></div>
+								  			<% else %>
+								 			  <div><a href="javascript:void(0)"  onclick="friendship_create(<%=h weibo.id %>);" class="friendship_create">添加关注</a></div>
+								 			 <% end %>
+				   	  	</div>
+				   	  	<!-- 是否关注end -->
+   	       <% @oniln_state = weibo.online_status == 0 ? "离线" : "在线" %>
+   			     <span style="color:<%=h weibo.online_status == 0 ? "gray" : "purple" %>;">
+   			     <%= @oniln_state %></span>
+				   			 <!--用户详情-->
+				   			 <div class="modal hide fade" id="<%= weibo.id %>_user_info_modal">
+													<div class="modal-header">
+															<button type="button" class="close" data-dismiss="modal">×</button>
+															<h3>用户详细信息</h3><div id="<%= weibo.id %>_modal_bytes"></div>
+													</div>
+													<div class="modal-body" id="<%= weibo.id %>_body_modal" style="padding:5px;">
+													  <div class="row">
+													    <div class="span2">
+																	  <img src="<%=h weibo.avatar_large  %>">
+																	</div>
+															  <div class="span2">
+															    <p>用户妮称 :<%= weibo.screen_name %></p>
+																			<p>用户名称 :<%= weibo.name %></p>
+																			<p>用户ID   :<%= weibo.id %></p>
+																			<p>姓别     :<%= weibo.gender %></p>
+															  </div>
+													  </div>
+													  <div style="margin-left:50px;">
+															 	<p>所在城市 :<%= weibo.location %></p>
+																	<p>博客地址:<%= weibo.url %></p>
+																	<p>自我描述 :<%= weibo.description %></p>
+																	<p>个性化域名 :<%= weibo.domain %></p>
+																	<p>粉丝数量 :<%= weibo.followers_count %></p>
+																	<p>关注数量 :<%= weibo.friends_count %></p>
+																	<p>微博数量 :<%= weibo.statuses_count %></p>
+																	<p>收藏数量 :<%= weibo.favourites_count %></p>
+																	<p>创建时间 :<%= weibo.create_at %></p>
+																	<p>我关注她 :<%= weibo.following %></p>
+																	<p>她关注我 :<%= weibo.follow_me %></p>
+															</div>
+													</div>
+													<div class="modal-footer">
+															<a href="#" class="btn btn-primary">打印</a>
+															<a href="#" class="btn btn-primary">保存至本地</a>
+															<a href="#" class="btn btn-primary">发布为一条微博</a>
+													</div>
+											</div>
+				    <!--用户详情end-->
+				    </div> 
+				 			<div class="span5" style="padding:5px;margin:0;">
+				 			  <span>
+									   <a　data-toggle="modal" href="#<%= weibo.id %>_user_info_modal">
+									     <%=h weibo.screen_name %></a>
+							   			 ：<%=h weibo.status.text %><br>
+														<img id="<%=h weibo.status.id %>_thumbnail" src="<%=h weibo.status.thumbnail_pic %>">
+						    </span>
+					   					<p>
+					   						<%=h DateTime.parse(weibo.created_at).strftime("%m月%d日  %H:%M:%S") %> | <a data-toggle="modal" href="#<%=h weibo.id %>_repost_modal" >转发</a>|<a href="javascript:void(0)" onclick="$('#<%= weibo.id %>_comment_pane').css('display','block');$('#<%=h weibo.status.id %>_commnet').val('');"  id="<%=h weibo.id %>_repost_list">评论</a>
+					   					</p>
+             <!--转发-->
+             <div class="modal hide fade" id="<%=h weibo.id %>_repost_modal">
+               <div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal">×</button>
+																<h3>转发微博</h3>
+													 	</div>
+														 <div class="modal-body">
+																<%= text_area_tag("#{weibo.id}_repost", "想说点什么......", rows:5, class:'text_area span5') %>
+														 </div>
+														 <div class="modal-footer">
+														   <lable><input type="checkbox" id="<%= weibo.id %>_comment_at_time" checked="true" />
+																    同时评论给<%= weibo.screen_name %>
+																<a class="btn btn-primary" href="javascript:void(0)" onclick="alert('start');weibo_repost_ajax(<%=h weibo.id %>,$('#<%=h weibo.id %>_repost').val(),$('#<%= weibo.id %>_comment_at_time').attr('checked'));alert('mid');$('#<%=h weibo.id %>_repost_modal').modal('toggle');alert('end');return false;">
+																  转发</a>
+									 					  <a class="btn" href="javascript:void(0)" onclick="$('#<%=h weibo.id %>_repost_modal').modal('toggle');">取消</a>
+																  </label>
+														 </div>
+												 </div>
+             <!--转发end-->
+             <!--评论-->
+					   					<div id="<%= weibo.id %>_comment_pane" style="display:none;width:200px;margin-left:0px;">
+					   					  <div class="span5" style="margin-left:0px;">
+					   					    <% @content = "hello world" %>
+					   					    <%= text_area_tag("#{weibo.id}_commnet", "#{@content}", rows:5, class:'text_area span5') %>
+					   					  </div>
+									 					<div id="<%= weibo.id %>_ctl_pane" class="span5">		 					
+												    <label style="float:right;margin-right:25px;">
+												      <input type="checkbox" id="<%= weibo.id %>_repost_at_time" checked="true" />
+												      同时评论原微博
+									 					  <a class="btn btn-mini" href="javascript:void(0)" onclick="weibo_comment_ajax(<%=h weibo.id %>,'comment',$('#<%=h weibo.id %>_commnet').val(),$('#<%= weibo.id %>_repost_at_time').attr('checked')));$('#<%=h weibo.id %>_comment_pane').css('display','none');return false;">评论</a>
+									 					  <a class="btn btn-mini" href="javascript:void(0)" onclick="$('#<%=h weibo.id %>_comment_pane').css('display','none');">取消</a>
+									 					  </label>
+					   					  </div>
+             </div>
+             <!--评论end-->
+					  </div>
+       <!--span5 end-->
+						</div>
+					<!--单条微博 结束-->       
+		<% end %>
+	<% end %>
+<script type="text/javascript">
+$(function(){
+		//点击微博中缩略图查看原图
+		<% if @select_users_info.present? %>
+				<% @select_users_info.each do |weibo| %>
+						 $("#<%=h weibo.status.id %>_thumbnail").hover(function(){
+									if($(this).attr("src")== "<%=h weibo.status.thumbnail_pic %>")
+											$(this).css("cursor","crosshair");
+									else
+											$(this).css("cursor","crosshair");
+							});
+							$("#<%=h weibo.status.id %>_thumbnail").click(function(){
+									if($(this).attr("src")== "<%=h weibo.status.thumbnail_pic %>"){
+											$(this).css("cursor","wait");
+											$(this).attr("src","<%=h weibo.status.original_pic %>");
+											$(this).css("cursor","crosshair");}
+									else{
+											$(this).css("cursor","wait");
+											$(this).attr("src","<%=h weibo.status.thumbnail_pic %>");
+											$(this).css("cursor","crosshair");}
+							});
+		//发布微博字节限制
+       $("#<%= weibo.id %>_modal_bytes").append($("#<%= weibo.id %>_modal_body").innerText().length);
+				<% end %>
+		<% end %>
+});
+</script>

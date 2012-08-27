@@ -1,0 +1,3 @@
+<% @oniln_state = weibo.online_status == 0 ? "离线" : "在线" %>
+<span style="color:<%=h weibo.online_status == 0 ? "gray" : "purple" %>;">
+<img src="/images/<%=h weibo.gender == 'm' ? 'man.gif' : 'gile.gif' %>">|<%= @oniln_state %></span>

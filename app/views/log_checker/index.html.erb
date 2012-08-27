@@ -1,0 +1,6 @@
+<input class="span3" id="file_root" type="text" value="<%= @file_path %>">
+<select class="span3" id="file_select" onchange="fun_select()">
+	<% @file_array.each do |file| %>
+			<option><%= file %></option>
+	<% end %>
+</select>

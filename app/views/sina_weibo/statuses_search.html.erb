@@ -1,0 +1,13 @@
+<% unless @is_user  %>
+<%= @result %>
+<% else %>
+		<p>返回<%= @result.size %>条结果</p>
+   <% id_index = 1 %>
+			<% @result.each do |weibo| %>
+			<!--单条微博 --> 
+	  <%= render :partial => "sina_partial/statuse_template", :locals => {:weibo => weibo, :id => id_index} %>
+	  <% id_index += 1 %>			
+		<!--单条微博 结束-->       
+		<% end %>
+<% end %>
+

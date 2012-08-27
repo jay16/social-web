@@ -1,0 +1,40 @@
+<div style="height:45em;ovarflow:auto;">
+  <div id="qq_statuse_release_pane" style="margin-left:20px;">
+   <a class="close" onclick="$('#qq_statuse_release_pane').css('display','none');$('#qq_curret_info_pane').css('height','100%');">x</a>
+					<div class="row"><br>
+						 <div class="span6">
+						 <span style="font-weight:bold;font-size:16px;color:gray;">
+						 来，说说你在做什么，想什么</span>
+				   <span style="float:right;">还可以输入<span id="qq_word_limit" style="font-style:oblique;font-size:18px;">140</span>字</span>
+						 </div>
+					</div>
+				<%= form_tag("/qq_weibo/t_add", :multipart=>true, :remote => true) do %>
+						<div class="row">
+								<div class="span6">
+								<%= text_area_tag("qq_statuses_text", nil, rows:3, class:'text_area span6') %>
+								</div>
+						</div>
+						<div class="row">
+								<div class="span6">
+								<span id="qq_face"><img src="/images/F_1.gif"><a onclick="sina_emotions()">表情</a></span>
+								<span id="qq_check_img"><a onclick="load_image()">图片</a></span>
+								<span><a onclick="$('#qq_statuses_image').toggleClass('hide');">视频</a></span>
+								<span><a onclick="$('#qq_statuses_image').toggleClass('hide');">音乐</a></span>
+								<span><a>话题</a></span>
+								<span><a>投票</a></span>
+								<span style="float:right;">
+								<%= submit_tag "广播", id:"qq_t_add", class:"btn",remote:true %>
+								</span>
+				  </div>
+				</div>
+				<% end %>
+		</div>
+  <%= render "current_user_brand" %>
+  <div id="qq_curret_info_pane" style="height:45em;overflow:auto;"></div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#qq_statuse_release_pane').css('display','none');
+});
+</script>

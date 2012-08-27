@@ -1,0 +1,58 @@
+<div style="height:45em;ovarflow:auto;margin:5px 0px;">
+  <div id="sina_statuse_release_pane" style="margin-left:20px;">
+   <a class="close" onclick="$('#sina_statuse_release_pane').css('display','none');$('#sina_curret_info_pane').css('height','100%');">x</a>
+					<div class="row">
+						 <div class="span6">
+						 <span>有什么新鲜事想告诉大家？</span>
+				   <span style="float:right;">还可以输入<span id="sina_word_limit">140</span>字</span>
+						 </div>
+					</div>
+			<!--	<%= form_tag("/sina_weibo/statuses_update", :multipart=>true, :remote => true) do %> -->
+						<div class="row">
+								<div class="span6">
+								<%= text_area_tag("sina_statuses_text", nil, rows:3, class:'text_area span6') %>
+								</div>
+						</div>
+						<div class="row">
+								<div class="span6">
+								<span id="sina_face"><img src="/images/F_1.gif"><a onclick="sina_emotions()">表情</a></span>
+								<span id="sina_check_img"><a onclick="sina_load_image()">图片</a></span>
+								<span><a>视频</a></span>
+								<span><a>音乐</a></span>
+								<span><a>话题</a></span>
+								<span><a>投票</a></span>
+								<%= render "sina_partial/sina_emotions" %>
+								<%= render "sina_partial/statuses_image" %>
+								<span style="float:right;">
+								 <% unless Userkey.find_by_user_id(current_user.id).nil? %>
+									<% @firms = Userkey.find_by_sql("select * from userkeys where user_id ='#{current_user.id}'") %>
+											<% @firms.each do |weibo| %>
+												<% if weibo.weibo_firm != "sinaweibo" %>
+													<% firm = case weibo.weibo_firm %>
+													<% when "sinaweibo" then "新浪微博" %>
+													<% when "qqweibo" then "腾讯微博" %>
+													<% when "wangyiweibo" then "网易微博" %>
+													<% else "focus" %>
+													<% end %>
+													<lable><input type="checkbox" id="<%= weibo.weibo_firm %>_checkbox" checked="true" />
+													<%= firm %>
+											 	</label>
+												<% end %>
+											<% end %>
+								 <% end %>
+								<%= submit_tag "发布", id:"sina_statuse_release", class:"btn",remote:true %>
+								</span>
+				  </div>
+				</div>
+				<!--<% end %>-->
+		</div>
+	   <%= render "current_user_brand" %>
+		  <div id="sina_curret_info_pane" style="height:44em;overflow:auto;">  
+	   </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#sina_statuse_release_pane').css('display','none');
+  sina_statuses_by_name("friends_timeline");
+});
+</script>

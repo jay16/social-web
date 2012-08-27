@@ -1,0 +1,38 @@
+ <div class="modal hide fade" id="<%= weibo.id %>_user_info_modal">
+				<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h3>用户详细信息</h3><div id="<%= weibo.id %>_modal_bytes"></div>
+				</div>
+				
+				<div class="modal-body" id="<%= weibo.id %>_body_modal" style="padding:5px;">
+				  <div class="row">
+				    <div class="span2">
+								  <img src="<%=h weibo.avatar_large  %>">
+								</div>
+						  <div class="span2">
+						    <p>用户妮称 :<%= weibo.screen_name %></p>
+										<p>用户名称 :<%= weibo.name %></p>
+										<p>用户ID   :<%= weibo.id %></p>
+										<p>姓别     :<%= weibo.gender %></p>
+						  </div>
+				  </div>
+				  <div style="margin-left:50px;">
+						 	<p>所在城市 :<%= weibo.location %></p>
+								<p>博客地址:<%= weibo.url %></p>
+								<p>自我描述 :<%= weibo.description %></p>
+								<p>个性化域名 :<%= weibo.domain %></p>
+								<p>粉丝数量 :<%= weibo.followers_count %></p>
+								<p>关注数量 :<%= weibo.friends_count %></p>
+								<p>微博数量 :<%= weibo.statuses_count %></p>
+								<p>收藏数量 :<%= weibo.favourites_count %></p>
+								<p>创建时间 :<%= weibo.create_at %></p>
+								<p>我关注她 :<%= weibo.following %></p>
+								<p>她关注我 :<%= weibo.follow_me %></p>
+						</div>
+				</div>
+				<div class="modal-footer">
+						<a href="#" class="btn btn-primary">打印</a>
+						<a href="#" class="btn btn-primary">保存至本地</a>
+						<a href="#" class="btn btn-primary">发布为一条微博</a>
+				</div>
+</div>

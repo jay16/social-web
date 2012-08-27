@@ -1,0 +1,46 @@
+
+<div class="row">
+	 <div class="span7">
+	  <div id="sina_statuses_main_pane" style="height:46em;overflow:auto;">
+	   <%= render "current_user_info" %>
+	   </div>
+		</div>
+		<div class="span3">
+		  <%= render "current_user_index" %>
+		</div>
+</div>
+
+<script type="text/javascript">
+//监控微博文字数量
+$("#sina_statuses_text").keyup(function(){
+		if($("#sina_statuses_text").val().length>0){
+		 if(!$("#sina_statuse_release").hasClass("btn-primary"))
+		   $("#sina_statuse_release").addClass("btn-primary");
+		 $("#sina_word_limit").html(140-$("#sina_statuses_text").val().length);
+		}
+		else{
+		  $("#sina_statuse_release").removeClass("btn-primary");
+		}
+});
+//点击发布微博按钮后的样式设置
+$("#sina_statuse_release").click(function(){
+  $("#sina_statuses_image").addClass("hide");
+		$("#loading_pane").removeClass("hide");
+		//其他微博同步发布
+		content=$("#sina_statuses_text").val();
+		other_weibos=["qqweibo","wangyiweibo"]
+		for(var i=0;i<other_weibos.length;i++){
+		  if($("#"+other_weibos[i]+"_checkbox").attr("checked")){
+		    switch(other_weibos[i]){
+				    case "qqweibo":
+				      qq_t_add(content);
+		      case "wangyiweibo":
+		      default:
+		        return
+		    }
+		  }
+		}
+});
+</script>
+
+

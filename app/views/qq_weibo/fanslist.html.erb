@@ -1,0 +1,13 @@
+<% unless @statuses.data? %>
+  <span style="text-align:center;">
+  Sorry!no accord!
+  </span>
+<% else %>
+  <% @statuses.data.info.each do |weibo| %>
+    <div class="row">
+      <div class="span5">
+      <%= weibo.nick %>(<%= weibo.name %>)__<%= weibo.location %>
+      </div>
+    </div>
+  <% end %>
+<% end %>

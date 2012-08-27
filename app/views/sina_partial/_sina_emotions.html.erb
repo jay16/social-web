@@ -1,0 +1,43 @@
+<div class="modal hide" id="sina_emotions">
+<div class="modal-body">
+ <a class="close" onclick="$('#sina_emotions').addClass('hide');">×</a>
+  <div class="tabbable">
+    <ul class="nav nav-tabs">
+      <% first = true %>
+						<% @sina_face.each do |node| %>
+						<li class="<%= first ? "active" : "" %>"><a href="#<%= node[0] %>" data-toggle="tab"><%= node[0] %></a></li>
+						<% first = false %>
+						<% end %>
+				</ul>
+					<div class="tab-content">
+								<% first, index = true, 0 %>
+						 	<% @sina_face.each do |node| %>
+								  <div class="tab-pane <%= first ? "active" : "" %>" id="<%= node[0] %>">
+						 	  <table class="table" border="1" width="22" height="22">
+										</tbody>
+										 <% @row = 1 %>
+											<% node[1].each do |face|%>
+													<% face.each do |key, value| %>
+													<% if @row%9 == 0 %>
+													<tr>
+													<% end %>
+													<% name, mean = value["name"], value["mean"] %>
+													<td><a onclick="add_sina_emotion('<%=h mean %>')">
+													    <img src="/images/sina_emotions/face/<%= name %>" alt="<%= mean %>">
+													    </a>
+													</td>
+													<% if @row%8 == 9 %>
+													</tr>
+													<% end %>
+													<% @row += 1 %>
+													<% end %>
+											<% end %>
+										</tbody>
+								  </table>
+								  </div>
+								<% first = false %>
+        <% end %>
+					</div>
+  </div>
+</div>
+</div>

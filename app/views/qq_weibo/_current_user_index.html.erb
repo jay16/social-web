@@ -1,0 +1,64 @@
+<% weibo = @user_info.data %>
+<div>
+  <div class="row">
+				<div class="span1">
+				  <img src="<%=h weibo.head << '/100' if weibo.head? %>"><br>
+				</div>
+				<div class="span1" style="margin=0;">	
+				  <%= weibo.nick %><br>
+				  <%= weibo.name %><br>
+				  <%= weibo.location %><br>
+				  <% if weibo.sex == 0 %>
+				    <% sex = "未填写" %>
+				  <% else %>
+				    <% sex = weibo.sex == 1 ? "男" : "女" %>
+				  <% end %>
+    性别:<%= sex %>
+				</div>
+		</div>
+		<div class="row">
+		  <div class="span3">
+    <a onclick="statuses_by_name('fanslist')">听众:<%= weibo.fansnum %></a>|
+    <a onclick="statuses_by_name('idollist')">收听:<%= weibo.idolnum %></a>|
+    收藏:<%= weibo.favnum %>|
+    我的广播:<%= weibo.tweetnum %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span3">
+    注册时间:<%= Time.at(weibo.regtime) %><br>
+    互听好友数:<%= weibo.mutual_fans_num %><br>
+    <%= weibo.isvip == 0 ? "未认证用户" : "认证用户" %><br>
+    <!--是否实名认证，0-老用户，1-已实名认证，2-未实名认证:-->
+    <% if weibo.isrealname == 2 %>
+      <%= isrealname = "未实名认证" %><br>
+    <% else %>
+      <%= isrealname = weibo.isrealname == 0 ? "老用户" : "已实名认证" %><br>
+    <% end %>
+    <%= weibo.isent == 0 ? "非企业机构" : "企业机构" %>
+	   </div>
+  </div><br><br>
+  <div class="row">
+    <div class="span3">
+    <img id="qq_statuses_create_pane" src="/images/sina_emotions/statuses.png">
+    </div>
+  </div><br><br>
+  <div class="row">
+    <div class="span3">
+						<div class="control-group">
+						<div class="controls">
+								<div class="input-append">
+								<input class="span2" id="qq_search" type="text" placeholder="Enter search term...">
+								<select class="span1" id="qq_select_class">
+								  <option>人物</option>
+								  <option>微博</option>
+								  <option>话题</option>
+								</select>
+							 <a class="btn" onclick="qq_statuses_search($('#qq_select_class').val(),$('#qq_search').val());">搜索</a>
+								</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+</div>

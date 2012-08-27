@@ -1,0 +1,14 @@
+	<div id="<%= weibo.id %>_comment_pane" style="display:none;width:200px;margin-left:0px;">
+	  <div class="span5" style="margin-left:0px;">
+	    <% @content = "hello world" %>
+	    <%= text_area_tag("#{weibo.id}_commnet", "#{@content}", rows:5, class:'text_area span5') %>
+	  </div>
+			<div id="<%= weibo.id %>_ctl_pane" class="span5">		 					
+    <label style="float:right;margin-right:25px;">
+      <input type="checkbox" id="<%= weibo.id %>_repost_at_time" checked="true" />
+      同时评论原微博
+			  <a class="btn btn-mini" href="javascript:void(0)" onclick="weibo_comment_ajax(<%=h weibo.id %>,'comment',$('#<%=h weibo.id %>_commnet').val(),$('#<%= weibo.id %>_repost_at_time').attr('checked')));$('#<%=h weibo.id %>_comment_pane').css('display','none');return false;">评论</a>
+			  <a class="btn btn-mini" href="javascript:void(0)" onclick="$('#<%=h weibo.id %>_comment_pane').css('display','none');">取消</a>
+			  </label>
+	  </div>
+ </div>
