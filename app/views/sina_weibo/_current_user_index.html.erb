@@ -124,6 +124,7 @@
 				//点击写微博面板调出输入框
 				$("#sina_weibo_index").click(function(){
 				  $("#sina_statuses_main_pane").html("<%= j render "current_user_info" %>");
+				  $("#sina_statuses_text").val("");
 				});
 		});
 		<!--   weibo search --> 

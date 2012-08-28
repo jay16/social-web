@@ -8,7 +8,6 @@
 				   <span style="float:right;">还可以输入<span id="qq_word_limit" style="font-style:oblique;font-size:18px;">140</span>字</span>
 						 </div>
 					</div>
-				<%= form_tag("/qq_weibo/t_add", :multipart=>true, :remote => true) do %>
 						<div class="row">
 								<div class="span6">
 								<%= text_area_tag("qq_statuses_text", nil, rows:3, class:'text_area span6') %>
@@ -16,19 +15,19 @@
 						</div>
 						<div class="row">
 								<div class="span6">
-								<span id="qq_face"><img src="/images/F_1.gif"><a onclick="sina_emotions()">表情</a></span>
-								<span id="qq_check_img"><a onclick="load_image()">图片</a></span>
+								<span id="qq_face"><a onclick="sina_emotions()">表情</a></span>
+								<span id="qq_check_img"><a onclick="qq_load_image()">图片</a></span>
 								<span><a onclick="$('#qq_statuses_image').toggleClass('hide');">视频</a></span>
 								<span><a onclick="$('#qq_statuses_image').toggleClass('hide');">音乐</a></span>
 								<span><a>话题</a></span>
 								<span><a>投票</a></span>
 								<span style="float:right;">
-								<%= submit_tag "广播", id:"qq_t_add", class:"btn",remote:true %>
+								<a id="qq_t_release" class="btn" onclick="qq_t_add($('#qq_statuses_text').val(),$('#qq_img_field').val())">广播 </a>
 								</span>
 				  </div>
 				</div>
-				<% end %>
 		</div>
+		<%= render "upload_img" %>
   <%= render "current_user_brand" %>
   <div id="qq_curret_info_pane" style="height:45em;overflow:auto;"></div>
 </div>

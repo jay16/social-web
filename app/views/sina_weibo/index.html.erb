@@ -29,17 +29,17 @@ $("#sina_statuse_release").click(function(){
 		//其他微博同步发布
 		content=$("#sina_statuses_text").val();
 		other_weibos=["qqweibo","wangyiweibo"]
-		for(var i=0;i<other_weibos.length;i++){
-		  if($("#"+other_weibos[i]+"_checkbox").attr("checked")){
-		    switch(other_weibos[i]){
-				    case "qqweibo":
-				      qq_t_add(content);
-		      case "wangyiweibo":
-		      default:
-		        return
-		    }
-		  }
-		}
+		//for(var i=0;i<other_weibos.length;i++){
+		//  if($("#"+other_weibos[i]+"_checkbox").attr("checked")){
+		//    switch(other_weibos[i]){
+		//		    case "qqweibo":
+		//		      qq_t_add(content);
+		//      case "wangyiweibo":
+		//      default:
+		//        return
+		//    }
+		//  }
+		//}
 });
 </script>
 

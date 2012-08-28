@@ -1,3 +1,13 @@
+<style type="text/css">
+span a{
+    background: url("/images/sina_emotions/ico.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin: 0 2px 0 0;
+    padding: 2px 0 2px 19px;
+}
+</style>
 <div style="height:45em;ovarflow:auto;margin:5px 0px;">
   <div id="sina_statuse_release_pane" style="margin-left:20px;">
    <a class="close" onclick="$('#sina_statuse_release_pane').css('display','none');$('#sina_curret_info_pane').css('height','100%');">x</a>
@@ -15,12 +25,14 @@
 						</div>
 						<div class="row">
 								<div class="span6">
-								<span id="sina_face"><img src="/images/F_1.gif"><a onclick="sina_emotions()">表情</a></span>
-								<span id="sina_check_img"><a onclick="sina_load_image()">图片</a></span>
-								<span><a>视频</a></span>
-								<span><a>音乐</a></span>
-								<span><a>话题</a></span>
-								<span><a>投票</a></span>
+								<span id="sina_face"><a style="background-position: 0 1px;" onclick="sina_emotions()">
+								表情</a></span>
+								<span id="sina_check_img"><a style="background-position: 0 -32px;" onclick="sina_load_image()">
+								图片</a></span>
+								<span><a style="background-position: 0 -67px;">视频</a></span>
+								<span><a style="background-position: 0 -100px;">音乐</a></span>
+								<span><a style="background-position: 0 -135px;">话题</a></span>
+								<span><a style="background-position: 0 -169px;">投票</a></span>
 								<%= render "sina_partial/sina_emotions" %>
 								<%= render "sina_partial/statuses_image" %>
 								<span style="float:right;">
@@ -40,7 +52,9 @@
 												<% end %>
 											<% end %>
 								 <% end %>
-								<%= submit_tag "发布", id:"sina_statuse_release", class:"btn",remote:true %>
+								 <a class="btn" id="sina_statuse_release" 
+								   onclick="sina_statuses_update($('#sina_statuses_text').val(),$('#sina_img_field').val());">
+								 发布</a>
 								</span>
 				  </div>
 				</div>
@@ -52,6 +66,7 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
+  $("#sina_statuses_text").val("");
   $('#sina_statuse_release_pane').css('display','none');
   sina_statuses_by_name("friends_timeline");
 });

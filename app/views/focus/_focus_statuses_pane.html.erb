@@ -5,7 +5,6 @@
 				   <span style="float:right;">还可以输入<span id="focus_word_limit">140</span>字</span>
 						 </div>
 					</div>
-				<%= form_tag("/focus/statuses_create", :multipart=>true, :remote => true) do %>
 						<div class="row">
 								<div class="span4">
 								<%= text_area_tag("focus_statuses_text", nil, rows:3, class:'text_area span4') %>
@@ -13,6 +12,8 @@
 						</div>
 						<div class="row">
 								<div class="span4">
+								<span id="focus_face"><a onclick="focus_emotions()">表情</a></span>
+								<span id="focus_check_img"><a onclick="focus_load_image()">图片</a></span>
 								<span style="float:right;">
 								 <% unless Userkey.find_by_user_id(current_user.id).nil? %>
 									<% @firms = Userkey.find_by_sql("select * from userkeys where user_id ='#{current_user.id}'") %>
@@ -28,11 +29,11 @@
 													</label>
 											<% end %>
 								 <% end %>
-								<%= submit_tag "发布", id:"focus_statuse_release", class:"btn",remote:true %>
+								<a id="focus_statuse_release", class="btn">发布</a>
 								</span>
 				  </div>
 				</div>
-				<% end %>
+			<%= render "focus/upload_img" %>
 		</div>
 	<script type="text/javascript">
 	  //光标变化

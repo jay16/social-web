@@ -13,11 +13,27 @@
 <script type="text/javascript">
 $(function(){
   //加载首页时自动读取广播大厅微博信息
-  qq_statuses_by_name("public_timeline");
-  
-  //网页加载完需要自动设置的样式
-		$("#qq_current_user_brand").css("display","none");
-		$("#qq_public_timeline_tab a").css("background","white");
+  //qq_statuses_by_name("public_timeline");
+  //监控微博文字数量
+  $("#qq_statuses_text").keyup(function(){
+		  if($("#qq_statuses_text").val().length>0){
+		   if(!$("#qq_t_release").hasClass("btn-primary"))
+		     $("#qq_t_release").addClass("btn-primary");
+		   $("#qq_word_limit").html(140-$("#sina_statuses_text").val().length);
+		  }
+		  else{
+		    $("#qq_statuse_release").removeClass("btn-primary");
+		  }
+  });
+  //点击发布微博按钮后的样式设置
+  $("#qq_statuse_release").click(function(){
+    $("#qq_statuses_image").addClass("hide");
+		  $("#loading_pane").removeClass("hide");
+	 })
+    //网页加载完需要自动设置的样式
+		  $("#qq_current_user_brand").css("display","none");
+		  $("#qq_public_timeline_tab a").css("background","white");
+
 		//进入顶部div后显示功能模板
 		$("#qq_hover").hover(
 		  function(){$("#qq_current_user_brand").css("display","block");$(this).css("display","none");});
@@ -35,4 +51,26 @@ $(function(){
 			  $("#qq_statuse_release_pane").css("display","block");
 			});
 });
+function qq_load_image(){
+  $("#qq_statuses_image").toggleClass("hide");
+ 	var newPos = new Object();
+  newPos.left= $("#qq_check_img").offset().left - 100;
+  newPos.top= $("#qq_check_img").offset().top + 15;
+  $("#qq_statuses_image").offset(newPos);
+  $("#qq_img_tab_form").css("display","block")
+  $("#qq_load_img_pane").attr("src","");
+  $("#qq_url_field").val("");
+  $("#qq_img_field").val("");
+}
+function readURL(input) {
+  if (input.files && input.files[0]) {
+     var reader = new FileReader();
+     reader.onload = function (e) {                     
+      $('#qq_load_img_pane').attr('src', e.target.result);
+      $('#qq_load_img_pane').attr('width', "220");                
+      } 
+    reader.readAsDataURL(input.files[0]);             
+   } 
+} 
+
 </script>

@@ -8,6 +8,7 @@ function add_sina_emotion(mean){
 //定位显示表情对话框位置
 function sina_emotions(){
   $("#sina_emotions").toggleClass("hide");
+  $("sina_img_reload").css("display","none");
  	var newPos = new Object();
   newPos.left= $("#sina_face").offset().left - 100;
   newPos.top= $("#sina_face").offset().top + 15;
@@ -20,9 +21,9 @@ function sina_load_image(){
   newPos.top= $("#sina_check_img").offset().top + 15;
   $("#sina_statuses_image").offset(newPos);
   $("#sina_img_tab_form").css("display","block")
-  $("#load_img").attr("src","");
-  $("#url_field").val("");
-  $("#img_field").val("");
+  $("#sina_load_img_pane").attr("src","");
+  $("#sina_url_field").val("");
+  $("#sina_img_field").val("");
 }
 function readURL(input) {
   if (input.files && input.files[0]) {
@@ -218,7 +219,7 @@ function readURL(input) {
 				});
 		}
 //发布微博
-	function sina_statuses_update(content){
+	function sina_statuses_update(content,pic){
 		var strhost = window.location.host;
 		var strprotocol = window.location.protocol;
 		var strurl = strprotocol + "//" + strhost + "/sina_weibo/statuses_update";
@@ -226,7 +227,7 @@ function readURL(input) {
  	$.ajax({
   	type: 'POST',
     url: strurl,
-   data: {"content":content},
+   data: {"sina_statuses_text":content,"pic":pic},
    contentType: 'multipart/form-data',
    datatype: 'json',
    success:function(data)

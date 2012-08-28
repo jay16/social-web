@@ -1,0 +1,36 @@
+<div class="modal hide" id="qq_statuses_image" style="width:300px;margin:0;">
+  <div class="modal-body">
+    <a class="close" onclick="$('#qq_statuses_image').addClass('hide');">×</a>
+    
+				<div class="tabbable">
+						<ul class="nav nav-tabs">
+								<li class="active"><a href="#qq_img_tab" data-toggle="tab">本地上传</a></li>
+								<li><a href="#qq_url_tab" data-toggle="tab">URL上传<span style="color:red;">高</span></a></li>
+						</ul>
+						<div class="tab-content">
+								<div class="tab-pane active" id="qq_img_tab">
+								  <%= form_tag("/qq_weibo/upload", :multipart=>true, :remote => true, :id => "qq_img_tab_form") do %>
+							     <%= file_field_tag :qq_img_field, :onchange => "readURL(this)", :accept => 'image/png,image/gif,image/jpeg,image/jpg', :class => 'btn' ,:size=>15 %><br>
+							   <img id="qq_load_img_pane">
+								  <%= submit_tag "上传", id:"qq_img_upload",class:"btn",remote:true %>
+								  <% end %>
+								  <a id="qq_img_reload" class="btn btn-mini" onclick="qq_img_reload()" href="javascript:void(0)" style="display:none;">更换图片</a> 
+								</div>
+								<div class="tab-pane" id="qq_url_tab">
+								  <%= text_field_tag "url_field",'Enter the image url here' %>
+								</div>
+						</div>
+				</div>
+   
+  </div>
+</div>
+<script type="text/javascript">
+function qq_img_reload(){
+  $("#qq_load_img_pane").attr("src","");
+  $("#qq_url_field").val("");
+  $("#qq_img_field").val("");
+  $("#qq_img_field").css("display","block");
+  $("#qq_img_reload").css("display","none");
+  $("#qq_img_upload").css("display","block")
+}
+</script>

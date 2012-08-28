@@ -55,7 +55,7 @@ function qq_statuses_search(s_class,value){
 		});
 }
 //发布微博
-function qq_t_add(content){
+function qq_t_add(content,pic){
   var strhost = window.location.host;
 		var strprotocol = window.location.protocol;
 		var strurl = strprotocol + "//" + strhost + "/qq_weibo/t_add";
@@ -63,7 +63,7 @@ function qq_t_add(content){
 		$.ajax({
 			type: 'POST',
 			url: strurl,
-			data:{"qq_statuses_text":content},
+			data:{"qq_statuses_text":content,"pic":pic},
 			contentType: 'multipart/form-data',
 			datatype: 'json',
 			success:function(data)

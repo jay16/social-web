@@ -14,9 +14,31 @@
 
 <script type="text/javascript">
 $(function(){
-  sina_weibo_init();
-  qq_weibo_init();
+  //sina_weibo_init();
+  //qq_weibo_init();
 });
+
+function focus_load_image(){
+  $("#focus_statuses_image").toggleClass("hide");
+ 	var newPos = new Object();
+  newPos.left= $("#focus_check_img").offset().left - 100;
+  newPos.top= $("#focus_check_img").offset().top + 15;
+  $("#focus_statuses_image").offset(newPos);
+  $("#focus_img_tab_form").css("display","block")
+  $("#focus_load_img_pane").attr("src","");
+  $("#focus_url_field").val("");
+  $("#focus_img_field").val("");
+}
+function readURL(input) {
+  if (input.files && input.files[0]) {
+     var reader = new FileReader();
+     reader.onload = function (e) {                     
+      $('#focus_load_img_pane').attr('src', e.target.result);
+      $('#focus_load_img_pane').attr('width', "220");                
+      } 
+    reader.readAsDataURL(input.files[0]);             
+   } 
+} 
 
 function sina_weibo_init(){
   var strhost = window.location.host;

@@ -8,112 +8,112 @@
    <div id="focus_sina_timeline" style="height:20em;overflow:hidden;"></div>
    <h3 style="margin-top:5px;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:gray;">
    腾讯动态：</h3>
-   <div id="focus_qq_timeline"  style="height:20em;overflow:hidden;"></div>
+   <div id="focus_qq_timeline" style="height:20em;overflow:hidden;"></div>
  </div>
 </div>
 
 <script type="text/javascript">
-		$(function(){
-		  sina_public_timeline();
-		  slideAutoDown("#focus_sina_timeline",".row");
-		  qq_public_timeline();
-		  slideAutoDown("#focus_qq_timeline",".row");
-		});
+$(function(){
+  sina_public_timeline();
+  slideAutoDown("#focus_sina_timeline",".row");
+  qq_public_timeline();
+  slideAutoDown("#focus_qq_timeline",".row");
+});
 function slideAutoUp(){
-		$("#focus_sina_timeline .row").each(function(){
-				if($("#focus_sina_timeline .row").last().offset().top==$(this).offset().top)
-						$("#focus_sina_timeline").scrollTop(0)
-				else{
-						if($(this).offset().top==$("#focus_sina_timeline").offset().top){
-							var top=$("#focus_sina_timeline").scrollTop()+($(this).next().offset().top-$("#focus_sina_timeline").offset().top);
-							$("#focus_sina_timeline").animate({scrollTop:top},3000);
-								return false;
-						}
-				}
+  $("#focus_sina_timeline .row").each(function(){
+    if($("#focus_sina_timeline .row").last().offset().top==$(this).offset().top)
+      $("#focus_sina_timeline").scrollTop(0)
+    else{
+      if($(this).offset().top==$("#focus_sina_timeline").offset().top){
+        var top=$("#focus_sina_timeline").scrollTop()+($(this).next().offset().top-$("#focus_sina_timeline").offset().top);
+        $("#focus_sina_timeline").animate({scrollTop:top},3000);
+        return false;
+      }
+    }
   });
-	 var t=setTimeout("slideAutoUp()",4000);
+  var t=setTimeout("slideAutoUp()",4000);
 }
 function slideAutoDown(fa,son){
-		  var $faWithSons=$(fa+" "+son);
-		  var $father=$(fa);
-		$faWithSons.each(function(){
-				if($faWithSons.first().offset().top==$father.offset().top){
-						$father.scrollTop($faWithSons.last().offset().top);
-						var index=0,tmpDif=1000,appIndex=0;
-						$faWithSons.each(function(){
-						  var topDif=$father.offset().top-$(this).offset().top;
-						  if(topDif>=0&&topDif<tmpDif){
-						    tmpDif=topDif;
-						    appIndex=index;
-						  }
-						  index=index+1;
-						});
-						$father.scrollTop($father.scrollTop()-tmpDif);
-				}		
-				else if($(this).offset().top==$father.offset().top){
-							var top=$father.scrollTop()-($father.offset().top-$(this).prev().offset().top);
-							$father.animate({scrollTop:top},3000);
-								return false;
-				}
-				else{
-				  var index=0,tmpDif=1000,appIndex=0;
-						$faWithSons.each(function(){
-						  var topDif=$father.offset().top-$(this).offset().top;
-						  if(topDif>=0&&topDif<tmpDif){
-						    tmpDif=topDif;
-						    appIndex=index;
-						  }
-						  index=index+1;
-						});
-				  $father.scrollTop($father.scrollTop()-tmpDif);
-				}
-  });
-	 setTimeout("slideAutoDown('"+String(fa)+"','"+String(son)+"')",4000);
+  var $faWithSons=$(fa+" "+son);
+  var $father=$(fa);
+  $faWithSons.each(function(){
+    if($faWithSons.first().offset().top==$father.offset().top){
+      $father.scrollTop($faWithSons.last().offset().top);
+      var index=0,tmpDif=1000,appIndex=0;
+      $faWithSons.each(function(){
+        var topDif=$father.offset().top-$(this).offset().top;
+        if(topDif>=0&&topDif<tmpDif){
+          tmpDif=topDif;
+          appIndex=index;
+        }
+        index=index+1;
+      });
+      $father.scrollTop($father.scrollTop()-tmpDif);
+    }	
+    else if($(this).offset().top==$father.offset().top){
+      var top=$father.scrollTop()-($father.offset().top-$(this).prev().offset().top);
+      $father.animate({scrollTop:top},3000);
+      return false;
+    }
+    else{
+      var index=0,tmpDif=1000,appIndex=0;
+      $faWithSons.each(function(){
+        var topDif=$father.offset().top-$(this).offset().top;
+        if(topDif>=0&&topDif<tmpDif){
+          tmpDif=topDif;
+          appIndex=index;
+        }
+        index=index+1;
+      });
+      $father.scrollTop($father.scrollTop()-tmpDif);
+    }
+ });
+  setTimeout("slideAutoDown('"+String(fa)+"','"+String(son)+"')",4000);
 }
 function sina_public_timeline(){
   var strhost = window.location.host;
-		var strprotocol = window.location.protocol;
-		var strurl = strprotocol + "//" + strhost + "/sina_weibo/public_timeline";
+  var strprotocol = window.location.protocol;
+  var strurl = strprotocol + "//" + strhost + "/sina_weibo/public_timeline";
   $("#loading_pane").removeClass("hide");
-		$.ajax({
-			type: 'POST',
-			url: strurl,
-			data:{"focus_index":"yes"},
-			contentType: 'multipart/form-data',
-			datatype: 'json',
-			success:function(data)
-			{
-				$("#focus_sina_timeline").html(data);
-    $("#loading_pane").addClass("hide");
-			},
-			error:function(xhr,r,e)
-			{
-				alert(e);
-    $("#loading_pane").addClass("hide");
-			}
-		});
+  $.ajax({
+    type: 'POST',
+    url: strurl,
+    data:{"focus_index":"yes"},
+    contentType: 'multipart/form-data',
+    datatype: 'json',
+    success:function(data)
+    {
+    $("#focus_sina_timeline").html(data);
+        $("#loading_pane").addClass("hide");
+    },
+    error:function(xhr,r,e)
+    {
+    alert(e);
+        $("#loading_pane").addClass("hide");
+    }
+  });
 }
 function qq_public_timeline(){
   var strhost = window.location.host;
-		var strprotocol = window.location.protocol;
-		var strurl = strprotocol + "//" + strhost + "/qq_weibo/public_timeline";
+  var strprotocol = window.location.protocol;
+  var strurl = strprotocol + "//" + strhost + "/qq_weibo/public_timeline";
   $("#loading_pane").removeClass("hide");
-		$.ajax({
-			type: 'POST',
-			url: strurl,
-			data:{"focus_index":"yes"},
-			contentType: 'multipart/form-data',
-			datatype: 'json',
-			success:function(data)
-			{
-				$("#focus_qq_timeline").html(data);
-    $("#loading_pane").addClass("hide");
-			},
-			error:function(xhr,r,e)
-			{
-				alert(e);
-    $("#loading_pane").addClass("hide");
-			}
-		});
+  $.ajax({
+    type: 'POST',
+    url: strurl,
+    data:{"focus_index":"yes"},
+    contentType: 'multipart/form-data',
+    datatype: 'json',
+    success:function(data)
+    {
+    $("#focus_qq_timeline").html(data);
+        $("#loading_pane").addClass("hide");
+    },
+    error:function(xhr,r,e)
+    {
+    alert(e);
+        $("#loading_pane").addClass("hide");
+    }
+  });
 }
 </script>

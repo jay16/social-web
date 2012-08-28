@@ -7,12 +7,41 @@ class QqWeiboController < ApplicationController
     @user_info = @qq.user.info
     
     respond_to do |format|
-      format.html { render :layout => false }
+      format.html# { render :layout => false }
     end
   end
   #发布微博
   def t_add
-    @qq.t.add(params[:qq_statuses_text])
+    content = params[:qq_statuses_text]
+    image = params[:pic]
+    if image.present?
+      timestamp = Time.now.strftime("%Y-%m-%d-%H-")
+      timestamp << image.to_s.downcase
+      img_path = File.join("public","upload",timestamp)
+      @qq.t.add_pic(content,img_path)
+    else
+      @qq.t.add(content)
+    end
+    
+    respond_to do |format|
+      format.html { render :layout => false }
+    end
+  end
+  
+  def upload
+    image = params[:qq_img_field]
+    if image.present?
+      timestamp = Time.now.strftime("%Y-%m-%d-%H-")
+      timestamp << image.original_filename.to_s.downcase
+      img_path =File.join("public","upload",timestamp)
+      File.open(img_path, "wb") do |f| 
+        f.write(image.read) 
+      end
+    end
+    
+    respond_to do |format|
+      format.js
+    end
   end
   # 主页时间线
   def home_timeline
@@ -91,17 +120,12 @@ class QqWeiboController < ApplicationController
 				 access_hash = QQ::Client.new.get_access_token(params[:code])	
 				 puts access_hash
 				 puts params[:openid]
-#				 access_token=a97b15eb32d82940c6ff8513311894fa
-#				 &expires_in=604800
-#				 &refresh_token=4bf0fd03c78284d4c0f498b861787c7b
 					save_user_key(current_user.id, access_hash.refresh_token, "qqweibo", access_hash.access_token, access_hash.expires_at, params[:openid])
 				end
 				
 				redirect_to "/focus/index"
   end
-  def save
-    save_user_key(current_user.id, "4bf0fd03c78284d4c0f498b861787c7b", "qqweibo", "a97b15eb32d82940c6ff8513311894fa", 604800+Time.now.to_i,"78231A433C5FFBBFF3B164C10FBA0F9A")
-  end
+
   def connect
     redirect_to QQ::Client.new.authorize_url
   end

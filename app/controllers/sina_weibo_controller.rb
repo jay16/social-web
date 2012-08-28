@@ -65,35 +65,31 @@ class SinaWeiboController < ApplicationController
 	   end
   end
   
-  #发表微博
-  #url上传图片需要高权限
+  #发表微博 #url上传图片需要高权限
   def statuses_update
     content = params[:sina_statuses_text]
-    img = params[:img_field]
-    if img.present?
-      @statuse = @client.statuses.upload(content, img)
-      @img = true
+    extension = File.extname(params[:pic]).underscore
+    if params[:pic].present?
+      img_path = File.join("public","upload_img#{extension}")
+      @statuse = @client.statuses.upload(content, File.open(img_path))
     else
       @statuse = @client.statuses.update(content)
-      @img = false
     end
     
 	   respond_to do |format|
-      format.js
+      format.html { render :layout => false }
 	   end
   end
   
-  def upload_img
+  def upload
     image = params[:sina_img_field]
     if image.present?
-      extension = File.extname(image.original_filename).underscore   
-      store_dir = Rails.root.join("public","upload_img#{extension}")
-      File.open(store_dir, "wb") do |f| 
+      timestamp = Time.now.strftime("%Y-%m-%d-%H-")
+      timestamp << image.original_filename.to_s.downcase  
+      img_path = Rails.root.join("public","upload",timestamp)
+      File.open(img_path, "wb") do |f| 
         f.write(image.read) 
       end
-      @img_url = store_dir
-    else
-      @img_url = "fail"
     end
     
     respond_to do |format|
