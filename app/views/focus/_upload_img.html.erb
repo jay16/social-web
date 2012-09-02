@@ -10,11 +10,11 @@
 						<div class="tab-content">
 								<div class="tab-pane active" id="focus_img_tab">
 								  <%= form_tag("/focus/upload", :multipart=>true, :remote => true, :id => "focus_img_tab_form") do %>
-							     <%= file_field_tag :focus_img_field, :onchange => "readURL(this)", :accept => 'image/png,image/gif,image/jpeg,image/jpg', :class => 'btn' ,:size=>15 %><br>
+							     <%= file_field_tag :focus_img_field, :accept => 'image/png,image/gif,image/jpeg,image/jpg', :class => 'btn' ,:size=>15 %><br>
 							   <img id="focus_load_img_pane">
 								  <%= submit_tag "上传", id:"focus_img_upload",class:"btn",remote:true %>
 								  <% end %>
-								  <a id="focus_img_reload" class="btn btn-mini" onclick="focus_img_reload()" href="javascript:void(0)" style="display:none;">更换图片</a> 
+								  <a id="focus_img_reload" class="btn" onclick="focus_img_reload()" href="javascript:void(0)" style="display:none;width:55px;">更换图片</a> 
 								</div>
 								<div class="tab-pane" id="focus_url_tab">
 								  <%= text_field_tag "url_field",'Enter the image url here' %>

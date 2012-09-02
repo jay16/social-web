@@ -5,18 +5,20 @@ class FocusController < ApplicationController
   def index
   end
   
-  def statuses_create
+  def weibo_create
     content = params[:focus_statuses_text]
     image = params[:pic]
     if image.present?
       timestamp = Time.now.strftime("%Y-%m-%d-%H-")
       timestamp << image.to_s.downcase
       img_path = File.join("public","upload",timestamp)
-      @statuse = @client.statuses.upload(content, File.open(img_path))
+      @sina.statuses.upload(content, File.open(img_path))
+      @qq.t.add_pic(content, img_path)
     else
-      @statuse = @client.statuses.update(content)
+      @sina.statuses.update(content)
+      @qq.t.add(content)
     end
-    
+     
     respond_to do |format|
       format.html { render :layout => false }
     end
@@ -32,6 +34,8 @@ class FocusController < ApplicationController
         f.write(image.read) 
       end
     end
+    
+    @img_path = File.join("","upload",timestamp)
     
     respond_to do |format|
       format.js
@@ -49,8 +53,8 @@ class FocusController < ApplicationController
         redirect_to "/sina_weibo/connect"
       end
  
-						@client = Sina::Client.new
-		    @client.get_token_from_hash({:access_token => userkey.key1, :expires_at => userkey.key2})
+						@sina = Sina::Client.new
+		    @sina.get_token_from_hash({:access_token => userkey.key1, :expires_at => userkey.key2})
       @sina_user = YAML.load_file("config/sina_user.yml")
     end
     

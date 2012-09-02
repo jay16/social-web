@@ -22,7 +22,7 @@ class QqWeiboController < ApplicationController
     else
       @qq.t.add(content)
     end
-    
+     
     respond_to do |format|
       format.html { render :layout => false }
     end

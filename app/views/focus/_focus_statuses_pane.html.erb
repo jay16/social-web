@@ -29,7 +29,7 @@
 													</label>
 											<% end %>
 								 <% end %>
-								<a id="focus_statuse_release", class="btn">发布</a>
+								<a id="focus_statuse_release", class="btn" onclick="focus_weibo_create($('#focus_statuses_text').val(),$('#focus_img_field').val());">发布</a>
 								</span>
 				  </div>
 				</div>
@@ -51,4 +51,34 @@
 				  $("#focus_statuse_release").removeClass("btn-primary");
 				}
   });
+function focus_weibo_create(content,pic){
+  var strhost = window.location.host;
+		var strprotocol = window.location.protocol;
+		var strurl = strprotocol + "//" + strhost + "/focus/weibo_create";
+  $("#loading_pane").removeClass("hide");
+		$.ajax({
+			type: 'POST',
+			url: strurl,
+			data:{"focus_statuses_text":content,"pic":pic},
+			contentType: 'multipart/form-data',
+			datatype: 'json',
+			success:function(data)
+			{
+			 $("#focus_statuses_image").css("display","none");
+			 $("#focus_statuses_text").val("");
+    $("#focus_load_img_pane").attr("src","");
+    $("#focus_url_field").val("");
+    $("#focus_img_field").val("");
+    $("#focus_img_field").css("display","block");
+    $("#focus_img_reload").css("display","none");
+    $("#focus_img_upload").css("display","block")
+    $("#loading_pane").addClass("hide");
+			},
+			error:function(xhr,r,e)
+			{
+			 alert(String(e)+"-"+String(xhr)+"-"+String(r));
+    $("#loading_pane").addClass("hide");
+			}
+		});    
+}
 	</script>

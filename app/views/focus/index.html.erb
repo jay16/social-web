@@ -29,16 +29,6 @@ function focus_load_image(){
   $("#focus_url_field").val("");
   $("#focus_img_field").val("");
 }
-function readURL(input) {
-  if (input.files && input.files[0]) {
-     var reader = new FileReader();
-     reader.onload = function (e) {                     
-      $('#focus_load_img_pane').attr('src', e.target.result);
-      $('#focus_load_img_pane').attr('width', "220");                
-      } 
-    reader.readAsDataURL(input.files[0]);             
-   } 
-} 
 
 function sina_weibo_init(){
   var strhost = window.location.host;
